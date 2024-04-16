@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "arvo";
+  src: url("http://fonts.cdnfonts.com/css/arvo") format("truetype");
+}
+#root {
+  width: -webkit-fill-available;
+  background-color: var(--bg-20);
+}
+:root {
+  --primary: rgba(0, 128, 0, 1);
+  --bg-100: rgba(144, 238, 144, 1);
+  --bg-20: rgba(236, 255, 220, 1);
+  --bg-10: #faffec;
+  --bg-0: rgba(255, 255, 255, 1);
+  --text-100: rgba(8, 20, 46, 1);
+  --text-50: rgba(131, 137, 151, 1);
+
+  --font: "arvo";
+  --size-title: 3rem;
+  --size-btn: 1.5rem;
+  --size-txt: 1.2rem;
+
+  --page-width: 480px;
+
+  --margin-out: 2rem;
+}
+
+* {
+  font-family: var(--font);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

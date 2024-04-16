@@ -1,0 +1,35 @@
+.dashboard-container {
+
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.mds-plots-container {
+  display: flex;
+  grid-row: 1;
+  gap: 10px;
+  margin-left: 100px;
+}
+
+.mds-plot {
+  flex: 1;
+
+}
+
+.pcp-plots-container {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / span 2; 
+  gap: 10px;
+}
+
+.pcp-plot {
+  flex: 1;
+
+}

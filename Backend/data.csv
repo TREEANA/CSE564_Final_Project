@@ -1,0 +1,510 @@
+host_name,host_location,host_total_listings_count,property_type,room_type,accommodates,bath type,number of bed,number_of_reviews,number_of_reviews_ltm,number_of_reviews_l30d,review_scores_rating,review_scores_accuracy,review_scores_cleanliness,review_scores_communication,review_scores_location,review_scores_value,price
+David,"New York, NY",11.0,Entire rental unit,Entire home/apt,4.0,1 bath,1.0,146.0,37.0,0.0,4.87,4.85,4.84,4.85,4.98,4.85,210.0
+Historic Blue Moon,"New York, NY",27.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,41.0,2.0,0.0,4.76,4.76,4.78,4.88,4.78,4.66,352.0
+Leyland,"New York, NY",7.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,8.0,8.0,0.0,5.0,5.0,4.63,4.88,4.5,4.63,58.0
+Furnished Quarters,"New York, NY",1011.0,Entire rental unit,Entire home/apt,5.0,2 baths,2.0,2.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,272.0
+Carlene,"New York, NY",21.0,Private room in rental unit,Private room,2.0,1 shared bath,2.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,41.0
+Aamer,"New York, NY",26.0,Room in hotel,Private room,1.0,0 baths,1.0,16.0,0.0,0.0,4.81,4.94,4.75,4.88,5.0,4.75,75.0
+Michelle,"New York, NY",3.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,303.0,34.0,0.0,4.91,4.9,4.93,4.94,4.77,4.86,136.0
+Madalyn,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,23.0,0.0,0.0,5.0,4.96,5.0,4.96,4.91,4.91,72.0
+Chida,"New York, United States",11.0,Private room in home,Private room,2.0,1 bath,1.0,2.0,2.0,0.0,5.0,5.0,4.5,5.0,5.0,5.0,65.0
+Cesar,"New York, NY",4.0,Entire rental unit,Entire home/apt,2.0,1 bath,2.0,6.0,6.0,4.0,4.17,4.5,4.0,4.17,4.17,4.0,100.0
+Vicky,"New York, United States",18.0,Private room in bungalow,Private room,2.0,1 private bath,1.0,85.0,41.0,0.0,4.73,4.85,4.46,4.91,4.86,4.69,74.0
+Elska,"New York, United States",2.0,Entire rental unit,Entire home/apt,5.0,1 bath,3.0,24.0,5.0,1.0,4.83,4.92,4.88,4.96,4.42,4.46,109.0
+Anthony,"New York, NY",4.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,50.0
+Ofer,"New York, NY",9.0,Entire serviced apartment,Entire home/apt,2.0,1 bath,1.0,30.0,5.0,1.0,4.83,4.9,4.73,4.9,5.0,4.6,91.0
+Andy,"New York, NY",2.0,Entire home,Entire home/apt,8.0,2 baths,5.0,125.0,35.0,0.0,4.94,4.96,4.88,4.99,4.94,4.83,400.0
+Andrew,"New York, NY",10.0,Entire rental unit,Entire home/apt,7.0,1 bath,4.0,4.0,3.0,0.0,5.0,4.75,5.0,5.0,5.0,4.5,189.0
+Marta,"New York, NY",1.0,Entire home,Entire home/apt,4.0,1.5 baths,2.0,128.0,32.0,3.0,4.84,4.86,4.84,4.88,4.87,4.81,295.0
+Sanjna,"New York, NY",1.0,Entire condo,Entire home/apt,2.0,1 bath,2.0,8.0,0.0,0.0,5.0,4.88,4.75,5.0,5.0,5.0,60.0
+Teresa,"New York, NY",4.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,86.0,29.0,0.0,4.73,4.74,4.78,4.83,4.59,4.72,48.0
+Bibiana,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,5.0,2.0,0.0,4.0,4.0,4.0,4.6,4.0,3.8,45.0
+Kiki,"New York, NY",16.0,Entire rental unit,Entire home/apt,6.0,1 bath,2.0,8.0,0.0,0.0,4.88,4.63,4.75,4.63,4.88,4.5,258.0
+Amy,"New York, NY",2.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,258.0,29.0,0.0,4.77,4.89,4.82,4.9,4.95,4.71,186.0
+Oliver,"New York, NY",2.0,Private room in home,Private room,1.0,1 shared bath,1.0,425.0,69.0,0.0,4.81,4.83,4.69,4.94,4.96,4.78,75.0
+Gimena,"New York, NY",3.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,2.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,170.0
+Abul,"New York, NY",2.0,Private room in home,Private room,3.0,1 private bath,3.0,46.0,36.0,3.0,4.64,4.81,4.62,4.7,4.64,4.74,125.0
+Michael,"New York, NY",1.0,Entire loft,Entire home/apt,2.0,1 bath,2.0,53.0,5.0,0.0,4.79,4.89,4.66,4.91,5.0,4.75,235.0
+Xie,"New York, United States",8.0,Private room in guest suite,Private room,4.0,1 shared bath,2.0,83.0,8.0,0.0,4.48,4.54,4.36,4.53,4.28,4.48,34.0
+Eibhlin,"New York, United States",31.0,Private room in rental unit,Private room,1.0,2 shared baths,1.0,3.0,1.0,0.0,2.67,3.67,2.33,4.0,3.33,3.0,38.0
+Alan,"New York, NY",3.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,2.0,0.0,0.0,4.0,4.5,3.0,4.0,5.0,4.5,99.0
+Lynn L,"New York, NY",4.0,Private room in guest suite,Private room,2.0,1 shared bath,2.0,76.0,2.0,0.0,4.53,4.68,4.67,4.68,4.56,4.61,45.0
+Marlyn,"New York, NY",11.0,Private room in townhouse,Private room,4.0,1 private bath,2.0,20.0,20.0,1.0,4.85,4.95,4.7,4.65,4.9,4.75,140.0
+Kathleen,"New York, NY",3.0,Entire rental unit,Entire home/apt,6.0,2.5 baths,3.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,574.0
+Ramia,"New York, NY",1.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,54.0,32.0,1.0,4.87,4.91,4.83,4.94,4.67,4.74,95.0
+Pavel,"New York, NY",3.0,Private room in home,Private room,2.0,1 shared bath,1.0,15.0,15.0,6.0,4.73,4.93,4.6,4.93,4.8,4.73,62.0
+Edelmira,"New York, United States",4.0,Private room in casa particular,Private room,2.0,1 shared bath,1.0,24.0,20.0,0.0,4.42,4.58,4.58,4.83,4.33,4.42,35.0
+Sandy,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,19.0,3.0,0.0,4.58,4.58,4.42,5.0,5.0,4.47,135.0
+Eli,"Bondi Beach, Australia",3.0,Entire rental unit,Entire home/apt,4.0,1 bath,1.0,2.0,0.0,0.0,4.5,4.5,4.5,5.0,5.0,4.5,325.0
+Michael,"New York, NY",2.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,1.0,0.0,0.0,4.0,5.0,5.0,4.0,5.0,5.0,260.0
+Mavi And Gulden,"New York, NY",5.0,Private room in rental unit,Private room,1.0,1.5 shared baths,1.0,17.0,1.0,0.0,4.65,4.47,4.65,4.88,4.76,4.47,48.0
+Benvindo,"New York, NY",1.0,Private room in home,Private room,2.0,1 shared bath,1.0,6.0,6.0,0.0,4.67,4.83,4.83,4.83,4.0,4.83,93.0
+David,"New York, NY",1.0,Private room in home,Private room,2.0,1 shared bath,1.0,7.0,7.0,3.0,5.0,5.0,5.0,4.86,5.0,5.0,85.0
+Furnished Quarters,"New York, NY",1011.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,4.0,151.0
+Zviadi,"Brooklyn, NY",6.0,Entire rental unit,Entire home/apt,3.0,1 bath,3.0,7.0,7.0,5.0,4.86,4.86,4.86,5.0,5.0,4.71,204.0
+Evan,"New York, NY",7.0,Entire rental unit,Entire home/apt,12.0,2 baths,6.0,16.0,3.0,0.0,4.63,4.5,4.44,4.81,5.0,4.56,275.0
+Triny,"New York, NY",3.0,Private room in home,Private room,2.0,1 shared bath,1.0,24.0,0.0,0.0,4.63,4.74,4.63,4.74,4.35,4.57,45.0
+Martin,"New York, NY",1.0,Entire guesthouse,Entire home/apt,4.0,1 bath,2.0,24.0,24.0,0.0,4.75,4.58,4.58,4.88,4.33,4.79,75.0
+Gary,"Clearwater, FL",30.0,Private room in resort,Private room,4.0,1 private bath,2.0,2.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,330.0
+Joan,"Baldwin, NY",13.0,Private room in home,Private room,1.0,1 shared bath,1.0,44.0,16.0,0.0,4.59,4.52,4.57,4.75,4.5,4.64,60.0
+Nick,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,453.0,35.0,0.0,4.88,4.95,4.87,4.96,4.99,4.82,225.0
+Amy,"New York, NY",2.0,Entire rental unit,Entire home/apt,6.0,1 bath,2.0,279.0,38.0,0.0,4.56,4.73,4.5,4.66,4.77,4.57,210.0
+Isabel,"New York, NY",4.0,Shared room in rental unit,Shared room,2.0,1 shared bath,1.0,261.0,20.0,0.0,4.66,4.73,4.49,4.83,4.83,4.65,39.0
+Hyacinth,"New York, United States",4.0,Private room in home,Private room,1.0,1 shared bath,1.0,138.0,23.0,0.0,4.85,4.88,4.73,4.86,4.59,4.89,41.0
+Anita,"Hartford, CT",1.0,Private room in home,Private room,2.0,1.5 baths,1.0,42.0,19.0,0.0,4.88,4.9,4.93,5.0,4.62,4.74,145.0
+David,"New York, NY",11.0,Entire rental unit,Entire home/apt,5.0,1 bath,1.0,53.0,28.0,1.0,4.7,4.53,4.77,4.81,4.96,4.62,200.0
+Malene,"New York, NY",1.0,Entire rental unit,Entire home/apt,4.0,2 baths,2.0,192.0,19.0,1.0,4.86,4.87,4.86,4.96,4.69,4.79,175.0
+Eugene,"New York, NY",782.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,1.0,0.0,0.0,5.0,5.0,3.0,3.0,5.0,5.0,39.0
+Ryan,"New York, NY",5.0,Private room in home,Private room,2.0,1 private bath,1.0,12.0,12.0,1.0,4.92,4.92,4.92,4.92,4.83,4.83,95.0
+Anastasia,"New York, United States",1.0,Private room in rental unit,Private room,2.0,1.5 shared baths,1.0,4.0,0.0,0.0,4.75,4.75,4.5,5.0,4.75,4.75,50.0
+Leisha,"New York, United States",7.0,Private room in home,Private room,1.0,1 shared bath,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,211.0
+Alev Fanny,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 bath,1.0,2.0,2.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,140.0
+Michal,"New York, NY",3.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,147.0,43.0,0.0,4.87,4.88,4.89,4.97,4.94,4.67,125.0
+Erica,"New York, United States",3.0,Entire rental unit,Entire home/apt,4.0,1 bath,1.0,109.0,6.0,0.0,4.99,5.0,5.0,5.0,4.92,4.92,250.0
+Buke,"New York, NY",3.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,6.0,0.0,0.0,4.33,4.83,4.67,5.0,5.0,4.5,314.0
+Scott,"New York, United States",2.0,Entire rental unit,Entire home/apt,7.0,1 bath,3.0,451.0,61.0,0.0,4.82,4.9,4.85,4.93,4.64,4.78,158.0
+Austine,"New York, NY",9.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,4.0,4.0,1.0,5.0,5.0,5.0,5.0,5.0,5.0,25.0
+Nicole,"New York, NY",1.0,Entire rental unit,Entire home/apt,3.0,1.5 baths,1.0,4.0,4.0,0.0,4.25,4.75,4.0,4.0,3.5,4.0,300.0
+Amir,"New York, NY",4.0,Entire home,Entire home/apt,4.0,1 bath,2.0,82.0,33.0,0.0,4.98,5.0,4.99,5.0,4.84,4.89,160.0
+Lihi,"Philadelphia, PA",3.0,Entire rental unit,Entire home/apt,6.0,1 bath,3.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,177.0
+Eli,"New York, NY",1.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,43.0,14.0,0.0,4.98,4.95,4.95,5.0,4.88,4.84,99.0
+Sonder (NYC),"New York, NY",758.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,36.0,13.0,1.0,4.53,4.56,4.67,4.67,4.72,4.5,271.0
+Edward,"New York, NY",3.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,315.0,24.0,0.0,4.39,4.6,4.05,4.85,4.71,4.53,66.0
+Furnished Club,"New York, NY",19.0,Entire rental unit,Entire home/apt,4.0,2 baths,2.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,293.0
+Guhapriya,"New York, NY",1.0,Entire home,Entire home/apt,4.0,1 bath,2.0,3.0,3.0,0.0,5.0,5.0,4.67,5.0,5.0,5.0,195.0
+Jemar Ira,"New York, NY",20.0,Entire rental unit,Entire home/apt,6.0,1 bath,4.0,12.0,2.0,0.0,4.33,4.58,4.17,4.67,4.42,4.33,410.0
+Rohan,"New York, NY",1.0,Entire guest suite,Entire home/apt,3.0,1 bath,2.0,247.0,67.0,0.0,4.87,4.91,4.81,4.94,4.89,4.83,109.0
+Yvonne,"New York, NY",8.0,Private room in home,Private room,2.0,1 shared bath,1.0,17.0,11.0,1.0,5.0,5.0,5.0,5.0,4.65,5.0,36.0
+Jonathan,"New York, NY",6.0,Entire guest suite,Entire home/apt,2.0,1 bath,1.0,20.0,3.0,1.0,4.95,5.0,5.0,5.0,4.75,4.85,65.0
+Vladan,"New York, NY",1.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,9.0,9.0,5.0,4.78,4.67,4.78,4.89,5.0,4.67,117.0
+Louis,"New York, United States",10.0,Shared room in serviced apartment,Shared room,2.0,1 shared bath,1.0,2.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,4.5,50.0
+Eliza,"New York, NY",67.0,Private room in rental unit,Private room,4.0,2 baths,2.0,9.0,9.0,1.0,4.22,4.56,4.56,4.67,5.0,4.33,47.0
+Gladwyn,"New York, United States",6.0,Private room in home,Private room,2.0,1 private bath,1.0,39.0,15.0,0.0,5.0,4.97,4.97,5.0,4.9,4.95,110.0
+Ali,"New York, NY",7.0,Private room in townhouse,Private room,1.0,1.5 baths,1.0,5.0,3.0,0.0,4.8,5.0,4.8,5.0,4.6,5.0,106.0
+Neriya,"New York, NY",4.0,Entire rental unit,Entire home/apt,8.0,2 baths,3.0,11.0,9.0,0.0,4.18,3.91,4.55,4.55,4.09,3.91,499.0
+Ana,"New York, NY",3.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,8.0,0.0,0.0,4.88,5.0,4.88,4.75,5.0,4.88,190.0
+Ji,"New York, United States",3.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,77.0,20.0,0.0,4.94,4.95,4.91,4.96,4.94,4.87,110.0
+Kristopher,"New York, NY",1.0,Private room in rental unit,Private room,4.0,1 private bath,2.0,190.0,63.0,4.0,4.89,4.89,4.84,4.96,4.85,4.89,86.0
+Mark,"New York, NY",3.0,Entire home,Entire home/apt,10.0,2 baths,6.0,7.0,7.0,0.0,4.71,4.71,5.0,5.0,4.71,5.0,152.0
+Xie,"New York, United States",8.0,Private room in home,Private room,3.0,1 shared bath,3.0,30.0,8.0,0.0,4.23,4.53,4.1,4.57,4.07,4.37,35.0
+Jose,"New York, United States",1.0,Private room in rental unit,Private room,2.0,1 shared bath,2.0,54.0,47.0,0.0,4.52,4.57,4.09,4.78,4.63,4.59,150.0
+Andrea,"New York, United States",2.0,Entire loft,Entire home/apt,2.0,1 bath,1.0,7.0,3.0,0.0,5.0,5.0,5.0,5.0,5.0,4.86,375.0
+Angie,"New York, NY",4.0,Private room in loft,Private room,1.0,1 shared bath,1.0,77.0,23.0,0.0,4.75,4.77,4.78,4.94,4.44,4.68,60.0
+Gee Moon,"New York, United States",1.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,7.0,5.0,1.0,4.86,5.0,4.57,5.0,4.43,4.71,220.0
+Bravo,"New York, NY",9.0,Shared room in rental unit,Shared room,1.0,1 shared bath,1.0,2.0,0.0,0.0,5.0,4.0,4.0,4.5,4.0,4.5,45.0
+Stanley,"New York, NY",7.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,41.0,3.0,0.0,4.83,4.88,4.68,4.98,4.83,4.71,44.0
+Debbie,"New York, NY",9.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,44.0,1.0,0.0,4.8,4.75,4.91,4.91,4.32,4.8,52.0
+Dovber,"New York, NY",2.0,Entire rental unit,Entire home/apt,2.0,2 baths,1.0,2.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,199.0
+Simone,"New York, NY",2.0,Private room in rental unit,Private room,2.0,2 baths,1.0,11.0,11.0,0.0,4.64,4.82,4.73,5.0,4.45,4.64,70.0
+Mary,"Washington, DC",23.0,Private room in home,Private room,1.0,1 shared bath,1.0,1.0,1.0,0.0,3.0,3.0,2.0,4.0,3.0,2.0,45.0
+Lilibeth,"New York, NY",2.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,27.0,20.0,0.0,4.63,4.63,4.22,4.89,4.63,4.59,75.0
+Sanyika,"New York, United States",3.0,Private room in rental unit,Private room,1.0,1 private bath,1.0,40.0,3.0,1.0,4.88,4.93,4.9,4.88,4.63,4.8,56.0
+Stay With Vibe,"New York, NY",324.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,18.0,2.0,0.0,4.5,4.83,4.17,4.78,4.76,4.24,117.0
+Best Inns USA,"New York, NY",39.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,3.0,3.0,0.0,4.33,4.33,3.67,4.33,5.0,4.0,83.0
+Miles,"New York, United States",2.0,Entire rental unit,Entire home/apt,4.0,1.5 baths,2.0,32.0,6.0,0.0,4.63,4.81,4.56,4.88,4.66,4.56,165.0
+Serah,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,56.0,31.0,0.0,4.82,4.91,4.91,4.96,4.95,4.7,225.0
+Janine,"New York, NY",8.0,Entire rental unit,Entire home/apt,6.0,2 baths,4.0,28.0,28.0,1.0,4.89,4.96,5.0,4.96,4.54,4.86,300.0
+Rove,"New York, NY",81.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,289.0
+Jian Kun,"New York, NY",18.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,1.0,1.0,1.0,4.0,5.0,5.0,4.0,5.0,5.0,115.0
+Millennium Downtown,"New York, NY",8.0,Room in hotel,Private room,2.0,1 private bath,1.0,43.0,18.0,1.0,4.37,4.42,4.26,4.23,4.88,4.26,139.0
+Jay,"New York, NY",1.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,68.0,0.0,0.0,4.87,4.91,4.78,4.96,4.76,4.78,180.0
+Dan,"New York, NY",3.0,Entire condo,Entire home/apt,5.0,2 baths,2.0,23.0,1.0,0.0,4.48,4.43,4.48,4.57,4.52,4.39,1275.0
+Marilenis,"New York, NY",4.0,Private room in rental unit,Private room,1.0,1 private bath,1.0,53.0,35.0,0.0,4.83,4.92,4.74,4.98,4.68,4.83,60.0
+Urban Furnished,"New York, NY",75.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,1.0,1.0,0.0,4.0,5.0,3.0,4.0,5.0,5.0,180.0
+Dean,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,11.0,0.0,0.0,4.64,4.82,4.45,4.91,4.73,4.45,135.0
+Stanley,"New York, NY",7.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,8.0,4.0,0.0,5.0,5.0,4.88,5.0,4.75,4.63,44.0
+Liza,"New York, NY",3.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,11.0,3.0,0.0,4.82,4.91,4.82,4.73,4.91,4.82,200.0
+Val,"New York, NY",6.0,Entire rental unit,Entire home/apt,5.0,1 bath,2.0,57.0,43.0,1.0,4.51,4.54,4.61,4.74,4.93,4.51,142.0
+Viviana,"New York, NY",3.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,77.0,2.0,0.0,4.78,4.88,4.91,4.95,4.71,4.7,65.0
+Lonnie,"New York, United States",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,58.0,0.0,0.0,4.81,4.9,4.64,4.97,4.86,4.62,175.0
+Sonder (NYC),"New York, NY",758.0,Room in boutique hotel,Private room,2.0,1 private bath,1.0,32.0,5.0,0.0,4.53,4.56,4.72,4.53,4.94,4.66,302.0
+Alexis,"New York, NY",2.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,9.0,2.0,0.0,5.0,5.0,5.0,5.0,4.89,5.0,110.0
+Rove,"New York, NY",81.0,Entire rental unit,Entire home/apt,8.0,2.5 baths,4.0,2.0,2.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,616.0
+David,"New York, NY",7.0,Private room in home,Private room,1.0,4 shared baths,1.0,35.0,0.0,0.0,4.57,4.63,4.51,4.89,4.51,4.74,49.0
+Jeniffer,"New York, NY",157.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,8.0,2.0,0.0,4.88,5.0,5.0,5.0,4.75,4.75,120.0
+MyNyHousing,"New York, NY",112.0,Entire rental unit,Entire home/apt,4.0,2 baths,2.0,2.0,2.0,0.0,5.0,5.0,4.0,5.0,4.5,4.0,290.0
+Jocelyn,"New York, NY",2.0,Private room in condo,Private room,2.0,1 private bath,1.0,180.0,22.0,0.0,4.98,4.98,4.93,4.98,4.99,4.9,340.0
+Ed,"New York, NY",1.0,Entire rental unit,Entire home/apt,8.0,1 bath,2.0,22.0,22.0,0.0,4.95,4.91,5.0,5.0,4.73,4.86,181.0
+Dorit,"New York, United States",9.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,3.0,0.0,0.0,3.67,3.67,3.33,4.33,5.0,3.67,100.0
+Liza,"San Francisco, CA",1.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,1.0,0.0,0.0,5.0,5.0,4.0,5.0,5.0,3.0,159.0
+Rebeca,"New York, NY",1.0,Entire home,Entire home/apt,6.0,2 baths,4.0,42.0,38.0,0.0,4.76,4.76,4.83,4.9,4.69,4.64,300.0
+Jemar Ira,"New York, NY",20.0,Entire rental unit,Entire home/apt,6.0,1 bath,2.0,17.0,2.0,0.0,4.41,4.53,4.35,4.82,4.29,4.29,380.0
+Keino,"New York, NY",2.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,18.0,8.0,0.0,4.89,4.94,4.89,4.83,4.17,4.61,65.0
+Ima,"New York, United States",1.0,Entire guesthouse,Entire home/apt,3.0,1 bath,2.0,42.0,4.0,0.0,4.74,4.74,4.86,4.83,4.74,4.79,130.0
+Omar,"New York, NY",4.0,Entire rental unit,Entire home/apt,16.0,3 baths,7.0,293.0,27.0,0.0,4.81,4.88,4.75,4.97,4.53,4.86,275.0
+Abeer,"New York, United States",7.0,Entire rental unit,Entire home/apt,4.0,1 bath,3.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,159.0
+Mary,"Washington, DC",23.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,22.0,5.0,0.0,4.68,4.64,4.55,4.82,5.0,4.55,115.0
+Alejandro,"New York, United States",2.0,Entire rental unit,Entire home/apt,2.0,1 bath,2.0,2.0,0.0,0.0,4.5,4.5,3.5,5.0,5.0,4.5,90.0
+June,"New York, NY",2.0,Entire loft,Entire home/apt,2.0,1 bath,1.0,163.0,0.0,0.0,4.88,4.96,4.9,4.99,4.92,4.86,100.0
+Stay With Vibe,"New York, NY",324.0,Entire condo,Entire home/apt,2.0,1 bath,1.0,7.0,0.0,0.0,4.71,4.57,4.43,4.71,4.86,4.29,165.0
+Vitaly,"New York, NY",1.0,Entire rental unit,Entire home/apt,4.0,1 bath,1.0,5.0,4.0,0.0,4.6,4.8,5.0,5.0,4.8,4.6,226.0
+Damien,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,38.0,11.0,0.0,4.63,4.66,4.5,4.76,4.53,4.53,100.0
+Furnished Quarters,"New York, NY",1011.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,2.0,0.0,0.0,4.5,4.5,4.5,5.0,4.5,4.0,333.0
+Vadim,"New York, NY",3.0,Entire rental unit,Entire home/apt,4.0,1 bath,4.0,176.0,0.0,0.0,4.85,4.85,4.71,4.95,4.69,4.85,250.0
+Benham,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,9.0,9.0,0.0,5.0,5.0,4.89,4.89,4.89,5.0,65.0
+Lhaden,"New York, United States",1.0,Private room in home,Private room,2.0,1 bath,1.0,13.0,13.0,0.0,4.38,4.46,4.15,4.92,4.69,4.31,81.0
+Lorelei,"New York, NY",1.0,Private room in townhouse,Private room,2.0,1 private bath,2.0,374.0,42.0,2.0,4.82,4.86,4.85,4.88,4.79,4.83,134.0
+Frank,"New York, NY",8.0,Private room in home,Private room,2.0,1 shared bath,1.0,14.0,3.0,1.0,4.79,4.79,4.79,4.86,4.93,4.86,80.0
+Lacy,"New York, NY",2.0,Entire rental unit,Entire home/apt,8.0,1.5 baths,4.0,75.0,39.0,1.0,4.88,4.83,4.89,4.92,4.96,4.8,598.0
+Tony,"New York, United States",14.0,Entire home,Entire home/apt,3.0,1 bath,2.0,155.0,35.0,0.0,4.94,4.96,4.92,4.97,4.92,4.83,159.0
+Taaj,"New York, NY",1.0,Private room in rental unit,Private room,3.0,1 shared bath,1.0,42.0,14.0,1.0,4.71,4.95,4.71,4.86,4.86,4.83,58.0
+Comfy,"New York, United States",2.0,Private room in rental unit,Private room,1.0,1 private bath,2.0,1.0,1.0,0.0,2.0,1.0,2.0,2.0,2.0,1.0,300.0
+Sharon,"New York, NY",9.0,Private room in rental unit,Private room,3.0,1 private bath,4.0,64.0,7.0,0.0,4.61,4.63,4.64,4.8,4.67,4.69,75.0
+Nat,"New York, NY",3.0,Entire condo,Entire home/apt,4.0,1 bath,2.0,250.0,45.0,0.0,4.78,4.82,4.84,4.88,4.99,4.68,350.0
+Susan,"New York, NY",2.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,15.0,5.0,0.0,5.0,5.0,4.93,5.0,5.0,4.8,90.0
+Briana,"New York, NY",4.0,Entire rental unit,Entire home/apt,4.0,1 bath,1.0,1.0,1.0,0.0,5.0,5.0,5.0,4.0,5.0,5.0,232.0
+Martina,"Santiago, Chile",4.0,Private room in casa particular,Private room,2.0,1 private bath,1.0,3.0,0.0,0.0,4.67,4.67,4.33,5.0,4.33,4.67,150.0
+Kaz,"New York, NY",366.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,8.0,3.0,0.0,4.88,4.88,4.75,5.0,5.0,4.25,33.0
+Joel,"Los Angeles, CA",2.0,Entire rental unit,Entire home/apt,2.0,1 bath,2.0,8.0,5.0,1.0,5.0,4.88,5.0,5.0,5.0,4.75,170.0
+Chris,"Queensbury, NY",3.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,78.0,6.0,0.0,4.72,4.71,4.77,4.87,4.53,4.69,55.0
+Blueground,"New York, NY",6556.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,1.0,0.0,0.0,4.0,5.0,3.0,5.0,5.0,3.0,265.0
+Vikas,"New York, United States",3.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,49.0,43.0,6.0,4.94,4.98,4.92,5.0,5.0,4.86,164.0
+Sue,"New York, NY",5.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,250.0
+Starr,"New York, NY",3.0,Entire rental unit,Entire home/apt,5.0,1.5 baths,2.0,22.0,22.0,0.0,4.82,4.82,4.64,4.91,4.73,4.86,180.0
+Robbin,"New York, NY",2.0,Entire rental unit,Entire home/apt,2.0,1 bath,2.0,164.0,3.0,0.0,4.91,4.94,4.95,4.91,4.82,4.77,165.0
+Furnished Quarters,"New York, NY",1011.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,1.0,0.0,0.0,4.0,4.0,4.0,5.0,5.0,4.0,183.0
+Nigel,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,3.0,2.0,0.0,5.0,4.67,4.67,5.0,5.0,4.33,81.0
+Lili,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,4.0,0.0,0.0,5.0,4.5,5.0,4.5,4.5,4.25,230.0
+Crystal,"New York, NY",2.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,40.0,3.0,0.0,4.75,4.85,4.73,4.85,4.78,4.7,50.0
+Tobias,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,5.0,5.0,0.0,5.0,5.0,5.0,4.8,4.6,5.0,100.0
+Jeniffer,"New York, NY",157.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,9.0,3.0,0.0,5.0,5.0,4.78,4.67,5.0,4.67,146.0
+Global Luxury Suites,"Hawthorne, NJ",1158.0,Entire serviced apartment,Entire home/apt,3.0,1 bath,1.0,1.0,0.0,0.0,2.0,2.0,3.0,1.0,1.0,1.0,469.0
+Kimberly,"New York, NY",3.0,Private room in townhouse,Private room,2.0,1 private bath,1.0,448.0,31.0,0.0,4.93,4.96,4.97,4.99,4.95,4.9,120.0
+Robert,"New York, NY",2.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,85.0,28.0,0.0,4.8,4.86,4.66,4.91,4.74,4.56,100.0
+Julio,"New York, NY",4.0,Private room in townhouse,Private room,2.0,1.5 shared baths,2.0,33.0,33.0,1.0,5.0,5.0,4.97,5.0,4.73,4.85,119.0
+Mil,"New York, NY",1.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,35.0,2.0,0.0,4.91,4.97,4.97,4.97,4.77,4.91,120.0
+J,"New York, NY",5.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,134.0,19.0,0.0,4.68,4.66,4.43,4.91,4.66,4.67,92.0
+Nicola,"New York, NY",7.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,4.0,4.0,1.0,4.75,4.75,4.5,5.0,5.0,4.25,99.0
+Jotham,"New York, NY",10.0,Private room in rental unit,Private room,2.0,2 shared baths,1.0,4.0,0.0,0.0,5.0,4.75,4.25,5.0,4.75,4.5,97.0
+John,"New York, NY",7.0,Entire rental unit,Entire home/apt,10.0,2 baths,5.0,173.0,7.0,0.0,4.78,4.82,4.89,4.92,4.78,4.63,7498.0
+Ainslie,"New York, NY",2.0,Private room in townhouse,Private room,2.0,1 shared bath,2.0,208.0,9.0,3.0,4.88,4.92,4.78,4.95,4.85,4.83,125.0
+J Carlos Retals,United States,6.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,29.0,28.0,0.0,4.93,4.9,4.93,4.86,4.86,4.86,50.0
+Mahoghany,"New York, NY",1.0,Private room in rental unit,Private room,2.0,1 bath,1.0,17.0,0.0,0.0,4.65,4.88,4.06,5.0,4.71,4.71,150.0
+Jennifer,"East Hampton, NY",5.0,Entire home,Entire home/apt,2.0,6 baths,4.0,5.0,5.0,0.0,4.6,4.6,4.6,4.6,4.8,4.6,800.0
+Josh,"New York, NY",2.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,20.0,0.0,0.0,4.25,4.55,3.65,4.85,5.0,4.35,1999.0
+Olivia,"New York, NY",2.0,Private room in townhouse,Private room,2.0,1 private bath,2.0,5.0,5.0,1.0,4.4,4.2,4.8,4.6,4.8,4.2,183.0
+Barbara,"New York, NY",5.0,Private room in townhouse,Private room,2.0,1 shared bath,1.0,77.0,31.0,2.0,4.94,4.92,4.86,4.9,4.68,4.83,98.0
+Louis,"New York, United States",10.0,Shared room in serviced apartment,Shared room,2.0,1 shared bath,1.0,4.0,0.0,0.0,4.0,3.75,4.75,3.5,4.5,3.75,50.0
+Luis Enrique,"New York, NY",23.0,Private room in rental unit,Private room,2.0,2.5 shared baths,1.0,3.0,1.0,0.0,4.0,5.0,4.67,4.0,5.0,3.0,43.0
+George Steven,"New York, United States",10.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,21.0,0.0,0.0,5.0,4.9,4.95,5.0,5.0,4.95,149.0
+Gregory,"New York, NY",2.0,Entire rental unit,Entire home/apt,4.0,1 bath,1.0,11.0,11.0,0.0,5.0,5.0,5.0,5.0,4.82,4.45,263.0
+Nkoli,"New York, NY",2.0,Entire loft,Entire home/apt,2.0,1 bath,1.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,4.0,4.0,125.0
+NYC Rentals,"New York, NY",11.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,53.0,45.0,0.0,4.92,4.94,4.92,4.94,4.96,4.81,484.0
+Best Inns USA,"New York, NY",39.0,Entire rental unit,Entire home/apt,1.0,1 bath,1.0,7.0,2.0,0.0,4.71,4.86,5.0,4.86,5.0,4.57,69.0
+Urban Furnished,"New York, NY",378.0,Entire serviced apartment,Entire home/apt,3.0,1 bath,1.0,1.0,1.0,0.0,2.0,4.0,5.0,2.0,2.0,1.0,138.0
+Anthony,"New York, NY",9.0,Private room in home,Private room,2.0,1.5 shared baths,1.0,12.0,11.0,0.0,5.0,5.0,4.92,4.92,5.0,4.92,123.0
+Lola,"New York, NY",2.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,235.0,1.0,0.0,4.71,4.83,4.61,4.91,4.87,4.78,89.0
+Jordan,"New York, NY",1.0,Private room in condo,Private room,2.0,1 private bath,1.0,89.0,16.0,0.0,4.99,5.0,4.93,4.98,4.99,4.91,400.0
+Sara,"New York, NY",1.0,Entire guest suite,Entire home/apt,2.0,1 bath,1.0,202.0,24.0,0.0,4.92,4.97,4.94,4.97,4.84,4.93,106.0
+Reservation Desk,"New York, NY",26.0,Room in boutique hotel,Private room,1.0,4 shared baths,1.0,8.0,1.0,0.0,4.13,4.25,4.25,4.5,5.0,4.0,67.0
+Jt,"New York, NY",57.0,Entire rental unit,Entire home/apt,6.0,1 bath,3.0,5.0,0.0,0.0,5.0,5.0,4.8,5.0,5.0,4.6,225.0
+Nesrine,"Paris, France",6.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,5.0,5.0,0.0,4.8,5.0,4.6,5.0,5.0,4.8,130.0
+Magda,"New York, United States",2.0,Entire home,Entire home/apt,4.0,2 baths,7.0,2.0,2.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,225.0
+Emmanouil,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1.5 baths,2.0,4.0,1.0,0.0,4.25,3.75,4.5,4.75,4.25,4.5,160.0
+Simone,"New York, NY",1.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,3.0,0.0,0.0,5.0,5.0,4.67,5.0,5.0,5.0,127.0
+Tasrina,"New York, United States",1.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,49.0,4.0,0.0,4.65,4.88,4.86,4.94,4.12,4.61,182.0
+Conrad,"New York, NY",2.0,Private room in townhouse,Private room,6.0,1 private bath,6.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,189.0
+Gregory,"New York, NY",2.0,Entire condo,Entire home/apt,2.0,1 bath,1.0,62.0,9.0,0.0,4.97,4.9,4.85,4.98,4.95,4.8,299.0
+Arturo,"New York, United States",7.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,58.0,1.0,0.0,4.86,4.91,4.83,4.98,5.0,4.55,179.0
+Charles,"New York, NY",6.0,Private room in condo,Private room,1.0,1 shared bath,1.0,31.0,0.0,0.0,4.68,4.71,4.77,4.94,4.52,4.71,65.0
+Larry,"New York, NY",3.0,Private room in townhouse,Private room,2.0,1 shared bath,1.0,95.0,23.0,0.0,4.64,4.69,4.76,4.82,4.25,4.66,51.0
+Mary,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,2.0,35.0,17.0,0.0,5.0,5.0,4.97,4.94,4.91,5.0,105.0
+Katarina,"New York, NY",3.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,38.0,23.0,0.0,4.76,4.76,4.87,4.82,4.42,4.58,98.0
+Val,"New York, NY",6.0,Entire rental unit,Entire home/apt,6.0,1 bath,3.0,107.0,53.0,4.0,4.68,4.78,4.79,4.84,4.91,4.71,137.0
+Emre,"New York, United States",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,23.0,0.0,0.0,4.74,4.87,4.57,4.96,4.82,4.77,180.0
+Tom,"New York, NY",2.0,Private room in rental unit,Private room,3.0,1 private bath,1.0,2.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,200.0
+Marcia,"New York, NY",2.0,Entire home,Entire home/apt,1.0,1 bath,1.0,26.0,8.0,0.0,4.88,4.96,4.96,5.0,4.73,4.81,74.0
+Isamar,"New York, United States",4.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,14.0,14.0,0.0,5.0,4.93,4.93,5.0,4.64,4.64,135.0
+Kara,"Los Angeles, CA",1.0,Entire rental unit,Entire home/apt,1.0,1 bath,1.0,3.0,3.0,0.0,5.0,5.0,5.0,5.0,5.0,4.33,208.0
+Alex And Zeena,"New York, NY",25.0,Private room in hostel,Private room,1.0,1 shared bath,1.0,787.0,607.0,34.0,4.45,4.49,4.48,4.73,4.73,4.34,71.0
+Michelle,"New York, NY",3.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,7.0,7.0,4.0,3.86,3.71,3.86,3.71,3.86,3.43,109.0
+Kaz,"New York, NY",366.0,Private room in townhouse,Private room,1.0,1.5 shared baths,1.0,5.0,2.0,0.0,4.8,5.0,4.6,4.8,4.8,4.6,49.0
+Tochi,"New York, NY",1.0,Private room in rental unit,Private room,1.0,1.5 shared baths,3.0,5.0,0.0,0.0,4.4,4.2,4.8,4.2,4.2,4.2,50.0
+Lara,"New York, NY",2.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,22.0,0.0,0.0,4.68,4.73,4.64,4.86,4.91,4.77,250.0
+Jonathan,"New York, NY",2.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,3.0,3.0,0.0,4.67,5.0,5.0,5.0,5.0,4.67,215.0
+Delroy,"New York, NY",1.0,Private room in townhouse,Private room,2.0,1 shared bath,1.0,147.0,0.0,0.0,4.98,4.99,4.99,4.99,4.77,4.96,139.0
+Miki,"New York, United States",1.0,Private room in townhouse,Private room,2.0,1 private bath,2.0,72.0,22.0,2.0,4.97,4.97,5.0,5.0,4.97,4.86,225.0
+Jeannie & Everett,"New York, NY",1.0,Entire townhouse,Entire home/apt,4.0,1 bath,2.0,127.0,19.0,0.0,4.95,4.96,4.92,4.99,4.64,4.87,150.0
+Winda,"New York, NY",1.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,10.0,4.0,0.0,4.9,4.9,4.9,5.0,4.7,4.8,90.0
+Camila,"New York, NY",1.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,32.0,29.0,0.0,4.94,4.94,4.97,4.97,4.82,4.85,90.0
+Jessie,"New York, NY",3.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,14.0,12.0,0.0,4.4,4.53,3.8,4.87,4.67,4.47,61.0
+Nigel,"New York, United States",1.0,Private room in rental unit,Private room,2.0,1 shared bath,2.0,81.0,30.0,0.0,4.93,4.89,4.83,4.94,4.54,4.89,145.0
+Shakawat,"New York, NY",3.0,Private room in home,Private room,1.0,1 private bath,1.0,2.0,2.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,70.0
+Urban Furnished,"New York, NY",378.0,Entire serviced apartment,Entire home/apt,3.0,1 bath,1.0,3.0,1.0,1.0,4.67,4.0,5.0,4.67,5.0,4.0,111.0
+Lars Byrresen,"New York, NY",1.0,Entire rental unit,Entire home/apt,4.0,1 bath,1.0,12.0,0.0,0.0,4.0,4.17,4.0,4.5,4.64,3.91,65.0
+Ekanem,"New York, United States",3.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,2.0,0.0,0.0,4.5,5.0,5.0,5.0,5.0,5.0,50.0
+Abena,"Florida, United States",15.0,Private room in townhouse,Private room,1.0,1 shared bath,1.0,20.0,2.0,0.0,4.8,4.75,4.5,4.75,4.2,4.8,75.0
+Marian,"New York, NY",1.0,Private room in rental unit,Private room,1.0,2 shared baths,1.0,19.0,1.0,0.0,4.53,4.79,4.37,4.84,4.53,4.74,43.0
+Jillian,"New York, NY",5.0,Entire condo,Entire home/apt,2.0,1 bath,1.0,110.0,18.0,0.0,4.8,4.85,4.84,4.89,4.4,4.65,170.0
+Jerry & Lynn,"New York, NY",32.0,Entire rental unit,Entire home/apt,3.0,1 bath,3.0,2.0,2.0,0.0,5.0,5.0,4.5,5.0,5.0,5.0,199.0
+Lijing,Hong Kong,1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,4.0,4.0,0.0,4.25,4.25,4.25,4.0,5.0,4.5,156.0
+Henry Norman,"New York, United States",19.0,Entire rental unit,Entire home/apt,2.0,1 bath,2.0,12.0,2.0,0.0,4.67,4.92,4.92,4.5,4.42,4.33,244.0
+Stay With Vibe,"New York, NY",324.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,3.0,3.0,1.0,5.0,5.0,5.0,5.0,5.0,4.67,95.0
+Haley,"Los Angeles, CA",3.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,9.0,0.0,0.0,4.75,4.56,4.22,4.78,4.67,4.56,55.0
+Eli,"New York, NY",7.0,Entire home,Entire home/apt,2.0,1 bath,1.0,147.0,0.0,0.0,4.8,4.82,4.74,4.93,4.8,4.76,150.0
+Caleigh,"New York, NY",1.0,Entire condo,Entire home/apt,2.0,1 bath,1.0,7.0,0.0,0.0,5.0,5.0,4.29,5.0,5.0,5.0,268.0
+Roukayatou,"New York, United States",3.0,Private room in home,Private room,2.0,1 shared bath,1.0,43.0,0.0,0.0,4.44,4.58,4.33,4.86,4.72,4.65,45.0
+Tarek,"Yorktown Heights, NY",3.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,4.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,350.0
+Santina,"New York, NY",5.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,2.0,0.0,0.0,4.0,4.5,4.5,5.0,4.5,4.0,95.0
+Andrada,"New York, NY",8.0,Private room in home,Private room,2.0,1 shared bath,1.0,57.0,57.0,0.0,4.91,4.93,4.95,4.91,4.72,4.84,77.0
+Tristan,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,25.0,4.0,0.0,4.68,4.63,4.29,4.88,4.64,4.44,100.0
+Hudson River,"New York, NY",26.0,Room in hotel,Private room,2.0,1 bath,1.0,2.0,0.0,0.0,1.0,1.5,1.0,2.5,2.5,1.5,156.0
+Joseph,"New York, NY",14.0,Entire condo,Entire home/apt,2.0,1 bath,1.0,12.0,1.0,0.0,4.75,4.83,4.92,5.0,5.0,4.75,125.0
+Paul,"New York, NY",1.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,5.0,2.0,0.0,4.8,4.6,4.8,4.8,5.0,4.6,195.0
+Hershey,"New York, NY",12.0,Entire condo,Entire home/apt,2.0,1 bath,1.0,123.0,57.0,0.0,4.95,4.93,4.9,4.98,4.65,4.81,198.0
+Chukwudi,"New York, NY",1.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,7.0,7.0,0.0,4.86,4.86,5.0,4.86,4.86,5.0,150.0
+Paradise Suites,"New York, NY",41.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,7.0,5.0,1.0,5.0,4.86,4.71,4.86,5.0,4.71,110.0
+K,"New York, NY",4.0,Private room in loft,Private room,2.0,2 shared baths,1.0,45.0,21.0,0.0,4.67,4.69,4.51,4.82,4.67,4.6,52.0
+Alberto,"New York, NY",8.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,14.0,14.0,3.0,4.64,4.43,4.86,4.57,5.0,4.57,81.0
+Alexander,"New York, NY",4.0,Private room in rental unit,Private room,4.0,2 baths,2.0,23.0,0.0,0.0,4.96,4.96,4.78,4.96,4.7,4.87,119.0
+Kisang,"New York, United States",1.0,Entire rental unit,Entire home/apt,5.0,1 bath,5.0,117.0,43.0,0.0,4.83,4.79,4.87,4.9,4.57,4.79,156.0
+Kevin,"New York, NY",1.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,162.0,27.0,1.0,4.96,4.96,4.81,4.99,4.98,4.9,215.0
+Boomerang,"New York, NY",44.0,Entire rental unit,Entire home/apt,4.0,1 bath,1.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,333.0
+Jordan,"New York, NY",1.0,Private room in rental unit,Private room,3.0,1 bath,1.0,7.0,7.0,0.0,4.71,5.0,4.43,5.0,5.0,4.71,235.0
+Trevor,"New York, NY",5.0,Private room in home,Private room,2.0,1.5 baths,1.0,8.0,4.0,0.0,4.38,4.25,4.0,4.63,4.5,4.13,130.0
+Katie,"New York, NY",1.0,Entire condo,Entire home/apt,2.0,1 bath,1.0,70.0,20.0,1.0,4.99,4.96,4.94,5.0,4.86,4.83,150.0
+Christopher,"New York, United States",11.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,16.0,0.0,0.0,4.81,4.88,4.88,5.0,5.0,5.0,90.0
+Yosanny,"New York, NY",2.0,Private room in home,Private room,1.0,1 shared bath,1.0,12.0,12.0,0.0,4.83,4.92,4.92,4.58,4.75,4.75,84.0
+Michael,"New York, United States",4.0,Private room in home,Private room,2.0,1 private bath,2.0,6.0,6.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,200.0
+Sonder (NYC),"New York, NY",758.0,Room in boutique hotel,Private room,2.0,1 private bath,1.0,7.0,4.0,1.0,4.71,4.57,4.71,4.43,4.43,4.29,292.0
+Urban Furnished,"New York, NY",378.0,Entire serviced apartment,Entire home/apt,3.0,1 bath,1.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,3.0,5.0,160.0
+Nicole,"New York, NY",1.0,Entire rental unit,Entire home/apt,1.0,1 bath,1.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,98.0
+Marla,"New York, NY",2.0,Entire rental unit,Entire home/apt,7.0,1 bath,3.0,122.0,40.0,0.0,4.8,4.85,4.68,4.93,4.85,4.59,229.0
+Lee And Lu,"Edison, NJ",17.0,Shared room in rental unit,Shared room,1.0,1 shared bath,1.0,2.0,2.0,0.0,3.0,3.5,3.0,3.5,5.0,3.0,49.0
+Hotel,"New York, United States",1.0,Room in hotel,Private room,2.0,1 private bath,1.0,34.0,8.0,3.0,3.79,4.03,4.06,4.18,3.21,3.56,172.0
+Thomas,"London, United Kingdom",6.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,23.0,1.0,0.0,4.83,4.96,4.83,4.96,4.39,4.83,185.0
+Nikki,"New York, United States",3.0,Private room in home,Private room,2.0,1 private bath,1.0,10.0,10.0,0.0,4.5,4.4,4.5,4.8,4.7,4.4,77.0
+Sonder (NYC),"New York, NY",758.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,1.0,1.0,1.0,5.0,5.0,5.0,5.0,5.0,5.0,215.0
+Shogo,"New York, United States",314.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,2.0,2.0,0.0,4.5,4.5,4.5,4.0,4.0,5.0,38.0
+Kaz,"New York, NY",366.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,16.0,4.0,0.0,4.69,4.94,4.31,4.88,4.56,4.44,39.0
+Central Park Apartments,"New York, NY",49.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,72.0
+Robin,"New York, NY",1.0,Private room in condo,Private room,2.0,1 shared bath,3.0,44.0,9.0,0.0,4.93,4.98,4.93,4.95,4.91,4.81,225.0
+Chiara,"New York, NY",1.0,Private room in guest suite,Private room,2.0,1 private bath,2.0,212.0,37.0,0.0,4.87,4.98,4.86,4.97,4.79,4.92,164.0
+Ibrahim Maiga,"New York, United States",3.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,249.0,37.0,0.0,4.66,4.79,4.75,4.76,4.5,4.76,45.0
+Monica,"New York, NY",12.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,11.0,11.0,3.0,4.82,4.73,4.91,4.91,4.73,4.73,175.0
+Karen,"New York, NY",1.0,Entire condo,Entire home/apt,2.0,1 bath,1.0,27.0,10.0,0.0,4.89,5.0,4.7,4.93,4.81,4.81,170.0
+Grace,"New York, NY",3.0,Private room in townhouse,Private room,1.0,1.5 baths,1.0,26.0,2.0,0.0,4.77,4.88,4.73,4.92,4.77,4.81,60.0
+The Local Stay,"New York, NY",77.0,Entire rental unit,Entire home/apt,4.0,1 bath,3.0,2.0,2.0,1.0,4.5,4.5,3.0,5.0,5.0,4.5,90.0
+Hamilton,"New York, NY",7.0,Entire guest suite,Entire home/apt,2.0,1 bath,2.0,35.0,0.0,0.0,4.69,4.89,4.86,4.66,4.69,4.71,95.0
+Maggie,"New York, NY",4.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,13.0,6.0,0.0,4.77,4.69,4.77,5.0,5.0,4.69,200.0
+Alizé,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,5.0,0.0,0.0,4.4,4.2,4.8,4.8,5.0,4.4,88.0
+Milton,"New York, NY",17.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,26.0,26.0,3.0,4.88,4.92,4.92,4.96,4.62,4.77,190.0
+Jason,"New York, NY",3.0,Entire guest suite,Entire home/apt,2.0,1 bath,2.0,343.0,33.0,4.0,4.91,4.97,4.86,4.97,4.81,4.86,149.0
+Jonathan,"New York, NY",2.0,Entire condo,Entire home/apt,6.0,3 baths,3.0,14.0,6.0,0.0,4.93,5.0,4.93,4.93,4.5,4.86,200.0
+Fanny,"New York, NY",2.0,Entire townhouse,Entire home/apt,2.0,1 bath,1.0,119.0,4.0,0.0,4.94,4.98,5.0,4.99,4.62,4.85,150.0
+Jeniffer,"New York, NY",157.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,3.0,1.0,0.0,4.67,4.67,5.0,4.67,4.67,4.33,160.0
+John,"New York, NY",13.0,Private room in townhouse,Private room,1.0,1 shared bath,1.0,31.0,1.0,0.0,4.84,4.79,4.93,5.0,4.73,4.77,249.0
+Shirley,"New York, NY",5.0,Private room in rental unit,Private room,3.0,1 private bath,1.0,27.0,0.0,0.0,4.41,4.41,4.67,4.74,4.41,4.59,106.0
+Cherry-Ann,"New York, NY",4.0,Private room in rental unit,Private room,3.0,2 baths,1.0,3.0,0.0,0.0,4.67,4.33,4.33,5.0,5.0,5.0,200.0
+Fred,"New York, NY",4.0,Private room in home,Private room,2.0,1.5 baths,1.0,2.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,4.5,165.0
+Veronika,"Nassau, NY",3.0,Entire rental unit,Entire home/apt,7.0,1 bath,3.0,4.0,4.0,0.0,4.75,4.5,4.75,5.0,4.75,4.75,200.0
+O,"New York, NY",3.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,12.0,0.0,0.0,4.83,4.83,4.92,5.0,5.0,4.75,295.0
+Sung Ae,"New York, NY",3.0,Entire rental unit,Entire home/apt,5.0,2 baths,3.0,74.0,4.0,1.0,4.53,4.68,4.32,4.8,4.74,4.46,150.0
+Sunshine,"New York, NY",13.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,2.0,2.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,41.0
+Alf,"New York, NY",4.0,Entire rental unit,Entire home/apt,12.0,2 baths,4.0,2.0,0.0,0.0,4.0,4.0,5.0,4.5,4.0,4.0,469.0
+Carl,"New York, NY",2.0,Private room in condo,Private room,2.0,1 private bath,1.0,29.0,29.0,0.0,4.97,4.97,4.93,5.0,4.8,4.93,135.0
+Micah,"New York, United States",1.0,Entire rental unit,Entire home/apt,5.0,1 bath,2.0,111.0,16.0,0.0,4.89,4.95,4.91,4.98,4.9,4.82,149.0
+Angel,"New York, NY",13.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,11.0,11.0,0.0,4.45,4.55,4.45,4.82,4.45,4.27,40.0
+Pascal,"New York, NY",1.0,Private room in rental unit,Private room,2.0,1 bath,3.0,170.0,27.0,0.0,4.9,4.94,4.87,4.95,4.56,4.8,290.0
+Saleh,"New York, NY",2.0,Entire home,Entire home/apt,8.0,2 baths,5.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,285.0
+Tashi,"New York, NY",2.0,Entire home,Entire home/apt,4.0,1 bath,2.0,204.0,0.0,0.0,4.59,4.8,4.58,4.8,4.76,4.66,99.0
+Ǧani,"New York, NY",14.0,Entire rental unit,Entire home/apt,12.0,2.5 baths,6.0,10.0,3.0,0.0,4.6,4.8,4.8,4.9,4.5,4.5,170.0
+Lucy,"New York, NY",6.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,26.0,0.0,0.0,4.62,4.81,4.92,4.85,4.96,4.77,120.0
+Brandy,"New York, NY",5.0,Entire rental unit,Entire home/apt,7.0,2 baths,3.0,10.0,10.0,0.0,4.8,4.6,4.8,4.7,5.0,4.8,318.0
+Vivian,"New York, NY",1.0,Private room in rental unit,Private room,1.0,1.5 baths,1.0,11.0,1.0,0.0,5.0,4.91,5.0,5.0,4.73,4.82,78.0
+Rory,"New York, United States",6.0,Private room in rental unit,Private room,2.0,1 shared bath,2.0,68.0,1.0,0.0,4.72,4.81,4.69,4.81,4.63,4.72,71.0
+Tucker,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,2.0,1.0,0.0,5.0,5.0,5.0,5.0,4.67,4.67,110.0
+Nick,"New York, NY",1.0,Entire condo,Entire home/apt,2.0,1 bath,1.0,20.0,16.0,0.0,5.0,5.0,4.85,4.95,4.9,4.65,200.0
+Jhon,"New York, NY",3.0,Private room in home,Private room,2.0,2 shared baths,1.0,36.0,0.0,0.0,4.61,4.91,4.69,4.97,4.58,4.7,50.0
+Ame,"New York, NY",3.0,Private room in townhouse,Private room,2.0,1 private bath,1.0,294.0,52.0,3.0,4.81,4.89,4.74,4.95,4.95,4.76,135.0
+Harry,"New York, NY",2.0,Entire condo,Entire home/apt,2.0,2 baths,2.0,4.0,2.0,1.0,4.75,4.75,4.75,5.0,5.0,5.0,250.0
+Sarah,"New York, NY",1.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,4.0,0.0,0.0,4.25,4.0,4.25,4.5,5.0,4.5,140.0
+Henry Norman,"New York, United States",19.0,Entire rental unit,Entire home/apt,2.0,1 bath,2.0,44.0,3.0,0.0,4.86,4.84,5.0,4.93,4.63,4.77,244.0
+Sony,"New York, NY",3.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,15.0,2.0,0.0,4.93,4.8,4.73,4.6,4.93,4.8,115.0
+Pierce,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,388.0,31.0,0.0,4.98,4.99,4.99,4.98,4.98,4.93,145.0
+Shakima,"New York, NY",1.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,102.0,29.0,7.0,4.79,4.83,4.93,4.83,4.65,4.78,79.0
+Alex,"New York, NY",13.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,1.0,1.0,0.0,4.0,3.0,5.0,5.0,5.0,4.0,52.0
+Darina,"New York, NY",15.0,Private room in rental unit,Private room,2.0,4 baths,1.0,13.0,5.0,0.0,4.92,5.0,4.62,5.0,4.85,4.85,75.0
+Hiroki,United States,358.0,Private room in townhouse,Private room,2.0,1 shared bath,1.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,40.0
+Chennae,"New York, United States",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,3.0,1.0,0.0,5.0,5.0,5.0,5.0,4.33,4.0,185.0
+Edicson,"New York, NY",1.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,46.0,33.0,0.0,4.72,4.85,4.87,4.83,4.78,4.63,48.0
+Andrew,"New York, NY",3.0,Entire rental unit,Entire home/apt,3.0,1 bath,3.0,3.0,0.0,0.0,5.0,5.0,4.67,5.0,5.0,4.67,272.0
+Philip,"New York, United States",6.0,Entire home,Entire home/apt,16.0,4 baths,11.0,31.0,5.0,0.0,4.87,4.9,4.87,4.84,4.68,4.71,754.0
+Lucy,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,21.0,1.0,1.0,4.81,4.95,4.81,4.9,4.81,4.71,150.0
+Peet,"Brooklyn, NY",3.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,26.0,26.0,0.0,4.96,4.88,5.0,5.0,5.0,4.88,259.0
+Cielo,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,4.0,4.0,0.0,4.75,4.75,4.5,5.0,4.75,4.5,70.0
+Julia,"New York, NY",7.0,Entire rental unit,Entire home/apt,4.0,1 bath,1.0,1.0,0.0,0.0,4.0,4.0,5.0,5.0,5.0,3.0,150.0
+Minee,"LaPlace, LA",9.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,12.0,0.0,0.0,4.67,4.67,4.42,5.0,4.75,4.67,42.0
+Mova,"New York, NY",18.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,15.0,15.0,2.0,4.53,4.67,4.6,4.6,4.73,4.73,180.0
+Patty,"New York, NY",1.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,2.0,2.0,0.0,5.0,5.0,5.0,5.0,4.5,5.0,170.0
+Brooke,"New York, NY",3.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,8.0,6.0,0.0,4.75,4.63,4.75,4.88,4.75,4.75,120.0
+Afsoon,"New York, NY",4.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,42.0,10.0,0.0,4.83,4.74,4.74,4.98,4.6,4.86,76.0
+The Local Stay,"New York, NY",77.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,22.0,0.0,0.0,4.68,4.5,4.5,4.82,4.86,4.41,82.0
+Russell,"New York, United States",1.0,Entire vacation home,Entire home/apt,6.0,1 bath,4.0,8.0,4.0,0.0,4.5,4.63,5.0,4.63,4.63,4.25,145.0
+Alex And Dre,"New York, NY",1.0,Entire rental unit,Entire home/apt,4.0,1 bath,3.0,44.0,23.0,0.0,4.75,4.89,4.8,4.98,4.32,4.55,180.0
+Yacine,"New York, NY",6.0,Entire home,Entire home/apt,4.0,1 bath,3.0,101.0,1.0,0.0,4.71,4.79,4.63,4.89,4.7,4.73,101.0
+Vitalina,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,5.0,4.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,110.0
+Dorrett,"New York, NY",1.0,Entire guest suite,Entire home/apt,2.0,1 bath,2.0,44.0,28.0,0.0,4.59,4.66,4.77,4.89,4.52,4.59,95.0
+Ben,"New York, United States",19.0,Entire home,Entire home/apt,5.0,1.5 baths,1.0,1.0,1.0,0.0,3.0,3.0,4.0,4.0,3.0,3.0,150.0
+Gjergji,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,2.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,200.0
+Nalani,"New York, United States",6.0,Private room in condo,Private room,1.0,1 private bath,3.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,78.0
+Shunan,"New York, NY",2.0,Entire rental unit,Entire home/apt,2.0,1 bath,2.0,13.0,1.0,1.0,4.54,4.85,4.0,5.0,4.92,4.69,198.0
+Abraham,"New York, United States",1.0,Private room in rental unit,Private room,2.0,1 shared bath,3.0,121.0,13.0,0.0,4.75,4.77,4.77,4.89,4.39,4.73,140.0
+Julia,"New York, United States",1.0,Entire rental unit,Entire home/apt,3.0,1 bath,3.0,41.0,0.0,0.0,4.61,4.68,4.54,4.71,4.76,4.49,110.0
+Talib,"New York, NY",4.0,Entire rental unit,Entire home/apt,3.0,2 baths,3.0,65.0,1.0,0.0,4.83,4.83,4.88,4.94,4.62,4.72,10.0
+Hanqi,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,88.0
+Urban Furnished,"New York, NY",75.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,3.0,2.0,1.0,5.0,5.0,5.0,5.0,4.0,4.0,147.0
+Kathleen R.,"New York, NY",3.0,Private room in home,Private room,2.0,1.5 shared baths,1.0,96.0,3.0,0.0,4.73,4.74,4.66,4.92,4.85,4.73,90.0
+Hamza,"Franklin Square, NY",3.0,Entire rental unit,Entire home/apt,6.0,1 bath,6.0,139.0,28.0,0.0,4.83,4.86,4.89,4.88,4.5,4.83,175.0
+Stephanie,"New York, NY",2.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,4.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,135.0
+Robert,"New York, NY",2.0,Private room in rental unit,Private room,1.0,1 bath,1.0,76.0,36.0,0.0,4.97,4.95,4.93,4.96,4.96,4.92,67.0
+Eibhlin,"New York, United States",31.0,Private room in rental unit,Private room,1.0,2 shared baths,1.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,37.0
+Doungrat,"New York, NY",13.0,Private room in townhouse,Private room,2.0,1.5 baths,3.0,25.0,5.0,0.0,4.92,4.92,4.84,4.92,4.83,4.75,309.0
+Marie And Alec,"Middlebury, IN",2.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,8.0,0.0,0.0,4.5,4.5,4.75,4.63,4.43,4.71,45.0
+Marina,"New York, NY",1.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,95.0,5.0,0.0,4.58,4.73,4.65,4.95,4.49,4.6,84.0
+Pamela,"New York, NY",4.0,Entire rental unit,Entire home/apt,1.0,1 bath,1.0,65.0,9.0,0.0,4.92,4.97,4.91,4.97,4.94,4.8,153.0
+Lakisha,"New York, NY",8.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,92.0,14.0,0.0,4.62,4.76,4.82,4.89,4.62,4.66,90.0
+Lia,"New York, NY",3.0,Private room in rental unit,Private room,1.0,1 bath,1.0,34.0,0.0,0.0,4.85,4.97,4.94,4.91,4.97,4.85,80.0
+Viviana,"New York, NY",3.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,3.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,4.33,65.0
+Gus,"New York, NY",24.0,Private room in rental unit,Private room,2.0,1.5 shared baths,1.0,7.0,3.0,0.0,4.71,4.71,4.86,4.86,4.71,4.71,35.0
+Garfield,"New York, United States",1.0,Private room in home,Private room,2.0,1 private bath,2.0,12.0,10.0,0.0,4.92,5.0,5.0,5.0,5.0,4.92,200.0
+Urban Furnished,"New York, NY",378.0,Entire serviced apartment,Entire home/apt,3.0,1 bath,1.0,2.0,2.0,0.0,4.5,4.5,4.5,5.0,3.5,3.5,140.0
+Anna,"New York, NY",1.0,Private room in townhouse,Private room,2.0,1 private bath,1.0,142.0,22.0,1.0,4.99,4.99,5.0,4.99,4.92,4.94,185.0
+Sidrah,"Los Angeles, CA",3.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,5.0,0.0,0.0,4.8,4.8,4.8,5.0,4.8,4.2,140.0
+J-,"New York, NY",2.0,Entire rental unit,Entire home/apt,1.0,1 bath,1.0,4.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,125.0
+Hiroki,United States,358.0,Private room in townhouse,Private room,2.0,1 shared bath,1.0,5.0,2.0,0.0,5.0,5.0,5.0,5.0,4.6,4.8,37.0
+Clara,"New York, United States",2.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,62.0,62.0,0.0,4.61,4.74,4.63,4.89,4.94,4.71,101.0
+Sitar,"New York, United States",3.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,7.0,0.0,0.0,5.0,5.0,5.0,5.0,4.86,5.0,50.0
+Sahar,"New York, NY",4.0,Entire rental unit,Entire home/apt,6.0,1 bath,2.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,3.0,179.0
+John & Siobhan,"New York, NY",13.0,Entire home,Entire home/apt,9.0,3 baths,6.0,33.0,11.0,0.0,4.97,4.94,4.97,4.97,4.76,4.79,615.0
+Eric,"New York, NY",16.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,126.0,3.0,1.0,4.37,4.67,4.28,4.71,4.43,4.36,70.0
+Ivanna,"New York, NY",12.0,Entire condo,Entire home/apt,7.0,2 baths,4.0,33.0,15.0,0.0,4.94,4.94,4.88,5.0,4.91,4.73,395.0
+Elizabete,"New York, United States",1.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,16.0,14.0,0.0,4.94,4.88,5.0,5.0,5.0,4.81,135.0
+Leesa,"New York, NY",2.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,4.0,52.0
+Brooklyn P,"New York, NY",15.0,Private room in rental unit,Private room,2.0,1.5 shared baths,1.0,21.0,21.0,6.0,4.57,4.81,4.86,4.67,4.71,4.57,67.0
+Atthaphon,"New York, NY",4.0,Private room in rental unit,Private room,1.0,0 shared baths,1.0,82.0,3.0,0.0,4.68,4.71,4.57,4.93,4.95,4.63,68.0
+Honora,"New York, United States",2.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,10.0,0.0,0.0,4.3,4.4,4.8,4.8,4.6,4.3,200.0
+Jana,"New York, NY",3.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,175.0
+Blueground,"New York, NY",6556.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,4.0,278.0
+Mike @ New Age Tech,"New York, NY",4.0,Entire rental unit,Entire home/apt,6.0,1 bath,2.0,139.0,36.0,0.0,4.84,4.89,4.91,4.89,4.49,4.75,146.0
+Frederick And Jessy,"New York, NY",3.0,Private room in home,Private room,1.0,1 shared bath,1.0,10.0,3.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,78.0
+Anthony,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,79.0,34.0,0.0,4.92,4.95,4.87,4.96,4.67,4.81,164.0
+Sidney,"New South Wales, Australia",2.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,2.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,165.0
+Kaz,"New York, NY",366.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,6.0,1.0,0.0,4.83,4.5,4.33,5.0,4.5,4.33,41.0
+Mira,"New York, NY",13.0,Entire rental unit,Entire home/apt,1.0,1 bath,1.0,9.0,9.0,5.0,5.0,5.0,5.0,5.0,5.0,5.0,190.0
+Vk,"New York, NY",39.0,Room in hotel,Private room,4.0,1 private bath,2.0,32.0,11.0,2.0,4.5,4.5,4.66,4.66,4.44,4.34,171.0
+Luis &Amp; Ana,"New York, NY",5.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,33.0,11.0,0.0,4.76,4.76,4.85,4.88,4.73,4.76,140.0
+Gamze,"New York, NY",5.0,Private room in earthen home,Private room,2.0,2 shared baths,1.0,6.0,2.0,0.0,4.17,4.67,4.33,4.67,5.0,4.17,135.0
+Shogo,"New York, United States",314.0,Private room in home,Private room,2.0,1 shared bath,1.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,42.0
+Eliza,"New York, NY",67.0,Private room in rental unit,Private room,4.0,0 shared baths,2.0,25.0,11.0,0.0,4.36,4.36,4.32,4.64,5.0,4.44,46.0
+Daniela,"New York, United States",3.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,6.0,6.0,0.0,4.0,3.83,3.83,4.17,4.17,4.17,75.0
+Gilberto,"New York, NY",1.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,208.0,25.0,0.0,4.62,4.85,4.66,4.73,4.37,4.69,55.0
+Joy,"New York, NY",2.0,Entire rental unit,Entire home/apt,3.0,1 bath,1.0,137.0,0.0,0.0,4.58,4.78,4.49,4.82,4.49,4.62,135.0
+Kaz,"New York, NY",366.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,22.0,2.0,0.0,4.59,4.64,4.55,4.95,4.55,4.59,79.0
+Jibari,"New York, NY",3.0,Shared room in rental unit,Shared room,5.0,1 shared bath,2.0,125.0,21.0,3.0,4.49,4.75,4.2,4.96,4.5,4.56,150.0
+Christine,"New York, United States",4.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,38.0,10.0,1.0,4.66,4.76,4.11,4.87,4.68,4.53,98.0
+AFI Apartments,"New York, NY",31.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,6.0,0.0,0.0,4.83,4.5,4.83,4.83,4.83,4.0,95.0
+Fabiola,"New York, NY",10.0,Private room in home,Private room,2.0,1 shared bath,1.0,32.0,17.0,0.0,4.59,4.59,4.81,4.75,4.59,4.53,98.0
+Inna,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,12.0,4.0,0.0,5.0,4.92,5.0,5.0,4.92,4.92,249.0
+Mendel,"New York, NY",3.0,Entire rental unit,Entire home/apt,10.0,1 bath,3.0,2.0,2.0,1.0,3.5,4.0,4.0,3.5,4.5,3.5,97.0
+Lesa,"New York, NY",4.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,17.0,3.0,0.0,5.0,4.94,4.94,4.94,5.0,4.88,150.0
+Stanley,"New York, NY",86.0,Entire place,Entire home/apt,4.0,1 bath,2.0,6.0,0.0,0.0,4.17,4.33,4.17,4.33,4.67,3.67,140.0
+Lilly,"New York, NY",3.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,4.0,0.0,0.0,5.0,5.0,5.0,5.0,4.75,5.0,110.0
+Matin,"New York, NY",2.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,5.0,0.0,0.0,5.0,5.0,4.8,5.0,5.0,5.0,200.0
+Doron,"New York, NY",7.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,7.0,2.0,0.0,4.29,4.43,4.14,4.29,4.86,4.29,87.0
+Steed,"New York, NY",10.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,120.0
+Ali,"New York, NY",30.0,Entire condo,Entire home/apt,11.0,4 baths,7.0,19.0,0.0,0.0,4.74,4.79,4.74,4.84,4.65,4.71,285.0
+Reservation Desk,"New York, NY",26.0,Room in boutique hotel,Private room,1.0,4 shared baths,1.0,5.0,3.0,0.0,4.6,4.6,5.0,4.8,5.0,5.0,70.0
+Kay,"New York, NY",10.0,Private room in rental unit,Private room,2.0,1.5 baths,1.0,2.0,2.0,0.0,3.5,3.5,2.5,3.5,4.5,4.0,60.0
+Michael,"New York, NY",3.0,Entire rental unit,Entire home/apt,6.0,2 baths,3.0,4.0,4.0,0.0,4.75,4.5,4.5,5.0,4.5,4.75,500.0
+Anyplace,"San Francisco, CA",112.0,Entire serviced apartment,Entire home/apt,2.0,1 bath,1.0,3.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,4.67,261.0
+Minghao,"New York, NY",2.0,Private room in rental unit,Private room,3.0,1 shared bath,2.0,17.0,17.0,6.0,5.0,5.0,4.94,5.0,5.0,4.94,200.0
+Aron,"New York, NY",6.0,Entire home,Entire home/apt,10.0,2 baths,6.0,67.0,1.0,0.0,4.93,4.88,4.85,4.94,4.93,4.76,695.0
+Mikhail,"New York, NY",4.0,Entire loft,Entire home/apt,6.0,1.5 baths,1.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,400.0
+Ivette,"New York, NY",2.0,Entire rental unit,Entire home/apt,4.0,1 bath,1.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,125.0
+Karen,"New York, NY",16.0,Private room in condo,Private room,2.0,1 shared bath,1.0,64.0,36.0,0.0,4.44,4.61,4.41,4.59,4.75,4.6,60.0
+Lynford,"New York, United States",2.0,Private room in home,Private room,2.0,1 shared bath,1.0,11.0,0.0,0.0,4.45,4.73,4.73,4.82,4.55,4.64,68.0
+Benjamin,"New York, NY",1.0,Entire rental unit,Entire home/apt,5.0,1 bath,2.0,73.0,4.0,0.0,5.0,4.99,4.97,5.0,4.86,4.96,123.0
+Agatha,"New York, NY",2.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,4.0,4.0,0.0,5.0,4.75,5.0,5.0,5.0,5.0,125.0
+Georgia,"New York, NY",5.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,16.0,16.0,0.0,4.69,4.69,4.5,4.88,4.44,4.69,99.0
+Gabriel,"New York, United States",1.0,Entire loft,Entire home/apt,3.0,1 bath,2.0,88.0,0.0,0.0,4.84,4.94,4.78,4.92,4.61,4.74,250.0
+Chelsea,"New York, NY",3.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,51.0,4.0,0.0,4.47,4.75,4.24,4.88,4.92,4.54,148.0
+Nanonte,"New York, NY",3.0,Private room in home,Private room,2.0,2 shared baths,1.0,41.0,15.0,1.0,4.8,4.8,4.83,4.85,4.85,4.68,138.0
+Jose,"New York, NY",1.0,Private room in rental unit,Private room,2.0,1 private bath,3.0,21.0,21.0,0.0,4.71,4.57,4.81,4.95,4.62,4.71,50.0
+Placemakr Wall Street,"New York, NY",15.0,Entire rental unit,Entire home/apt,4.0,1 bath,4.0,21.0,21.0,0.0,4.9,4.9,4.9,4.76,5.0,4.67,318.0
+Naftaly,"New York, United States",2.0,Entire home,Entire home/apt,3.0,1 bath,3.0,126.0,23.0,0.0,4.87,4.89,4.93,4.94,4.91,4.79,140.0
+Petya,"New York, NY",58.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,43.0
+Shully'S,"New York, United States",5.0,Entire home,Entire home/apt,3.0,1 bath,2.0,78.0,2.0,0.0,4.77,4.79,4.81,4.87,4.72,4.77,100.0
+Eric,"New York, NY",8.0,Entire townhouse,Entire home/apt,8.0,5 baths,6.0,120.0,30.0,3.0,4.73,4.79,4.55,4.79,4.91,4.55,913.0
+Jerry & Lynn,"New York, NY",32.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,5.0,1.0,0.0,5.0,5.0,4.8,5.0,5.0,5.0,170.0
+Eliza,"New York, NY",67.0,Private room in condo,Private room,9.0,1 private bath,5.0,82.0,28.0,2.0,4.39,4.55,4.51,4.55,4.92,4.42,173.0
+MedHousing,"New York, NY",34.0,Private room in townhouse,Private room,2.0,1 shared bath,1.0,22.0,10.0,0.0,4.59,4.64,4.36,4.82,4.55,4.55,59.0
+Jos,"New York, NY",4.0,Entire loft,Entire home/apt,4.0,1 bath,2.0,3.0,0.0,0.0,5.0,5.0,4.67,5.0,5.0,5.0,250.0
+Chinomnso,"New York, NY",1.0,Entire condo,Entire home/apt,2.0,1 bath,1.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,88.0
+Matthew,"New York, NY",3.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,58.0,18.0,0.0,4.84,4.9,4.78,4.93,4.98,4.74,140.0
+Janice,"New York, NY",4.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,57.0,17.0,0.0,4.96,5.0,4.95,4.96,4.89,4.95,60.0
+Michael,"New York, NY",25.0,Entire rental unit,Entire home/apt,2.0,1 bath,2.0,18.0,1.0,0.0,4.67,4.61,4.56,4.78,4.78,4.5,110.0
+Adrian,United States,5.0,Private room in condo,Private room,1.0,1 shared bath,1.0,11.0,6.0,0.0,4.27,4.27,4.09,4.27,3.82,4.36,83.0
+Justin And Alyssa,"New York, NY",12.0,Room in boutique hotel,Private room,2.0,1 bath,1.0,14.0,0.0,0.0,5.0,5.0,5.0,4.93,5.0,4.86,1150.0
+Nas,United States,1.0,Entire rental unit,Entire home/apt,3.0,1 bath,3.0,3.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,118.0
+Emily,"New York, NY",5.0,Entire condo,Entire home/apt,4.0,2 baths,2.0,2.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,150.0
+Abbey,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,9.0,0.0,0.0,4.89,5.0,4.89,5.0,5.0,4.56,160.0
+Stay With Vibe,"New York, NY",324.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,3.0,3.0,0.0,5.0,4.33,5.0,5.0,5.0,4.67,89.0
+Ferdousi,"New York, NY",2.0,Entire rental unit,Entire home/apt,8.0,1 bath,4.0,69.0,22.0,0.0,4.83,4.87,4.94,4.87,4.61,4.72,300.0
+Eva,"New York, NY",4.0,Entire home,Entire home/apt,4.0,1 bath,3.0,23.0,4.0,0.0,4.65,4.57,4.78,4.78,4.87,4.35,580.0
+Jared,"New York, NY",1.0,Entire condo,Entire home/apt,2.0,1 bath,1.0,3.0,3.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,240.0
+Qingming,"New York, NY",9.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,2.0,2.0,0.0,4.5,5.0,4.5,5.0,5.0,4.0,53.0
+Angel,"New York, United States",5.0,Private room in home,Private room,1.0,1 bath,1.0,4.0,4.0,0.0,4.75,5.0,4.75,5.0,4.75,4.75,58.0
+Luke,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,12.0,0.0,0.0,5.0,5.0,4.67,5.0,4.92,4.92,125.0
+Olga,"West New York, NJ",1.0,Entire rental unit,Entire home/apt,12.0,2 baths,6.0,5.0,0.0,0.0,3.6,4.0,3.6,3.6,4.6,3.6,350.0
+Kim,"New York, NY",4.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,5.0,0.0,0.0,4.6,4.8,5.0,5.0,5.0,4.6,219.0
+Chelsea,"New York, United States",14.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,13.0,5.0,0.0,4.62,4.38,4.23,4.46,4.85,4.38,209.0
+Christian,"New York, NY",1.0,Entire rental unit,Entire home/apt,3.0,1 bath,3.0,4.0,0.0,0.0,3.75,3.75,4.0,4.5,4.0,3.75,250.0
+Virginie,"New York, NY",9.0,Entire rental unit,Entire home/apt,2.0,1 bath,2.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,125.0
+Ahmed,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,9.0,5.0,0.0,5.0,4.89,4.56,5.0,4.89,4.89,122.0
+Elliot,"New York, NY",2.0,Entire rental unit,Entire home/apt,6.0,2 baths,3.0,116.0,39.0,0.0,4.88,4.92,4.92,4.91,4.84,4.84,150.0
+Maria,"New York, United States",19.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,5.0,3.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,33.0
+Jessica,"New York, United States",2.0,Entire guest suite,Entire home/apt,4.0,1 bath,2.0,92.0,3.0,0.0,4.97,4.95,4.97,5.0,4.92,4.89,130.0
+Alexandra-Katherine,"New York, NY",4.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,3.0,3.0,3.0,3.67,4.67,4.0,3.67,4.67,4.33,214.0
+Shaun,"Elmira, NY",36.0,Entire condo,Entire home/apt,4.0,3 baths,2.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,2250.0
+Christian,"New York, NY",1.0,Private room in guest suite,Private room,2.0,1 shared bath,2.0,206.0,37.0,0.0,4.84,4.89,4.87,4.97,4.8,4.85,95.0
+Sharon,"New York, NY",1.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,38.0,10.0,0.0,5.0,4.97,4.97,4.97,4.97,4.97,115.0
+Carlos,"New York, NY",4.0,Private room in rental unit,Private room,2.0,2 baths,1.0,3.0,3.0,3.0,4.33,4.0,4.67,4.67,4.67,4.33,70.0
+Nesva Hotel,"New York, United States",15.0,Room in boutique hotel,Hotel room,2.0,1 private bath,2.0,16.0,1.0,0.0,4.63,4.69,4.88,4.69,4.75,4.44,179.0
+Alberto,"New York, NY",5.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,9.0,9.0,2.0,4.11,3.78,4.22,4.67,4.78,3.89,102.0
+Shogo,"New York, United States",314.0,Private room in home,Private room,2.0,1 private bath,1.0,1.0,0.0,0.0,3.0,3.0,2.0,4.0,1.0,4.0,45.0
+Jason,"New York, NY",1.0,Entire loft,Entire home/apt,2.0,1 bath,1.0,61.0,2.0,0.0,4.93,4.95,4.66,4.97,4.9,4.82,90.0
+Robert,"Los Angeles, CA",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,2.0,128.0,30.0,0.0,4.77,4.8,4.94,4.68,4.95,4.7,140.0
+Christopher,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,9.0,0.0,0.0,5.0,5.0,5.0,5.0,4.89,5.0,110.0
+Jem,"New York, NY",9.0,Entire rental unit,Entire home/apt,5.0,1 bath,2.0,6.0,6.0,0.0,4.67,4.83,4.5,4.67,4.83,4.33,590.0
+Zoey,"Greenville, SC",1.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,1.0,0.0,0.0,3.0,4.0,1.0,5.0,3.0,2.0,85.0
+Robert,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,25.0,20.0,0.0,4.92,4.96,4.96,4.96,4.96,4.88,150.0
+Ashley,"New York, NY",1.0,Private room in home,Private room,2.0,1 shared bath,1.0,12.0,12.0,0.0,4.92,4.92,4.5,5.0,4.58,4.83,122.0
+Reservation Desk,"New York, NY",26.0,Room in boutique hotel,Private room,1.0,4 shared baths,1.0,6.0,0.0,0.0,3.83,3.67,4.33,3.67,4.5,4.0,50.0
+Mark,"New York, NY",7.0,Private room in loft,Private room,1.0,1 private bath,3.0,204.0,24.0,0.0,4.87,4.94,4.92,4.95,4.7,4.82,50.0
+Tina,"New York, NY",4.0,Private room in home,Private room,2.0,1 shared bath,1.0,15.0,1.0,0.0,4.67,4.6,4.67,4.53,4.8,4.87,90.0
+Jennifer,"New York, NY",5.0,Entire rental unit,Entire home/apt,3.0,1 bath,2.0,2.0,0.0,0.0,5.0,5.0,5.0,5.0,4.5,5.0,210.0
+Evelyn,"New York, NY",10.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,271.0,36.0,2.0,4.8,4.81,4.77,4.84,4.96,4.77,252.0
+Simone,"New York, NY",3.0,Entire rental unit,Entire home/apt,2.0,1.5 baths,1.0,1.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,225.0
+Ann,"New York, NY",6.0,Entire place,Entire home/apt,10.0,0 baths,1.0,2.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,450.0
+Stephanie,"New York, NY",4.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,1.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,225.0
+Lucas,"New York, NY",2.0,Private room in home,Private room,2.0,1 private bath,1.0,65.0,30.0,0.0,4.75,4.89,4.71,4.89,4.78,4.71,110.0
+Devin,"New York, NY",4.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,3.0,0.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,98.0
+Lesa,"New York, NY",4.0,Entire rental unit,Entire home/apt,4.0,1 bath,3.0,19.0,7.0,0.0,4.89,4.84,4.84,5.0,4.68,4.74,325.0
+Jen & Isa,Austria,2.0,Entire rental unit,Entire home/apt,4.0,1 bath,2.0,2.0,1.0,0.0,5.0,5.0,5.0,5.0,5.0,5.0,279.0
+Central Park Apartments,"New York, NY",49.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,3.0,2.0,0.0,5.0,5.0,5.0,5.0,4.33,5.0,77.0
+Abbey,"New York, NY",2.0,Private room in serviced apartment,Private room,2.0,1 private bath,1.0,12.0,0.0,0.0,4.92,4.92,5.0,4.83,5.0,4.83,250.0
+Andrew,"New York, NY",3.0,Private room in condo,Private room,2.0,1 private bath,1.0,49.0,21.0,0.0,4.9,4.96,4.96,4.92,4.84,4.8,154.0
+The Wrights,"New York, NY",3.0,Private room in guest suite,Private room,2.0,2 shared baths,1.0,259.0,8.0,0.0,4.73,4.83,4.72,4.84,4.64,4.76,56.0
+Jaime,"New York, NY",6.0,Entire townhouse,Entire home/apt,8.0,4.5 baths,4.0,38.0,3.0,0.0,5.0,5.0,5.0,4.97,4.95,4.84,400.0
+Mordeana,"Floral Park, NY",1.0,Private room in home,Private room,2.0,1 private bath,1.0,94.0,17.0,0.0,4.78,4.78,4.84,4.84,4.86,4.71,90.0
+Jacinta,"New York, NY",2.0,Private room in rental unit,Private room,1.0,1 shared bath,1.0,11.0,10.0,0.0,5.0,5.0,4.91,5.0,4.91,4.82,57.0
+Adrian,"New York, United States",1.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,1.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,107.0
+Sam,"New York, NY",1.0,Entire rental unit,Entire home/apt,7.0,1 bath,4.0,67.0,43.0,0.0,4.74,4.76,4.75,4.97,4.79,4.59,350.0
+Omri,"New York, NY",1.0,Private room in rental unit,Private room,2.0,1 private bath,1.0,178.0,12.0,0.0,4.93,4.96,4.96,4.98,4.88,4.84,172.0
+Skylar,"New York, NY",3.0,Entire rental unit,Entire home/apt,1.0,1.5 baths,1.0,13.0,3.0,0.0,4.69,4.85,4.23,5.0,5.0,4.77,119.0
+Ikello,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,169.0,18.0,0.0,4.75,4.85,4.74,4.89,4.67,4.8,70.0
+Campbell,"New York, NY",1.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,8.0,8.0,0.0,5.0,5.0,4.88,5.0,5.0,4.38,350.0
+Raquel,"New York, NY",2.0,Private room in rental unit,Private room,2.0,1 shared bath,1.0,84.0,41.0,0.0,4.64,4.7,4.77,4.7,4.6,4.58,93.0
+Maria,"New York, United States",4.0,Entire rental unit,Entire home/apt,2.0,1 bath,1.0,6.0,6.0,1.0,5.0,5.0,5.0,5.0,5.0,5.0,149.0
+Leonid,"New York, NY",5.0,Entire rental unit,Entire home/apt,2.0,1 bath,2.0,14.0,2.0,0.0,4.93,4.93,4.86,5.0,4.93,4.79,165.0

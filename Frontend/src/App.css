@@ -1,0 +1,21 @@
+.article {
+  background-color: var(--bg-20);
+  display: flex;
+  min-height: calc(100vh);
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modalBackground {
+  z-index: 600;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modalBackground--inactive {
+  display: none;
+}
