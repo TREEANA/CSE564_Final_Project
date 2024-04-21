@@ -17,14 +17,17 @@ const PCPPlot2 = ({k}) => {
     'review_scores_communication',
     'review_scores_location',
     'number_of_reviews',
-    'number_of_reviews_ltm',
-    'number of bed',
+    'bedrooms',
+    'bathrooms',
     'accommodates',
-    'number_of_reviews_l30d',
     'host_total_listings_count',
     'price',
     'Cluster_ID' ] 
  
+    
+
+ 
+
     useEffect(() => {
       fetch(`http://localhost:2000/pcp_plot_2/${k}`)
         .then(response => response.json())

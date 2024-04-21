@@ -23,6 +23,8 @@ numerical_cols = [col for col in original_df.columns if original_df[col].dtype i
 # Selecting categorical columns
 categorical_cols = [col for col in original_df.columns if col not in numerical_cols]
 
+numerical_cols =  [col for col in numerical_cols if col not in ['host_name', 'latitude', 'longitude']]
+
 df = original_df[numerical_cols]
 
 df2 = original_df[categorical_cols]
@@ -53,7 +55,7 @@ X_standardized = scaler.fit_transform(df)
 # Finding the optimal k using the elbow method
 sse = {}
 for k in range(1, 11):
-    kmeans = KMeans(n_clusters=k, max_iter=1000, random_state=29).fit(X_standardized)
+    kmeans = KMeans(n_clusters=k, max_iter=1000, random_state=14).fit(X_standardized)
     sse[k] = kmeans.inertia_
 
 first_derivative = {k: sse[k] - sse[k-1] for k in range(2, 11)}

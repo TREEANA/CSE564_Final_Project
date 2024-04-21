@@ -16,7 +16,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 function App() {
 	
 
-	const [k, setK] = useState(5);
+	const [k, setK] = useState(4);
 
 	useEffect(() => {
 
