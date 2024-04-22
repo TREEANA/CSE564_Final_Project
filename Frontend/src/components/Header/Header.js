@@ -16,7 +16,11 @@ const Header = () => {
           <Link to="/MSEPlot">
             <button>MSEPlot</button>
           </Link>
+          <Link to="/ChoroplethMap">
+            <button>ChoroplethMap</button>
+          </Link>
 
+          
           <Link to="/MDSPlot">
             <button>MDSPlot</button>
           </Link>

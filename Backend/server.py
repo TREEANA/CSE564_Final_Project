@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 import numpy as np
 import seaborn as sns
+import geopandas as gpd
 from flask import Flask, jsonify
 import json
 from flask_cors import CORS
@@ -97,6 +98,17 @@ def elbow_plot():
     }
 
     return json.dumps(dict)
+
+@app.route('/choropleth_data')
+def choropleth_data():
+    gdf = gpd.read_file('neighbourhoods.geojson')
+    data = pd.read_csv('data.csv')
+    data_gdf = gpd.GeoDataFrame(data, geometry=gpd.points_from_xy(data.longitude, data.latitude))
+    joined = gpd.sjoin(gdf, data_gdf, how='inner', op='contains')
+    price_by_neighbourhood = joined.groupby('neighbourhood').price.mean()
+    gdf = gdf.merge(price_by_neighbourhood, on='neighbourhood', how='left')
+    print(gdf)
+    return jsonify(json.loads(gdf.to_json()))
 
 
 @app.route("/mds_plot_1/<int:k>")
