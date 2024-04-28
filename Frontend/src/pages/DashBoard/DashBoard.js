@@ -3,9 +3,8 @@ import './DashBoard.css';
 
 import MDSPlot from '../../components/MDSPlot/MDSPlot';
 import MDSPlot2 from '../../components/MDSPlot2/MDSPlot2';
-import PCPPlot from '../../components/PCPPlot/PCPPlot';
-import PCPPlot2 from '../../components/PCPPlot2/PCPPlot2';
 import LineChart from '../../components/LineChart/LineChart';
+import PCPPage from '../PCPPage/PCPPage'
 
 const DashBoard = ({  k,  setK}) => {
   return (
@@ -23,15 +22,10 @@ const DashBoard = ({  k,  setK}) => {
         </div>
 
 
-
-
       </div>
       <div className="pcp-plots-container">
         <div className="pcp-plot">
-          <PCPPlot  k={k}/>
-        </div>
-        <div className="pcp-plot">
-          <PCPPlot2  k={k} />
+          <PCPPage  k={k}/>
         </div>
       </div>
     </div>

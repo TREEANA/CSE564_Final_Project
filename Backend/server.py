@@ -99,15 +99,22 @@ def elbow_plot():
 
     return json.dumps(dict)
 
-@app.route('/choropleth_data')
-def choropleth_data():
+@app.route('/choropleth_data/<string:s>')
+def choropleth_data(s):
+    user_select = str(s)
     gdf = gpd.read_file('neighbourhoods.geojson')
     data = pd.read_csv('data.csv')
     data_gdf = gpd.GeoDataFrame(data, geometry=gpd.points_from_xy(data.longitude, data.latitude))
     joined = gpd.sjoin(gdf, data_gdf, how='inner', op='contains')
-    price_by_neighbourhood = joined.groupby('neighbourhood').price.mean()
-    gdf = gdf.merge(price_by_neighbourhood, on='neighbourhood', how='left')
-    print(gdf)
+
+    if user_select in joined.columns:
+        values_by_neighbourhood = joined.groupby('neighbourhood')[user_select].mean()
+        gdf = gdf.merge(values_by_neighbourhood, on='neighbourhood', how='left', suffixes=('', '_mean'))
+    else:
+        price_by_neighbourhood = joined.groupby('neighbourhood').price.mean()
+        gdf = gdf.merge(price_by_neighbourhood, on='neighbourhood', how='left')
+
+
     return jsonify(json.loads(gdf.to_json()))
 
 
