@@ -11,7 +11,7 @@ const Header = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <div className="header__title">New York Housing Data by Air bnb</div>
         </Link>
-        <div className="header_menu">
+        {/* <div className="header_menu">
 
           <Link to="/MSEPlot">
             <button>MSEPlot</button>
@@ -37,7 +37,7 @@ const Header = () => {
           </Link>
  
 
-        </div>
+        </div> */}
       </header>
     </>
   );
