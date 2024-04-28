@@ -16,11 +16,14 @@ import React, { useState,useEffect } from 'react';
 import axios from 'axios';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import RadarPlot from './components/RadarPlot/RadarPlot';
 
 function App() {
 	
 
 	const [k, setK] = useState(4);
+	const [radarLocs, setRadarLocs] = useState([]);
+	const [mapAttr, setMapAttr] = useState("price");
 
 	
 	useEffect(() => {
@@ -39,7 +42,7 @@ function App() {
 	
 			<div className="article">
 				<Routes>
-					<Route path="/" element={<DashBoard k={k} setK={setK} />} />
+					<Route path="/" element={<DashBoard k={k} setK={setK} radarLocs={radarLocs} setRadarLocs={setRadarLocs}/>} />
 
 					<Route path="/ChoroplethMap" element={<ChoroplethMap />} />
 
@@ -66,6 +69,11 @@ function App() {
 					<Route
 						path="/MSEPlot"
 						element={<LineChart  k = {k} setK = {setK}/>}
+					/>
+
+					<Route
+						path="/Radar"
+						element={<RadarPlot  />}
 					/>
 
 				</Routes>

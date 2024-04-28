@@ -72,7 +72,10 @@ df_for_pcp = pd.concat([df, df2], axis=1)
 
 
 mds_1 = MDS(n_components=2, metric=True, random_state=42)
-X_mds = mds_1.fit_transform(X_standardized)
+try:
+    X_mds = np.load("mds.npy")
+except:
+    X_mds = mds_1.fit_transform(X_standardized)
 
 app = Flask(__name__)
 CORS(app)
@@ -181,5 +184,43 @@ def pcp_plot_2(k):
     data_dict = df.to_dict(orient='records')
     return jsonify(data_dict)
 
+@app.route("/radar")
+def radar():
+    labels = ["review scores rating",
+              "review scores accuracy",
+              "review scores cleanliness",
+              "review scores communication",
+              "review scores location",
+              "review scores value"]
+    data = []
+    for j in range(3):
+        group = []
+        for i in labels:
+            data_entry = {
+                "axis": i,
+                "value": df.iloc[j, :]["_".join(i.split())],
+                "i": j
+            }
+            group.append(data_entry)
+        data.append(group)
+    # data_dict = df[labels].to_dict(orient="records")[:5]
+    return data
+
+@app.route("/toptable")
+def top_table():
+    gdf = gpd.read_file('neighbourhoods.geojson')
+    data = pd.read_csv('data.csv')
+    pbn = data.groupby("neighbourhood_cleansed").price.mean().sort_values()[:5]
+    # data_gdf = gpd.GeoDataFrame(data, geometry=gpd.points_from_xy(data.longitude, data.latitude))
+    # joined = gpd.sjoin(gdf, data_gdf, how='inner', op='contains')
+    # price_by_neighbourhood = joined.groupby('neighbourhood').price.mean().sort_values()[:5]
+    data = []
+    for neighborhood, val in pbn.items():
+        data.append({
+            "neighborhood": neighborhood,
+            "value": val
+        })
+    return data
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=2000)
+    app.run(host='0.0.0.0', port=2000, debug=True)

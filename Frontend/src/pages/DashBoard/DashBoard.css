@@ -33,3 +33,30 @@
   flex: 1;
 
 }
+
+.radar-plot-container {
+  display: flex;
+  flex-direction: column;
+  grid-row: 1;
+  gap: 10px;
+}
+
+.radar {
+  flex: 1;
+}
+
+.radar td:nth-child(2), .radar th:nth-child(2) {
+  border-left: 1px solid black;
+}
+
+.radar tr {
+  border-bottom: 1px solid black;
+}
+
+.radar tbody tr:nth-child(even) {
+  background-color: var(--bg-20);
+}
+
+.radar tbody tr:nth-child(odd) {
+  background-color: var(--bg-10);
+}
