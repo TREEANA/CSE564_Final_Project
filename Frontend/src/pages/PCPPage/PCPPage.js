@@ -13,7 +13,7 @@ const PCPPage = ({ k, setK }) => {
     return (
         <>
             <div style={{display: 'flex', gap: '15px'}}>
-                <h5 style={{textAlign: 'center', display: 'inline-block'}}>{showFirstPlot ? "Parallel Coordinates Plot" : "MDS Parallel Coordinates Plot"}</h5>
+                <h5 style={{textAlign: 'center', display: 'inline-block'}}>{showFirstPlot ? "Parallel Coordinates Plot" : " Numerical Parallel Coordinates Plot"}</h5>
                 <div className="toggle-switch">
                     <input
                         id="toggle"

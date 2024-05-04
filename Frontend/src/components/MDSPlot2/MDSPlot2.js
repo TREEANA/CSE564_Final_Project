@@ -66,6 +66,7 @@ const MDSPlot2 = () => {
         .attr("y", 40)
         .attr("fill", "#000")
         .style("text-anchor", "middle")
+        .style("font-size", "8px")
         .text("MDS1");
 
     const yAxis = svgContent.append("g")
@@ -83,7 +84,8 @@ const MDSPlot2 = () => {
 
   return (
     <>
-      <h5 style={{ textAlign: 'center' }}>Variables MDS Plot using (1-|Correlation|) Distance</h5>
+      <h5 style={{ textAlign: 'center'}}>Variables MDS Plot </h5>
+      <h6 style={{ textAlign: 'center', marginBottom: '40px' }}>using 1-|Correlation| distance</h6>
       <svg ref={chartRef} width="360" height="220"></svg>
     </>
   );

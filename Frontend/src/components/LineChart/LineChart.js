@@ -4,8 +4,8 @@ import * as d3 from 'd3';
 
 const LineChart = ({setK, k }) => {
   const ref = useRef();
-  const margin = { top: 45, right: 30, bottom: 40, left: 60 };
-  const width = 370 - margin.left - margin.right;
+  const margin = { top: 5, right: 30, bottom: 40, left: 60 };
+  const width = 400 - margin.left - margin.right;
   const height = 190 - margin.top - margin.bottom;
   const [data, setData] = useState(null);
   const [eblow, setElbow] = useState(3);
@@ -53,6 +53,7 @@ const LineChart = ({setK, k }) => {
            .attr("x", width / 2) 
            .attr("y", height + margin.bottom) 
            .style("text-anchor", "middle") 
+           .style("font-size", "8px")
            .text("Number of k cluster");
 
       // y 축 설정
@@ -69,6 +70,7 @@ const LineChart = ({setK, k }) => {
       .attr("x", -(height / 2)) 
       .attr("dy", "1em") 
       .style("text-anchor", "middle") 
+      .style("font-size", "8px")
       .text("SSE");
 
       
@@ -168,7 +170,7 @@ const LineChart = ({setK, k }) => {
        svg.append("text")
        .attr("id", "tooltip")
        .attr("x",  220)
-       .attr("y", 20)
+       .attr("y", 40)
        .attr("text-anchor", "middle")
        .text(`SSE: ${d.y}`);
     })
@@ -184,7 +186,7 @@ const LineChart = ({setK, k }) => {
   return (
     <>
       <h5 style={{ textAlign: 'center' }}>KMean MSE Plot (Elbow method)</h5>
-      <h6 style={{ textAlign: 'center' }}>{`Selected the number of Number of k cluster : ${k}`}</h6>
+      <h6 style={{ textAlign: 'center', marginBottom: '50px' }}>{`Selected the number of Number of k cluster : ${k}`}</h6>
       <svg ref={ref} width={370} height={190}/>
     </>
   );

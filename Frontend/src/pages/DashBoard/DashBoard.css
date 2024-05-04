@@ -22,6 +22,14 @@
   gap: 10px;
 }
 
+/* .mds-plot {
+  margin-top: 5Z0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+
 .pcp-plot {
   display: flex;
   flex-direction: column;

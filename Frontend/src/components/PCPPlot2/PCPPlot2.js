@@ -7,21 +7,22 @@ const PCPPlot2 = ({k}) => {
   const [selectedAxes, setSelectedAxes] = useState({ first: 'default', second: 'default' });
   const [columnNames, setColumnNames] = useState([]);
   const [refreshData, setRefreshData] = useState(false);
-  
+  const [loading, setLoading] = useState(true);
   // this is the MDS (1-|Correlation|) Distance axis order for columns without Cluster_ID
   const ordered_columns = [
-    'review_scores_cleanliness',
-    'review_scores_rating',
-    'review_scores_accuracy',
-    'review_scores_value',
-    'review_scores_communication',
-    'review_scores_location',
-    'number_of_reviews',
     'bedrooms',
     'bathrooms',
-    'accommodates',
-    'host_total_listings_count',
+    'num_accommodations',
     'price',
+    'location',
+    'value',
+    'cleanliness',
+    'communication',
+    'rating',
+    'accuracy',
+    'host_acceptance_rate',
+    'host_total_listings_count',
+    'number_of_reviews',
     'Cluster_ID' ] 
  
     
@@ -64,6 +65,7 @@ const PCPPlot2 = ({k}) => {
     
           // 그래프 다시 그리기
           drawPlot(reorderedData);
+          setLoading(false); 
         });
     }, [k]);
 
@@ -321,7 +323,7 @@ const PCPPlot2 = ({k}) => {
     .call(drag)
     .append("text")
     .style("text-anchor", "end")
-    .attr("transform", d => `translate(0,${height})rotate(-90)`)
+    .attr("transform", d => `translate(0,${height})rotate(-60)`)
     .attr("y", 0)  // Offset the labels further down from the axes
     .attr("x", -10)
     .text(d => d)
@@ -351,39 +353,45 @@ const PCPPlot2 = ({k}) => {
   };
 
   return (
-    <>
-    <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-      <table>
-        <tbody>
-          <tr>
-            <td>Axes Ordering</td>
-            <td>
-              <select value={selectedAxes.first} onChange={(e) => handleAxisChange('first', e.target.value)}>
-                <option value="default">Default</option>
-                {columnNames.map(name => (
-                  <option key={name} value={name}>{name}</option>
-                ))}
-              </select>
-            </td>
-            <td>
-              <select value={selectedAxes.second} onChange={(e) => handleAxisChange('second', e.target.value)}>
-                <option value="default">Default</option>
-                {columnNames.map(name => (
-                  <option key={name} value={name}>{name}</option>
-                ))}
-              </select>
-            </td>
-            <td>
-              <button onClick={handleApplyChanges}>Apply Changes</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div style={{ width: '800px', height: '300px', margin: 'auto' }}>
+      {loading ? (
+        <div style={{ textAlign: 'center', marginTop: '100px' }}>
+          <progress max="100" value="50">Loading...</progress>
+        </div>
+      ) : (
+        <>
+          <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Axes Ordering</td>
+                  <td>
+                    <select value={selectedAxes.first} onChange={(e) => handleAxisChange('first', e.target.value)}>
+                      <option value="default">Default</option>
+                      {columnNames.map((name) => (
+                        <option key={name} value={name}>{name}</option>
+                      ))}
+                    </select>
+                  </td>
+                  <td>
+                    <select value={selectedAxes.second} onChange={(e) => handleAxisChange('second', e.target.value)}>
+                      <option value="default">Default</option>
+                      {columnNames.map((name) => (
+                        <option key={name} value={name}>{name}</option>
+                      ))}
+                    </select>
+                  </td>
+                  <td>
+                    <button onClick={handleApplyChanges}>Apply Changes</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <svg ref={chartRef} />
+        </>
+      )}
     </div>
-      
-      {/* <h3 style={{ textAlign: 'center', color: 'blue' }}>Parallel Coordinates Plot2 by MDS Axes Ordering (numerical value) </h3> */}
-      <svg ref={chartRef} />
-    </>
   );
 };
 

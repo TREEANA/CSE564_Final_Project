@@ -1,12 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
+
 const PCPPlot = ({k}) => {
   const chartRef = useRef(null);
   const [data, setData] = useState(null);
   const [selectedAxes, setSelectedAxes] = useState({ first: 'default', second: 'default' });
   const [columnNames, setColumnNames] = useState([]);
   const [refreshData, setRefreshData] = useState(false);
-  
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
 
     
@@ -18,6 +20,7 @@ const PCPPlot = ({k}) => {
   
         setData(d);
         drawPlot(d);
+        setLoading(false); 
       });
   }, [k]);
 
@@ -276,7 +279,7 @@ const PCPPlot = ({k}) => {
         .call(drag)
         .append("text")
         .style("text-anchor", "end")
-        .attr("transform", d => `translate(0,${height})rotate(-90)`)
+        .attr("transform", d => `translate(0,${height})rotate(-60)`)
         .attr("y", 0)  // Offset the labels further down from the axes
         .attr("x", -10)
         .text(d => d)
@@ -307,40 +310,47 @@ const PCPPlot = ({k}) => {
 
  
   return (
-    <>
-     <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-      <table>
-        <tbody>
-          <tr>
-            <td>Axes Ordering</td>
-            <td>
-              <select value={selectedAxes.first} onChange={(e) => handleAxisChange('first', e.target.value)}>
-                <option value="default">Default</option>
-                {columnNames.map(name => (
-                  <option key={name} value={name}>{name}</option>
-                ))}
-              </select>
-            </td>
-            <td>
-              <select value={selectedAxes.second} onChange={(e) => handleAxisChange('second', e.target.value)}>
-                <option value="default">Default</option>
-                {columnNames.map(name => (
-                  <option key={name} value={name}>{name}</option>
-                ))}
-              </select>
-            </td>
-            <td>
-              <button onClick={handleApplyChanges}>Apply Changes</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div style={{ width: '800px', height: '300px', margin: 'auto' }}>
+      {loading ? (
+        <div style={{ textAlign: 'center', marginTop: '100px' }}>
+          <progress max="100" value="50">Loading...</progress>
+        </div>
+      ) : (
+        <>
+          <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Axes Ordering</td>
+                  <td>
+                    <select value={selectedAxes.first} onChange={(e) => handleAxisChange('first', e.target.value)}>
+                      <option value="default">Default</option>
+                      {columnNames.map((name) => (
+                        <option key={name} value={name}>{name}</option>
+                      ))}
+                    </select>
+                  </td>
+                  <td>
+                    <select value={selectedAxes.second} onChange={(e) => handleAxisChange('second', e.target.value)}>
+                      <option value="default">Default</option>
+                      {columnNames.map((name) => (
+                        <option key={name} value={name}>{name}</option>
+                      ))}
+                    </select>
+                  </td>
+                  <td>
+                    <button onClick={handleApplyChanges}>Apply Changes</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <svg ref={chartRef} />
+        </>
+      )}
     </div>
-      
-      {/* <h3 style={{ textAlign: 'center', color: 'blue' }}>Parallel Coordinates Plot by Cluster ID (category and numerical value)</h3> */}
-      <svg ref={chartRef} />
-    </>
   );
 };
+
 
 export default PCPPlot;
