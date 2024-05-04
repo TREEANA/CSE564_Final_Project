@@ -74,7 +74,7 @@ function App() {
 
 					<Route
 						path="/Radar"
-						element={<RadarPlot  />}
+						element={<RadarPlot radarLocs={radarLocs} setRadarLocs={setRadarLocs} />}
 					/>
 
 				</Routes>

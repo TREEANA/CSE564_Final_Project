@@ -10,19 +10,19 @@ const PCPPlot2 = ({k}) => {
   const [loading, setLoading] = useState(true);
   // this is the MDS (1-|Correlation|) Distance axis order for columns without Cluster_ID
   const ordered_columns = [
-    'bedrooms',
-    'bathrooms',
-    'num_accommodations',
-    'price',
-    'location',
     'value',
-    'cleanliness',
-    'communication',
-    'rating',
     'accuracy',
-    'host_acceptance_rate',
-    'host_total_listings_count',
+    'num_accommodations',
+    'rating',
+    'communication',
+    'location',
+    'bathrooms',
+    'price',
+    'bedrooms',
+    'num_accommodations',
     'number_of_reviews',
+    'host_total_listings_count',
+    'host_acceptance_rate',
     'Cluster_ID' ] 
  
     
@@ -336,7 +336,7 @@ const PCPPlot2 = ({k}) => {
       .data(legendData)
       .enter().append("g")
       .attr("class", "legend")
-      .attr("transform", (d, i) => `translate(${width - 50},${i * 15 + height / 1000})`);
+      .attr("transform", (d, i) => `translate(${width - 65},${i * 15 + height / 1000})`);
 
     legend.append("rect")
       .attr("x", 22)
