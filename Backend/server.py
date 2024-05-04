@@ -191,7 +191,7 @@ def pcp_plot_1(k):
     df_for_pcp = pd.concat([df, df2], axis=1)
 
     print("pcp_plot_1")
-    data_dict = df_for_pcp.to_dict(orient='records')  
+    data_dict = df_for_pcp.sample(500, random_state=1).to_dict(orient='records')  
     return jsonify(data_dict)
 
 @app.route("/pcp_plot_2/<int:k>")
@@ -201,7 +201,7 @@ def pcp_plot_2(k):
     df['Cluster_ID'] = kmeans.labels_
     
     print("pcp_plot_2")
-    data_dict = df.to_dict(orient='records')
+    data_dict = df.sample(500, random_state=1).to_dict(orient='records')
     return jsonify(data_dict)
 
 @app.route("/radar")
