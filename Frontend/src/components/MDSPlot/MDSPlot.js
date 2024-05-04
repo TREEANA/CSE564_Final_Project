@@ -91,7 +91,7 @@ const MDSPlot = ({k}) => {
   };
 
   return (<>
-  <h5 style={{ textAlign: 'center' }}>MDS plot (use the Euclidian distance) </h5>
+  <h5 style={{ textAlign: 'center' , marginBottom: '50px'}}>MDS plot (use the Euclidian distance) </h5>
   <svg ref={chartRef} width="360" height="220"></svg>
   </>)
 };
