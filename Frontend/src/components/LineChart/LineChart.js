@@ -4,7 +4,7 @@ import * as d3 from 'd3';
 
 const LineChart = ({setK, k }) => {
   const ref = useRef();
-  const margin = { top: 5, right: 30, bottom: 40, left: 60 };
+  const margin = { top: 20, right: 30, bottom: 40, left: 60 };
   const width = 400 - margin.left - margin.right;
   const height = 190 - margin.top - margin.bottom;
   const [data, setData] = useState(null);
@@ -109,22 +109,23 @@ const LineChart = ({setK, k }) => {
       chart.append("text")
         .attr("class", "selected-text")
         .attr("x", selectedX)
-        .attr("y", selectedY - 40) 
+        .attr("y", selectedY ) 
         .attr("text-anchor", "middle")
         .attr("fill", "black")
         .attr("font-weight", "bold") 
-        .text("Select");
+        .style("font-size", "40px")
+        .text("*");
 
-      // 선택된 막대에 눈금선 추가
-      chart.append("line")
-        .attr("class", "selected-line")
-        .attr("x1", selectedX)
-        .attr("x2", selectedX)
-        .attr("y1", selectedY-40)
-        .attr("y2", height)
-        .attr("stroke", "black")
-        .attr("stroke-width", 1)
-        .attr("stroke-dasharray", "5,5");
+      // // 선택된 막대에 눈금선 추가
+      // chart.append("line")
+      //   .attr("class", "selected-line")
+      //   .attr("x1", selectedX)
+      //   .attr("x2", selectedX)
+      //   .attr("y1", selectedY-10)
+      //   .attr("y2", height)
+      //   .attr("stroke", "black")
+      //   .attr("stroke-width", 1)
+      //   .attr("stroke-dasharray", "5,5");
     }
 
     if (eblow !== null) {
