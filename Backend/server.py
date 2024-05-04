@@ -76,6 +76,7 @@ try:
     X_mds = np.load("mds.npy")
 except:
     X_mds = mds_1.fit_transform(X_standardized)
+    np.save("mds.npy", X_mds)
 
 app = Flask(__name__)
 CORS(app)
@@ -109,6 +110,11 @@ def choropleth_data(s):
     data = pd.read_csv('data.csv')
     data_gdf = gpd.GeoDataFrame(data, geometry=gpd.points_from_xy(data.longitude, data.latitude))
     joined = gpd.sjoin(gdf, data_gdf, how='inner', op='contains')
+    joined = joined.drop(["neighbourhood_left", "neighbourhood_group_left"], axis=1)
+    joined = joined.rename({
+        "neighbourhood_right": "neighbourhood",
+        "neighbourhood_group_right": "neighbourhood_group"
+    }, axis=1)
 
     if user_select in joined.columns:
         values_by_neighbourhood = joined.groupby('neighbourhood')[user_select].mean()
@@ -189,7 +195,7 @@ def radar():
     query_params = request.args.to_dict(flat=False)
     labels = query_params["attrb"]
     data = []
-    gbn = original_df.groupby("neighbourhood_cleansed")[labels].mean()
+    gbn = original_df.groupby("neighbourhood")[labels].mean()
     try:
         for j in range(len(query_params["loc"])):
             group = []
@@ -215,7 +221,7 @@ def radar():
 def top_table():
     query_params = request.args.to_dict()
     data = pd.read_csv('data.csv')
-    pbn = data.groupby("neighbourhood_cleansed")[query_params["attrb"]].mean().sort_values()[:5]
+    pbn = data.groupby("neighbourhood")[query_params["attrb"]].mean().sort_values()[:5]
     data = []
     for neighborhood, val in pbn.items():
         data.append({

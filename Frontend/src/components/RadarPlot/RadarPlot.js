@@ -4,20 +4,20 @@ import * as d3 from 'd3';
 const RadarPlot = ({radarLocs}) => {
     const chartRef = useRef(null);
     const [data, setData] = useState(null);
-    const [selectedAttr, setSelectedAttr] = useState(["review_scores_rating",
-                                                      "review_scores_accuracy",
-                                                      "review_scores_cleanliness",
-                                                      "review_scores_communication",
-                                                      "review_scores_location",
-                                                      "review_scores_value"]);
+    const [selectedAttr, setSelectedAttr] = useState(["rating",
+                                                      "accuracy",
+                                                      "cleanliness",
+                                                      "communication",
+                                                      "location",
+                                                      "value"]);
     const attributeList = [
-        "review_scores_rating",
-        "review_scores_accuracy",
-        "review_scores_cleanliness",
-        "review_scores_communication",
-        "review_scores_location",
-        "review_scores_value",
-        "accommodates",
+        "rating",
+        "accuracy",
+        "cleanliness",
+        "communication",
+        "location",
+        "value",
+        "num_accommodations",
         "bedrooms",
         "bathrooms",
         "host_acceptance_rate",

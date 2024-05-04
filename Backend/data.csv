@@ -1,4 +1,4 @@
-host_name,host_acceptance_rate,host_total_listings_count,neighbourhood_cleansed,neighbourhood_group_cleansed,latitude,longitude,room_type,accommodates,bathrooms,bathrooms_text,bedrooms,price,number_of_reviews,review_scores_rating,review_scores_accuracy,review_scores_cleanliness,review_scores_communication,review_scores_location,review_scores_value
+host_name,host_acceptance_rate,host_total_listings_count,neighbourhood,neighbourhood_group,latitude,longitude,room_type,num_accommodations,bathrooms,bathrooms_text,bedrooms,price,number_of_reviews,rating,accuracy,cleanliness,communication,location,value
 Bp Stays.,100,59.0,Harlem,Manhattan,40.80954,-73.95236,Private room,2,2.0,2 shared baths,1.0,56.0,36,4.75,4.89,4.83,4.92,4.33,4.72
 Yamid,100,1.0,Elmhurst,Queens,40.74815,-73.8773,Private room,2,1.0,1 shared bath,1.0,55.0,167,4.91,4.92,4.93,4.85,4.74,4.91
 Charly,39,1.0,DUMBO,Brooklyn,40.70511,-73.98592,Entire home/apt,2,1.0,1 bath,1.0,210.0,16,4.63,4.5,4.13,4.81,5.0,4.44
@@ -699,3 +699,803 @@ Lisa,87,2.0,Prospect-Lefferts Gardens,Brooklyn,40.65977,-73.95913,Private room,2
 Lord Daniel,98,11.0,Bedford-Stuyvesant,Brooklyn,40.68823,-73.9508,Entire home/apt,4,1.0,1 bath,2.0,165.0,72,4.85,4.86,4.86,4.92,4.72,4.81
 Kelly,64,3.0,Bushwick,Brooklyn,40.70179,-73.93003,Private room,1,1.5,1.5 baths,1.0,70.0,151,4.91,4.92,4.71,4.95,4.87,4.85
 Maria,100,5.0,Williamsburg,Brooklyn,40.71573,-73.93877,Entire home/apt,6,2.0,2 baths,3.0,300.0,4,5.0,5.0,5.0,5.0,5.0,5.0
+Jenny,97,3.0,Ditmars Steinway,Queens,40.77054,-73.90586,Private room,2,1.0,1 private bath,1.0,162.0,132,4.98,4.95,5.0,4.99,4.91,4.9
+Sean,88,2.0,Bedford-Stuyvesant,Brooklyn,40.68345,-73.91808,Private room,2,1.0,1 private bath,1.0,140.0,163,4.84,4.94,4.87,4.88,4.66,4.83
+Amalia Alejandra,100,4.0,Cypress Hills,Brooklyn,40.68585,-73.8725,Private room,2,1.0,1 private bath,1.0,163.0,14,4.79,5.0,4.71,4.79,4.21,4.57
+Jose,100,2.0,Bushwick,Brooklyn,40.68983,-73.91464,Private room,2,1.0,1 bath,0.0,109.0,175,4.82,4.88,4.86,4.81,4.71,4.73
+Bing,100,19.0,Flushing,Queens,40.75368,-73.81366,Private room,3,1.0,1 private bath,2.0,59.0,196,4.38,4.49,4.22,4.73,4.65,4.41
+Aamer,96,26.0,Kips Bay,Manhattan,40.7448,-73.98075,Private room,4,1.0,1 private bath,1.0,99.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Yehonatan,97,2.0,Forest Hills,Queens,40.71452035961716,-73.85405116699604,Entire home/apt,3,1.0,1 bath,1.0,90.0,19,5.0,4.95,4.9,5.0,4.85,4.95
+Jason,100,3.0,Bedford-Stuyvesant,Brooklyn,40.68132,-73.93179,Private room,2,1.0,1 shared bath,1.0,125.0,206,4.88,4.93,4.8,4.94,4.79,4.86
+Moumita,96,1.0,Jackson Heights,Queens,40.7482,-73.89328,Private room,2,1.5,1.5 baths,4.0,95.0,11,4.18,4.5,3.9,4.9,4.5,4.3
+Akiko & Cindy,0,11.0,Hell's Kitchen,Manhattan,40.76179,-73.99074,Private room,5,1.0,1 private bath,1.0,256.0,243,4.57,4.74,4.77,4.69,4.91,4.61
+Cando,77,3.0,South Ozone Park,Queens,40.67286,-73.79686,Private room,2,1.0,1 shared bath,1.0,38.0,221,4.56,4.78,4.35,4.8,4.65,4.62
+Jessica,30,1.0,Chelsea,Manhattan,40.74908875871652,-73.99712059818151,Entire home/apt,2,1.0,1 bath,0.0,140.0,2,5.0,5.0,4.5,5.0,5.0,5.0
+Heather,100,2.0,Harlem,Manhattan,40.82613,-73.94484,Entire home/apt,2,1.0,1 bath,1.0,150.0,2,5.0,4.5,5.0,5.0,4.5,4.5
+Lou,100,1.0,Kips Bay,Manhattan,40.73853729721698,-73.9806635169183,Entire home/apt,3,1.0,1 bath,1.0,110.0,73,4.34,4.66,4.27,4.9,4.75,4.44
+Avi,86,148.0,Midtown,Manhattan,40.764,-73.98364,Entire home/apt,3,1.0,1 bath,0.0,135.0,1,5.0,4.0,5.0,5.0,5.0,3.0
+Fiona,47,3.0,Flushing,Queens,40.76489,-73.82954,Private room,2,1.0,1 shared bath,1.0,62.0,45,4.87,4.89,4.96,4.91,4.91,4.91
+Stanley,95,86.0,Murray Hill,Manhattan,40.74864,-73.97736,Entire home/apt,3,1.0,1 bath,1.0,160.0,3,3.67,3.33,4.67,3.0,4.67,3.0
+Georgia,35,7.0,Harlem,Manhattan,40.80145,-73.95748,Entire home/apt,2,1.0,1 bath,0.0,120.0,7,5.0,5.0,4.71,5.0,4.86,4.71
+Julia,98,3.0,Williamsburg,Brooklyn,40.70726868339301,-73.94671484827995,Entire home/apt,3,1.0,1 bath,1.0,150.0,36,4.86,4.72,4.97,4.92,4.67,4.64
+Ilene,91,8.0,Grant City,Staten Island,40.583255767822266,-74.10810089111328,Private room,2,1.0,1 private bath,1.0,38.0,60,4.95,4.97,5.0,5.0,4.88,4.92
+Yakima,92,2.0,Longwood,Bronx,40.81471,-73.90546,Private room,2,1.0,1 shared bath,1.0,120.0,28,4.68,4.75,4.79,4.79,4.25,4.57
+MyNyHousing,84,115.0,Chelsea,Manhattan,40.73968,-73.99804,Entire home/apt,2,1.0,1 bath,0.0,120.0,4,4.75,4.5,4.75,4.75,4.75,4.75
+Anna,80,1.0,Flatbush,Brooklyn,40.65374,-73.96465,Private room,1,1.0,1 bath,1.0,200.0,19,4.95,5.0,5.0,4.95,4.79,4.74
+Maggie,95,4.0,Harlem,Manhattan,40.824902,-73.952759,Private room,2,1.0,1 shared bath,1.0,72.0,69,4.87,4.88,4.77,4.97,4.83,4.88
+Tina,89,3.0,Upper East Side,Manhattan,40.776000803830456,-73.94970579810098,Private room,1,1.0,1 shared bath,1.0,250.0,6,5.0,4.83,4.83,5.0,4.83,4.83
+Shuly,96,8.0,Ditmars Steinway,Queens,40.77253,-73.90472,Private room,2,2.0,2 shared baths,1.0,61.0,142,4.85,4.94,4.93,4.84,4.84,4.9
+Maria,71,2.0,Jackson Heights,Queens,40.75163,-73.86876,Entire home/apt,10,2.0,2 baths,5.0,316.0,90,4.9,4.94,4.91,4.92,4.81,4.86
+Sajeel,100,3.0,Williamsburg,Brooklyn,40.713,-73.96341,Entire home/apt,5,1.0,1 bath,2.0,350.0,31,4.35,4.35,4.16,4.68,4.68,4.26
+Urban Furnished,49,77.0,Gramercy,Manhattan,40.73323,-73.9828,Entire home/apt,3,1.0,1 bath,0.0,109.0,10,4.2,4.2,4.5,4.5,4.9,4.0
+Paula,100,4.0,Hell's Kitchen,Manhattan,40.76652,-73.98488,Private room,2,1.0,1 shared bath,1.0,142.0,73,4.68,4.64,4.73,4.92,4.9,4.63
+Erenita,87,3.0,Harlem,Manhattan,40.82677,-73.94219,Private room,2,1.0,1 shared bath,1.0,190.0,128,4.87,4.89,4.89,4.91,4.84,4.88
+Momoyo,80,299.0,Inwood,Manhattan,40.86475,-73.92183,Private room,2,2.5,2.5 shared baths,1.0,36.0,3,5.0,5.0,4.33,5.0,5.0,5.0
+Paris,0,7.0,Bedford-Stuyvesant,Brooklyn,40.68668,-73.93896,Private room,1,2.5,2.5 baths,1.0,36.0,10,4.4,4.3,4.7,4.4,4.4,4.6
+MyNyHousing,84,115.0,Upper West Side,Manhattan,40.78939,-73.97218,Entire home/apt,3,1.0,1 bath,0.0,120.0,15,4.73,4.87,4.67,4.93,4.73,4.4
+Michelle,81,10.0,Harlem,Manhattan,40.80526,-73.94618,Entire home/apt,2,1.0,1 bath,1.0,215.0,43,4.56,4.6,4.71,4.77,4.56,4.44
+Blueground,97,5313.0,West Village,Manhattan,40.729222,-74.002791,Entire home/apt,2,1.0,1 bath,1.0,323.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Dylan,100,5.0,Rego Park,Queens,40.73369,-73.85629,Entire home/apt,2,1.0,1 bath,1.0,110.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Hudson River,100,26.0,Hell's Kitchen,Manhattan,40.755795,-73.997543,Private room,4,1.0,1 private bath,1.0,201.0,2,4.0,3.5,3.5,4.5,4.5,4.5
+Ming,80,1.0,Williamsburg,Brooklyn,40.71512,-73.95899,Entire home/apt,2,1.0,1 bath,1.0,195.0,295,4.96,4.96,4.98,4.98,4.96,4.9
+Yahira,92,7.0,Richmond Hill,Queens,40.69295823764722,-73.84474162012339,Entire home/apt,5,1.0,1 bath,1.0,180.0,14,4.86,4.86,5.0,4.71,4.86,4.86
+Aneudy,100,2.0,Washington Heights,Manhattan,40.83869,-73.94061,Entire home/apt,4,1.0,1 bath,1.0,199.0,64,4.83,4.81,4.86,4.83,4.72,4.72
+Elena,67,5.0,Hell's Kitchen,Manhattan,40.76269,-73.99141,Private room,2,1.0,1 shared bath,3.0,110.0,40,4.85,4.85,4.83,4.98,5.0,4.8
+Dawn,98,1.0,East Flatbush,Brooklyn,40.6462995,-73.94742839999999,Private room,2,1.0,1 private bath,0.0,125.0,18,4.89,4.94,4.89,5.0,4.56,4.89
+Daniel,92,1.0,Midtown,Manhattan,40.75408,-73.97071,Entire home/apt,2,1.0,1 bath,1.0,175.0,155,4.69,4.77,4.65,4.88,4.86,4.61
+Dini,93,2.0,East New York,Brooklyn,40.67326,-73.88017,Entire home/apt,4,1.0,1 bath,1.0,140.0,11,4.91,4.82,4.82,5.0,4.55,4.64
+Orestes,99,1.0,Long Island City,Queens,40.74757,-73.94571,Private room,3,1.0,1 private bath,1.0,185.0,390,4.91,4.92,4.87,4.92,4.9,4.85
+Blandine,98,3.0,East Flatbush,Brooklyn,40.651272,-73.945312,Private room,2,1.0,1 shared bath,2.0,116.0,38,4.48,4.48,4.45,4.85,4.0,4.53
+Rachel,89,17.0,South Ozone Park,Queens,40.66684,-73.81257,Private room,1,1.0,1 shared bath,1.0,42.0,3,4.67,5.0,4.67,4.67,4.67,5.0
+Blackfoot,0,1.0,Rosedale,Queens,40.65731,-73.72959,Entire home/apt,2,1.0,1 bath,1.0,88.0,56,5.0,5.0,4.98,5.0,4.98,5.0
+MyNyHousing,84,115.0,Chelsea,Manhattan,40.74127,-73.99956,Entire home/apt,2,1.0,1 bath,0.0,130.0,3,5.0,5.0,4.33,5.0,5.0,4.33
+Phoebe,96,1.0,Jamaica,Queens,40.68077,-73.78823,Entire home/apt,5,1.0,1 bath,2.0,207.0,189,4.92,4.91,4.94,4.99,4.81,4.84
+Lucie,91,4.0,Williamsburg,Brooklyn,40.71437,-73.94475,Entire home/apt,2,1.0,1 bath,1.0,210.0,84,4.9,4.92,4.83,4.96,4.94,4.76
+Sonder (NYC),100,758.0,Flatiron District,Manhattan,40.74247,-73.98998,Private room,2,1.0,1 bath,0.0,242.0,63,4.17,4.32,4.32,4.47,4.74,4.05
+Fiona,50,2.0,Tribeca,Manhattan,40.72044,-74.00399,Entire home/apt,4,1.0,1 bath,2.0,449.0,3,5.0,5.0,5.0,5.0,5.0,5.0
+Brigitte,73,2.0,Harlem,Manhattan,40.80236,-73.95219,Private room,1,1.0,1 shared bath,1.0,91.0,14,5.0,4.93,4.93,5.0,4.93,4.86
+Anton,100,4.0,Bushwick,Brooklyn,40.69401,-73.92842,Private room,2,1.0,1 private bath,1.0,65.0,116,4.66,4.77,4.54,4.77,4.77,4.66
+Boomerang,99,59.0,Midtown,Manhattan,40.74459,-73.98364,Entire home/apt,5,1.0,1 bath,3.0,222.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Shari,83,5.0,East Flatbush,Brooklyn,40.65249,-73.9439,Entire home/apt,4,1.0,1 bath,2.0,120.0,37,4.89,4.95,4.7,4.89,4.62,4.81
+Martin,100,4.0,Upper West Side,Manhattan,40.78552,-73.97494,Entire home/apt,12,1.0,1 bath,2.0,208.0,5,4.6,4.8,5.0,4.8,5.0,4.8
+Akiko & Cindy,0,11.0,Hell's Kitchen,Manhattan,40.76073,-73.98908,Shared room,4,1.0,1 shared bath,1.0,251.0,167,4.63,4.8,4.83,4.74,4.93,4.57
+Leo,100,1.0,Midtown,Manhattan,40.74597,-73.98521,Entire home/apt,5,2.0,2 baths,2.0,995.0,46,5.0,4.98,4.98,5.0,4.98,4.89
+Marie Esthel,40,1.0,Forest Hills,Queens,40.71811300606488,-73.83670682398704,Entire home/apt,2,1.0,1 bath,0.0,105.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Marianne,100,9.0,Concord,Staten Island,40.60066,-74.08902,Private room,2,1.0,1 shared bath,1.0,58.0,64,4.77,4.73,4.8,4.85,4.53,4.71
+Angel,91,12.0,Flushing,Queens,40.75982036754903,-73.80283409791144,Private room,1,2.0,2 shared baths,1.0,32.0,3,4.67,4.67,4.0,4.67,4.67,5.0
+Caroline,100,1.0,Carroll Gardens,Brooklyn,40.68322,-73.99129,Entire home/apt,6,2.5,2.5 baths,3.0,250.0,39,4.85,4.87,4.76,4.95,4.76,4.82
+Jake,100,11.0,Midtown,Manhattan,40.74757,-73.98887,Entire home/apt,4,1.0,1 bath,0.0,154.0,181,4.55,4.79,4.47,4.63,4.91,4.49
+Julia,100,1.0,Washington Heights,Manhattan,40.83768,-73.94262,Private room,1,1.0,1 shared bath,1.0,58.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Marios,78,18.0,Two Bridges,Manhattan,40.71235,-73.99642,Entire home/apt,3,1.0,1 bath,2.0,195.0,4,3.75,4.25,4.25,3.75,5.0,3.25
+Julie,100,1.0,Bedford-Stuyvesant,Brooklyn,40.69307,-73.93266,Entire home/apt,2,1.0,1 bath,1.0,110.0,7,4.0,4.14,4.0,4.14,4.29,3.86
+Rove,88,94.0,Gowanus,Brooklyn,40.68204,-73.98889,Entire home/apt,4,1.0,1 bath,2.0,168.0,2,5.0,5.0,5.0,5.0,5.0,4.5
+Urban Furnished,69,357.0,Upper East Side,Manhattan,40.77242660522461,-73.95455169677734,Entire home/apt,3,1.0,1 bath,1.0,119.0,3,4.33,3.67,5.0,4.33,5.0,4.0
+Karen,100,17.0,Astoria,Queens,40.76851,-73.92338,Private room,2,1.0,1 shared bath,1.0,60.0,4,4.25,4.75,3.5,4.75,4.75,4.5
+Allia,53,26.0,Hell's Kitchen,Manhattan,40.76752032791078,-73.9889860593121,Entire home/apt,4,2.0,2 baths,2.0,200.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Sharon,99,22.0,Schuylerville,Bronx,40.8366813659668,-73.83421325683594,Private room,2,1.0,1 shared bath,1.0,80.0,86,4.74,4.79,4.81,4.87,4.81,4.83
+Sahar,50,4.0,Chelsea,Manhattan,40.74120093080387,-73.99778556351717,Entire home/apt,6,1.0,1 bath,2.0,199.0,3,5.0,5.0,5.0,5.0,5.0,4.67
+Dadrine,96,10.0,East Flatbush,Brooklyn,40.65718,-73.9159,Private room,1,1.0,1 shared bath,1.0,65.0,13,4.85,4.92,4.69,5.0,4.85,4.85
+Jian,100,2.0,Sunset Park,Brooklyn,40.63688,-74.00859,Private room,1,1.0,1 shared bath,1.0,60.0,11,4.91,4.91,4.82,5.0,4.91,4.91
+Harman,100,1.0,Queens Village,Queens,40.71858,-73.75411,Entire home/apt,3,1.0,1 bath,2.0,75.0,88,4.41,4.67,4.54,4.61,4.49,4.51
+Lynette,98,5.0,East New York,Brooklyn,40.66044,-73.89917,Entire home/apt,2,1.0,1 bath,1.0,85.0,287,4.86,4.87,4.95,4.92,4.72,4.76
+Billy,100,2.0,Harlem,Manhattan,40.82127,-73.94875,Private room,2,1.0,1 private bath,1.0,195.0,157,4.96,4.95,4.79,4.98,4.9,4.91
+Meela,92,15.0,Astoria,Queens,40.75788,-73.92843,Private room,2,2.0,2 shared baths,1.0,59.0,73,4.55,4.77,4.66,4.56,4.66,4.59
+Kai,98,5.0,Hell's Kitchen,Manhattan,40.7650880576285,-73.9903587925059,Entire home/apt,2,1.0,1 bath,1.0,215.0,27,4.93,4.85,4.7,4.89,4.93,4.89
+Carlos,86,4.0,Upper West Side,Manhattan,40.79982595042055,-73.96525987069936,Private room,2,2.0,2 baths,1.0,102.0,6,4.67,4.5,4.67,4.83,4.83,4.67
+Rivka,63,16.0,Williamsburg,Brooklyn,40.70711,-73.95547,Private room,2,3.0,3 shared baths,1.0,168.0,2,2.5,3.0,3.0,3.5,4.0,3.0
+Kristina,69,19.0,Greenpoint,Brooklyn,40.72953,-73.95636,Private room,2,1.0,1 shared bath,1.0,71.0,1,5.0,5.0,4.0,5.0,5.0,4.0
+Patrick,100,5.0,Bedford-Stuyvesant,Brooklyn,40.68115614880734,-73.90864534843341,Entire home/apt,3,1.0,1 bath,2.0,250.0,16,5.0,4.94,4.75,5.0,4.81,4.94
+Inna,68,57.0,Upper West Side,Manhattan,40.78573,-73.97112,Entire home/apt,3,1.0,1 bath,0.0,108.0,28,4.75,4.93,4.89,4.79,4.96,4.43
+Ranita,100,4.0,East Village,Manhattan,40.72326,-73.98531,Private room,1,1.0,1 shared bath,1.0,296.0,45,4.91,4.91,4.82,4.93,4.93,4.88
+Barry,98,14.0,Pelham Gardens,Bronx,40.86677,-73.84056,Private room,1,1.0,1 shared bath,1.0,40.0,253,4.87,4.9,4.92,4.88,4.8,4.9
+Eric,89,1.0,Bedford-Stuyvesant,Brooklyn,40.69149,-73.93662,Private room,2,1.0,1 private bath,1.0,141.0,344,4.92,4.95,4.9,4.99,4.39,4.87
+Sharon,100,2.0,Bedford-Stuyvesant,Brooklyn,40.6908,-73.9487,Entire home/apt,4,2.5,2.5 baths,2.0,204.0,3,5.0,5.0,5.0,5.0,4.67,5.0
+Michael,52,164.0,Hell's Kitchen,Manhattan,40.76441,-73.98911,Entire home/apt,2,1.0,1 bath,1.0,129.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Abdo,89,15.0,Flatbush,Brooklyn,40.65352,-73.96195,Private room,2,1.0,1 shared bath,1.0,400.0,6,5.0,5.0,5.0,5.0,4.67,4.17
+Charlene,100,4.0,East Flatbush,Brooklyn,40.64181,-73.93255,Entire home/apt,4,1.0,1 bath,2.0,83.0,103,4.74,4.83,4.71,4.94,4.49,4.71
+Taihwa,98,6.0,Chelsea,Manhattan,40.75282,-73.99827,Shared room,1,2.0,2 shared baths,3.0,59.0,37,4.86,4.86,4.84,4.89,5.0,4.84
+Danielle,100,3.0,East Flatbush,Brooklyn,40.65586,-73.93722,Entire home/apt,3,1.0,1 bath,1.0,81.0,13,5.0,5.0,4.85,4.77,4.54,4.77
+Sam,99,9.0,Sheepshead Bay,Brooklyn,40.5954,-73.95973,Private room,2,1.0,1 shared bath,1.0,51.0,179,4.92,4.96,4.92,4.94,4.77,4.88
+SoCo Property,100,42.0,Clinton Hill,Brooklyn,40.68339,-73.96649,Entire home/apt,2,1.0,1 bath,0.0,135.0,31,4.87,4.74,4.84,4.68,4.81,4.71
+Stay With Vibe,74,330.0,Kips Bay,Manhattan,40.74471,-73.9809,Entire home/apt,2,1.0,1 bath,0.0,98.0,11,4.73,4.64,4.73,4.91,4.91,4.45
+NYC Rentals,100,11.0,Chelsea,Manhattan,40.74255,-74.00091,Entire home/apt,4,1.0,1 bath,1.0,472.0,5,5.0,5.0,4.75,5.0,5.0,5.0
+Devora,100,17.0,Crown Heights,Brooklyn,40.676551534329,-73.94353998240703,Entire home/apt,6,1.0,1 bath,2.0,263.0,10,4.8,4.4,5.0,5.0,4.5,4.8
+Armande,100,8.0,East Harlem,Manhattan,40.80722,-73.93871,Private room,2,1.0,1 shared bath,1.0,70.0,64,4.72,4.72,4.59,4.81,4.66,4.72
+Aron,96,9.0,Bushwick,Brooklyn,40.68999,-73.91699,Entire home/apt,4,1.0,1 bath,2.0,96.0,53,4.87,4.87,4.83,4.96,4.57,4.87
+Charmine,96,1.0,Rosedale,Queens,40.656,-73.73772,Entire home/apt,4,1.0,1 bath,1.0,99.0,14,4.29,4.5,4.14,4.86,4.64,4.36
+Jeffrey,95,5.0,Elmhurst,Queens,40.73452003396453,-73.88625567100354,Entire home/apt,4,1.0,1 bath,2.0,169.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Eve,53,8.0,Upper East Side,Manhattan,40.78137,-73.94698,Private room,1,1.0,1 shared bath,1.0,66.0,3,4.33,4.0,4.33,4.67,5.0,5.0
+Sol,85,14.0,Upper East Side,Manhattan,40.78319,-73.94717,Entire home/apt,4,1.0,1 bath,2.0,177.0,5,4.8,5.0,4.0,5.0,5.0,4.6
+Khadija,100,1.0,Harlem,Manhattan,40.8026,-73.95124,Private room,1,1.5,1.5 shared baths,1.0,65.0,21,4.71,4.52,4.57,4.52,4.43,4.62
+Christian,94,1.0,Bedford-Stuyvesant,Brooklyn,40.68411317506716,-73.92645246810417,Private room,2,1.0,1 private bath,1.0,175.0,180,4.96,4.98,4.96,4.98,4.8,4.87
+Jed,100,1.0,Upper West Side,Manhattan,40.78322,-73.98095,Entire home/apt,2,1.5,1.5 baths,2.0,545.0,195,4.94,4.95,4.93,4.89,4.98,4.75
+Partha,100,1.0,Upper East Side,Manhattan,40.78329372207181,-73.95250491852417,Private room,2,1.5,1.5 baths,1.0,256.0,2,5.0,5.0,3.5,5.0,5.0,4.0
+Kevin,100,2.0,DUMBO,Brooklyn,40.70404,-73.98769,Entire home/apt,2,1.0,1 bath,0.0,999.0,16,4.94,5.0,5.0,5.0,5.0,4.81
+Mehmet,60,1.0,Mariners Harbor,Staten Island,40.62667,-74.15076,Entire home/apt,2,1.0,1 bath,1.0,70.0,38,4.29,4.76,4.32,4.74,4.37,4.37
+Juan,95,4.0,Longwood,Bronx,40.81394,-73.90066,Private room,2,1.0,1 shared bath,1.0,115.0,4,4.0,5.0,5.0,4.0,4.0,4.25
+Susanne,67,1.0,Crown Heights,Brooklyn,40.67258,-73.92974,Private room,1,1.0,1 shared bath,1.0,65.0,19,4.58,4.79,4.37,4.89,4.53,4.53
+Jacob,71,2.0,Upper West Side,Manhattan,40.78271,-73.9726,Entire home/apt,4,1.0,1 bath,1.0,164.0,3,4.33,4.33,3.67,5.0,4.67,3.67
+Elodie,0,2.0,Windsor Terrace,Brooklyn,40.6574,-73.98495,Entire home/apt,4,2.0,2 baths,2.0,300.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Jeniffer,38,161.0,Little Italy,Manhattan,40.71899,-73.99773,Entire home/apt,3,1.0,1 bath,0.0,105.0,11,4.36,4.55,4.55,4.18,4.82,4.27
+Rebecca,94,4.0,Crown Heights,Brooklyn,40.67576975623405,-73.93616653249289,Private room,1,1.0,1 shared bath,1.0,69.0,2,5.0,5.0,5.0,5.0,4.0,5.0
+Eliza,100,67.0,Midtown,Manhattan,40.74678722763484,-73.98672443002727,Private room,5,1.0,1 shared bath,1.0,74.0,13,4.23,4.85,4.23,4.92,4.92,4.31
+June,72,1433.0,Chelsea,Manhattan,40.74559538431113,-74.00413564025273,Private room,1,0.0,0 shared baths,4.0,97.0,1,4.0,3.0,1.0,3.0,5.0,2.0
+Michael,100,1.0,Long Island City,Queens,40.74595,-73.94475,Entire home/apt,6,2.0,2 baths,2.0,450.0,11,4.91,4.82,5.0,5.0,5.0,4.91
+Benjamin,76,26.0,Boerum Hill,Brooklyn,40.68826,-73.98558,Entire home/apt,2,1.0,1 bath,0.0,120.0,22,4.77,4.73,4.82,4.91,4.91,4.41
+Michael,46,1.0,Williamsburg,Brooklyn,40.71569,-73.94675,Entire home/apt,2,1.0,1 bath,1.0,294.0,24,5.0,5.0,4.96,4.96,4.96,4.96
+Joe,97,2.0,Bensonhurst,Brooklyn,40.60515,-73.99818,Entire home/apt,8,1.0,1 bath,2.0,85.0,122,4.78,4.81,4.6,4.96,4.8,4.72
+Kaz,78,366.0,Sunnyside,Queens,40.73696,-73.9205,Private room,1,1.0,1 shared bath,1.0,44.0,11,5.0,5.0,4.91,5.0,4.91,5.0
+Victor,100,5.0,Williamsburg,Brooklyn,40.70667,-73.93681,Private room,2,1.0,1 shared bath,5.0,111.0,10,4.3,4.2,4.2,4.5,4.5,4.1
+Hiroki,88,372.0,Bedford-Stuyvesant,Brooklyn,40.68846,-73.94969,Private room,2,1.0,1 shared bath,1.0,36.0,1,2.0,3.0,5.0,3.0,3.0,2.0
+Michelle,94,3.0,Astoria,Queens,40.76435,-73.90887,Entire home/apt,2,1.0,1 bath,1.0,136.0,302,4.92,4.91,4.94,4.94,4.77,4.87
+Andrey,100,1.0,Midtown,Manhattan,40.7643,-73.98098,Entire home/apt,2,1.0,1 bath,1.0,198.0,53,4.81,4.91,4.83,4.92,4.92,4.62
+Anthony,93,1.0,East Flatbush,Brooklyn,40.64833821959398,-73.94722025767213,Entire home/apt,2,1.0,1 bath,0.0,103.0,9,5.0,4.89,4.89,4.89,4.56,5.0
+Shemi,100,17.0,Prospect-Lefferts Gardens,Brooklyn,40.660794,-73.942335,Entire home/apt,5,1.0,1 bath,2.0,319.0,13,4.62,4.92,4.46,5.0,4.54,4.62
+Àngel,98,5.0,Washington Heights,Manhattan,40.8580028205229,-73.93242938743502,Entire home/apt,2,1.0,1 bath,1.0,95.0,45,4.98,4.96,5.0,4.98,4.73,4.89
+Asia,97,4.0,Theater District,Manhattan,40.759311915735545,-73.98722087732253,Entire home/apt,5,2.0,2 baths,1.0,450.0,20,4.86,4.76,4.67,4.9,4.95,4.76
+Yotlaire,100,6.0,Bushwick,Brooklyn,40.6900707,-73.9196438,Entire home/apt,2,1.0,1 bath,1.0,106.0,7,5.0,5.0,5.0,5.0,5.0,4.71
+Mahesh,98,6.0,South Ozone Park,Queens,40.67067,-73.80763,Shared room,2,2.0,2 shared baths,1.0,174.0,90,4.93,4.96,4.96,4.96,4.74,4.91
+Eva,100,3.0,Harlem,Manhattan,40.82056830716915,-73.94699088746202,Entire home/apt,6,1.0,1 bath,2.0,70.0,60,4.77,4.73,4.78,4.95,4.33,4.67
+Christopher,91,6.0,Hell's Kitchen,Manhattan,40.760763502266045,-73.99113714240352,Entire home/apt,5,1.0,1 bath,2.0,90.0,2,4.5,4.5,4.5,5.0,5.0,4.5
+Bp Stays.,100,59.0,Harlem,Manhattan,40.823720764540376,-73.94111726195536,Private room,3,1.0,1 shared bath,1.0,64.0,27,4.44,4.37,4.78,4.52,4.22,4.33
+Garrett,73,2.0,Long Island City,Queens,40.743053,-73.957161,Entire home/apt,2,1.0,1 bath,0.0,135.0,3,5.0,5.0,5.0,5.0,5.0,5.0
+Viancka,99,2.0,Jamaica,Queens,40.7045,-73.80644,Entire home/apt,3,1.0,1 bath,1.0,149.0,61,4.87,4.84,4.89,4.9,4.75,4.79
+Ethan,100,4.0,Bedford-Stuyvesant,Brooklyn,40.68305609999999,-73.92111349999999,Private room,1,1.0,1 shared bath,1.0,49.0,1,5.0,5.0,4.0,4.0,5.0,4.0
+Hiroki,88,372.0,Williamsburg,Brooklyn,40.70294,-73.94412,Private room,2,1.0,1 shared bath,1.0,59.0,2,3.5,3.0,4.5,2.5,4.0,3.0
+Sara,23,3.0,Greenwich Village,Manhattan,40.729595,-74.000618,Private room,4,1.0,1 private bath,1.0,335.0,19,4.95,4.89,4.89,5.0,4.84,4.79
+Irie,86,5.0,Harlem,Manhattan,40.8115,-73.94256,Private room,2,1.0,1 shared bath,1.0,58.0,47,4.87,4.83,4.7,4.93,4.76,4.76
+Urban Furnished,69,357.0,Lower East Side,Manhattan,40.71934,-73.98505,Entire home/apt,3,1.0,1 bath,0.0,130.0,1,4.0,5.0,5.0,5.0,4.0,4.0
+Chris,100,3.0,Jamaica,Queens,40.68877,-73.77862,Private room,1,1.0,1 shared bath,1.0,55.0,78,4.72,4.71,4.77,4.87,4.53,4.69
+Amy,89,2.0,East Harlem,Manhattan,40.79346,-73.94374,Entire home/apt,2,1.0,1 bath,1.0,115.0,245,4.83,4.9,4.91,4.94,4.38,4.8
+Sylwia,100,1.0,Forest Hills,Queens,40.71106,-73.8444,Entire home/apt,1,1.0,1 bath,2.0,108.0,100,4.98,4.95,4.96,4.99,4.95,4.91
+June,72,1433.0,Chinatown,Manhattan,40.71378094937674,-73.99460534359582,Private room,1,0.0,0 shared baths,3.0,84.0,1,2.0,1.0,1.0,3.0,4.0,1.0
+Michael,52,164.0,Tribeca,Manhattan,40.71491,-74.0095,Entire home/apt,8,1.0,1 bath,4.0,219.0,1,4.0,4.0,4.0,5.0,5.0,4.0
+Violetta,15,1.0,Upper West Side,Manhattan,40.78846,-73.97459,Entire home/apt,2,1.0,1 bath,1.0,215.0,38,4.97,4.95,4.97,4.92,4.97,4.76
+Edna,100,1.0,Clinton Hill,Brooklyn,40.68089,-73.9629,Entire home/apt,4,1.0,1 bath,1.0,229.0,428,4.74,4.85,4.85,4.9,4.51,4.73
+DeAnda,87,4.0,Park Slope,Brooklyn,40.67803903405839,-73.97911874031684,Entire home/apt,2,1.0,1 bath,1.0,85.0,2,4.5,4.5,4.5,5.0,4.5,4.0
+Sheri,78,2.0,Harlem,Manhattan,40.82274,-73.95408,Entire home/apt,3,1.0,1 bath,2.0,185.0,7,5.0,5.0,5.0,5.0,4.83,5.0
+Aron,96,9.0,Bushwick,Brooklyn,40.68795,-73.91661,Entire home/apt,4,1.0,1 bath,2.0,95.0,36,4.72,4.83,4.67,4.89,4.31,4.61
+Shani,73,3.0,Financial District,Manhattan,40.7056,-74.00654,Entire home/apt,4,1.0,1 bath,2.0,140.0,1,4.0,4.0,5.0,5.0,5.0,5.0
+Miriam,92,5.0,Harlem,Manhattan,40.82246,-73.9378,Private room,2,1.0,1 bath,1.0,48.0,26,4.62,4.62,4.35,4.77,4.69,4.58
+Jack,96,11.0,Two Bridges,Manhattan,40.71238,-73.99258,Private room,2,1.0,1 shared bath,1.0,108.0,6,4.17,4.33,4.17,4.17,4.0,4.0
+Desmar,97,3.0,Mott Haven,Bronx,40.81611,-73.92491,Private room,2,1.0,1 private bath,0.0,125.0,182,4.55,4.76,4.48,4.74,4.65,4.62
+Michelle,99,15.0,Crown Heights,Brooklyn,40.67576,-73.9464,Private room,2,2.0,2 shared baths,1.0,75.0,180,4.84,4.88,4.71,4.93,4.69,4.76
+Ana,86,2.0,Bedford-Stuyvesant,Brooklyn,40.6884,-73.94293,Entire home/apt,6,1.5,1.5 baths,1.0,138.0,131,5.0,4.98,4.99,4.98,4.79,4.92
+Lidia,100,3.0,Sunnyside,Queens,40.74694,-73.91699,Private room,1,1.0,1 shared bath,1.0,78.0,21,5.0,4.95,4.86,4.9,4.9,4.9
+Aracelis,94,11.0,East Flatbush,Brooklyn,40.63447,-73.94889,Entire home/apt,2,1.0,1 bath,1.0,73.0,3,4.33,4.67,4.67,4.33,4.0,4.33
+Sam,99,7.0,Flatbush,Brooklyn,40.63641527662973,-73.96245982549047,Private room,2,1.0,1 private bath,2.0,200.0,4,4.5,4.75,4.5,5.0,4.5,4.75
+Chris,95,2.0,Gowanus,Brooklyn,40.67664,-73.9929,Entire home/apt,5,2.0,2 baths,3.0,375.0,17,4.94,4.94,4.82,4.94,5.0,4.76
+Jeffrey,98,1.0,Prospect-Lefferts Gardens,Brooklyn,40.66082,-73.96225,Private room,1,1.0,1 shared bath,1.0,74.0,84,4.9,4.93,4.65,4.98,4.94,4.92
+Gary,100,2.0,Prospect-Lefferts Gardens,Brooklyn,40.66146,-73.95063,Entire home/apt,4,1.0,1 bath,2.0,150.0,136,4.99,5.0,4.99,5.0,4.81,4.93
+Bp Stays.,100,59.0,Harlem,Manhattan,40.82427,-73.94116,Private room,2,1.0,1 shared bath,1.0,49.0,37,4.76,4.49,4.89,4.89,4.49,4.49
+Jo-Ann,79,2.0,Park Slope,Brooklyn,40.67499,-73.98109,Entire home/apt,2,1.0,1 bath,1.0,159.0,4,4.75,4.75,4.5,4.75,4.25,4.5
+George,100,1.0,Crown Heights,Brooklyn,40.67553,-73.94655,Entire home/apt,2,1.0,1 bath,1.0,120.0,33,4.64,4.7,4.58,4.91,4.73,4.64
+Alvaro,100,3.0,East Elmhurst,Queens,40.76451368487214,-73.88349327918405,Entire home/apt,4,1.0,1 bath,2.0,100.0,7,4.86,4.86,4.43,4.86,5.0,4.71
+Jeniffer,38,161.0,Hell's Kitchen,Manhattan,40.76661,-73.9881,Entire home/apt,4,1.0,1 bath,2.0,140.0,9,4.67,4.78,4.78,4.33,5.0,4.44
+Amanda,100,3.0,Bedford-Stuyvesant,Brooklyn,40.67959,-73.93886,Entire home/apt,6,2.0,2 baths,3.0,132.0,1,5.0,5.0,5.0,4.0,4.0,5.0
+Simone,100,5.0,Fort Hamilton,Brooklyn,40.6123180455901,-74.03166196964897,Private room,2,2.0,2 baths,3.0,165.0,37,4.97,5.0,4.86,5.0,4.95,4.95
+Nomad,95,59.0,Midtown,Manhattan,40.74752,-73.98675,Private room,4,1.0,1 private bath,1.0,124.0,39,4.64,4.59,4.54,4.82,4.9,4.69
+Peter,71,2.0,Bushwick,Brooklyn,40.70528,-73.92205,Entire home/apt,4,1.0,1 bath,2.0,200.0,14,4.43,4.64,4.36,4.64,4.86,4.43
+Gabriel,67,3.0,East Village,Manhattan,40.73292,-73.98704,Entire home/apt,2,1.0,1 bath,1.0,100.0,1,5.0,3.0,4.0,5.0,4.0,4.0
+Natalie,93,18.0,Bedford-Stuyvesant,Brooklyn,40.68408570326341,-73.94157690456281,Entire home/apt,4,1.0,1 bath,2.0,205.0,11,4.82,4.91,4.91,5.0,5.0,5.0
+Felicia,100,3.0,Highbridge,Bronx,40.83393,-73.92499,Private room,1,1.0,1 shared bath,1.0,55.0,9,4.67,4.78,4.67,4.89,4.67,4.56
+Hila,92,15.0,Murray Hill,Manhattan,40.74456,-73.97199,Entire home/apt,5,1.0,1 bath,2.0,170.0,3,4.67,4.33,4.33,5.0,5.0,4.33
+Jose,11,2.0,Upper East Side,Manhattan,40.76121,-73.95962,Private room,1,1.0,1 shared bath,1.0,65.0,14,4.71,4.86,4.21,4.79,5.0,4.71
+Urban Furnished,49,77.0,Hell's Kitchen,Manhattan,40.76323,-73.9931,Entire home/apt,4,1.0,1 bath,2.0,129.0,3,5.0,5.0,4.33,5.0,5.0,4.33
+Ravi,57,1.0,Boerum Hill,Brooklyn,40.68565818436248,-73.97927488113822,Entire home/apt,2,1.0,1 bath,1.0,350.0,2,5.0,4.5,4.5,4.5,5.0,4.5
+Nolan,90,4.0,Upper West Side,Manhattan,40.79772,-73.9666,Entire home/apt,8,4.0,4 baths,4.0,1696.0,1,5.0,4.0,5.0,5.0,5.0,5.0
+Eve,83,3.0,Harlem,Manhattan,40.81868,-73.94103,Private room,2,1.0,1 shared bath,1.0,45.0,52,4.62,4.73,4.71,4.69,4.12,4.69
+Musa,100,1.0,Gramercy,Manhattan,40.73571697087935,-73.98778576513804,Entire home/apt,3,1.0,1 bath,0.0,121.0,198,4.58,4.68,4.64,4.73,4.92,4.65
+Hum,100,1.0,Bedford-Stuyvesant,Brooklyn,40.69985,-73.94086,Entire home/apt,2,1.0,1 bath,2.0,175.0,40,4.93,4.83,4.85,4.93,4.73,4.85
+Bryan,77,5.0,East Flatbush,Brooklyn,40.65376,-73.94161,Private room,1,2.0,2 shared baths,1.0,47.0,17,4.47,4.94,4.35,4.88,4.65,4.41
+Stephen,33,2.0,Harlem,Manhattan,40.825531614641385,-73.95238182507681,Entire home/apt,4,1.0,1 bath,1.0,150.0,11,4.91,5.0,4.64,5.0,4.82,4.82
+Christlyn,100,2.0,Bushwick,Brooklyn,40.70449,-73.9162,Entire home/apt,2,1.0,1 bath,1.0,299.0,56,4.91,4.95,4.86,4.95,4.7,4.84
+Cindy,100,1.0,Borough Park,Brooklyn,40.64221581611735,-73.9933870756583,Private room,1,1.0,1 shared bath,1.0,50.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Peter,96,8.0,Cypress Hills,Brooklyn,40.69067,-73.86953,Private room,3,1.0,1 shared bath,1.0,60.0,18,4.5,4.5,4.17,4.72,4.06,4.33
+Sara,100,2.0,Bedford-Stuyvesant,Brooklyn,40.69068,-73.94357,Entire home/apt,4,1.0,1 bath,1.0,98.0,210,4.88,4.93,4.88,4.95,4.74,4.84
+Shahriar,0,1.0,Williamsburg,Brooklyn,40.70953,-73.96222,Private room,1,1.0,1 shared bath,1.0,113.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Naomi,99,1.0,Arverne,Queens,40.59614,-73.7942,Entire home/apt,2,1.0,1 bath,2.0,75.0,76,5.0,5.0,4.89,4.97,4.8,4.97
+Jeniffer,90,77.0,Lower East Side,Manhattan,40.72023,-73.99401,Private room,2,1.0,1 private bath,0.0,148.0,22,4.91,4.82,4.86,4.68,4.91,4.73
+Xiuyun,100,12.0,Sunset Park,Brooklyn,40.6488778550692,-74.00893008508147,Private room,2,1.0,1 shared bath,1.0,78.0,37,4.76,4.87,4.71,4.92,4.66,4.71
+Serah,100,1.0,Park Slope,Brooklyn,40.67348,-73.97829,Entire home/apt,2,1.0,1 bath,1.0,225.0,56,4.82,4.91,4.91,4.96,4.95,4.7
+Shuly,96,8.0,Ditmars Steinway,Queens,40.77253,-73.90472,Private room,2,2.0,2 shared baths,1.0,59.0,167,4.84,4.94,4.96,4.86,4.84,4.88
+James,83,1.0,Midtown,Manhattan,40.75758,-73.96519,Entire home/apt,2,1.0,1 bath,0.0,200.0,151,4.88,4.93,4.87,4.96,4.96,4.82
+Roxiny,100,1.0,Sunnyside,Queens,40.73856,-73.92821,Private room,2,1.0,1 private bath,2.0,219.0,38,4.95,4.97,4.89,4.97,5.0,4.86
+Maveline,100,14.0,Theater District,Manhattan,40.7593,-73.98468,Private room,2,1.0,1 shared bath,1.0,160.0,1,5.0,5.0,5.0,5.0,5.0,4.0
+Anna,98,5.0,Midtown,Manhattan,40.74636,-73.9885,Entire home/apt,4,1.0,1 bath,1.0,214.0,9,4.78,4.78,4.78,4.89,5.0,4.33
+Chinomnso,75,1.0,Norwood,Bronx,40.8769982,-73.88626049999999,Entire home/apt,2,1.0,1 bath,1.0,88.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Minee,100,9.0,Jamaica,Queens,40.67877,-73.78803,Private room,4,1.0,1 private bath,1.0,55.0,56,4.71,4.75,4.76,4.91,4.64,4.77
+Belkis,100,6.0,Bronxdale,Bronx,40.85669,-73.86511,Private room,2,1.0,1 shared bath,1.0,45.0,40,4.9,4.95,4.98,5.0,4.88,4.95
+Min,0,1.0,Hell's Kitchen,Manhattan,40.76082,-74.00054,Entire home/apt,3,1.0,1 bath,1.0,470.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Ivan,88,11.0,Washington Heights,Manhattan,40.83678772813917,-73.93838230065133,Private room,1,1.0,1 shared bath,1.0,33.0,9,4.78,4.89,4.78,5.0,4.33,4.78
+Stanley,95,86.0,Murray Hill,Manhattan,40.74981,-73.97524,Entire home/apt,1,1.0,1 bath,0.0,100.0,1,4.0,4.0,5.0,5.0,5.0,4.0
+Katherine,100,3.0,Sunset Park,Brooklyn,40.66246,-73.9933,Entire home/apt,1,1.0,1 bath,0.0,80.0,40,4.8,4.85,4.8,4.95,4.68,4.8
+Iosif,97,2.0,Glendale,Queens,40.70289,-73.8815,Entire home/apt,6,2.0,2 baths,3.0,300.0,12,4.42,4.67,4.33,4.25,4.5,4.25
+Tony,100,8.0,East Elmhurst,Queens,40.75814,-73.89974,Private room,1,1.0,1 private bath,1.0,46.0,4,3.5,3.75,3.5,4.0,4.0,3.5
+Sebastian,99,1.0,Springfield Gardens,Queens,40.67406,-73.76267,Private room,6,1.0,1 private bath,2.0,150.0,47,4.81,4.89,4.83,4.91,4.72,4.8
+Myla,100,16.0,Brighton Beach,Brooklyn,40.57886,-73.96282,Private room,1,1.5,1.5 baths,1.0,82.0,12,4.92,4.83,4.92,5.0,4.75,4.83
+Urban Furnished,69,357.0,Upper East Side,Manhattan,40.77093505859375,-73.95758819580078,Entire home/apt,3,1.0,1 bath,0.0,141.0,1,5.0,5.0,5.0,5.0,5.0,4.0
+Ouafi,100,1.0,Long Island City,Queens,40.76016,-73.92952,Entire home/apt,2,1.0,1 bath,1.0,135.0,43,4.53,4.51,4.58,4.84,4.79,4.49
+Adam,99,2.0,Crown Heights,Brooklyn,40.67651,-73.94466,Entire home/apt,5,2.0,2 baths,3.0,228.0,468,4.81,4.89,4.76,4.94,4.56,4.77
+Maryam,100,1.0,Bedford-Stuyvesant,Brooklyn,40.68888741203235,-73.9270075265479,Entire home/apt,2,1.0,1 bath,1.0,100.0,11,4.55,4.64,4.64,4.73,4.55,4.55
+Esplanade 99,54,79.0,Upper West Side,Manhattan,40.79627,-73.97191,Private room,2,3.0,3 shared baths,1.0,55.0,1,5.0,5.0,4.0,4.0,4.0,4.0
+Emilie,89,1.0,Harlem,Manhattan,40.80504,-73.95732,Entire home/apt,2,1.0,1 bath,1.0,125.0,192,4.91,4.95,4.92,4.95,4.89,4.83
+Urban Furnished,69,357.0,Hell's Kitchen,Manhattan,40.7629644,-73.9920309,Entire home/apt,3,1.0,1 bath,1.0,125.0,1,5.0,5.0,4.0,5.0,4.0,4.0
+Khalid,2,3.0,Long Island City,Queens,40.75712,-73.93279,Private room,2,1.5,1.5 shared baths,1.0,81.0,21,4.81,4.86,4.86,5.0,4.95,4.86
+Lyn,50,6.0,East Flatbush,Brooklyn,40.65579,-73.91929,Private room,1,1.0,1 shared bath,2.0,38.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Romina,0,1.0,East Village,Manhattan,40.72501,-73.97801,Private room,1,1.0,1 private bath,1.0,85.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Dane,99,4.0,Springfield Gardens,Queens,40.68863,-73.75079,Private room,2,1.0,1 shared bath,1.0,85.0,24,4.96,4.92,4.96,5.0,4.79,4.79
+Daniel,88,6.0,Laurelton,Queens,40.68507,-73.73344,Entire home/apt,4,2.0,2 baths,2.0,80.0,36,4.14,4.22,4.53,4.31,4.47,4.25
+Shauna,97,8.0,Flushing,Queens,40.75982,-73.8164,Private room,2,1.0,1 private bath,1.0,88.0,47,4.87,4.91,4.89,4.98,4.68,4.85
+Furnished Quarters,100,1013.0,Chelsea,Manhattan,40.74473,-73.99245,Entire home/apt,3,1.0,1 bath,1.0,345.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Roger,88,3.0,East Flatbush,Brooklyn,40.66154,-73.92301,Entire home/apt,4,1.0,1 bath,2.0,135.0,90,4.7,4.82,4.71,4.96,4.52,4.83
+Jaime,91,9.0,Tremont,Bronx,40.84346,-73.89175,Entire home/apt,8,1.0,1 bath,3.0,165.0,3,4.67,4.67,5.0,5.0,4.0,4.0
+Joanne,67,2.0,Long Island City,Queens,40.76229,-73.92665,Entire home/apt,5,1.0,1 bath,1.0,79.0,87,4.61,4.8,4.53,4.78,4.78,4.71
+Sagee,73,5.0,Cambria Heights,Queens,40.68574,-73.73454,Private room,2,1.0,1 private bath,1.0,99.0,3,4.67,5.0,4.67,4.67,5.0,4.67
+Arlo,89,7.0,Hell's Kitchen,Manhattan,40.75507,-73.99497,Private room,2,1.0,1 private bath,1.0,341.0,47,4.83,4.91,4.94,4.94,4.89,4.83
+Richard,100,1.0,Chelsea,Manhattan,40.74352,-74.00061,Entire home/apt,6,2.5,2.5 baths,2.0,1200.0,1,5.0,5.0,4.0,5.0,5.0,5.0
+Jeniffer,38,161.0,Little Italy,Manhattan,40.71881,-73.99741,Entire home/apt,3,1.0,1 bath,0.0,120.0,9,4.0,4.22,4.22,3.67,4.33,3.67
+Alexey,100,1.0,Brighton Beach,Brooklyn,40.57393809535928,-73.96621046354066,Entire home/apt,6,1.0,1 bath,1.0,206.0,37,4.81,4.86,4.95,4.76,4.84,4.84
+Petra,53,2.0,Chelsea,Manhattan,40.74493,-73.99521,Entire home/apt,4,2.0,2 baths,2.0,400.0,5,5.0,4.8,4.8,5.0,4.8,4.8
+Mia,99,4.0,Bedford-Stuyvesant,Brooklyn,40.69101445131023,-73.92597218918881,Private room,2,1.0,1 private bath,1.0,125.0,15,5.0,5.0,5.0,5.0,4.93,5.0
+Masahiro,100,1.0,Upper East Side,Manhattan,40.7724,-73.94637,Private room,1,1.0,1 shared bath,1.0,79.0,40,4.95,4.98,4.85,4.95,4.93,4.93
+Santiago,100,6.0,Richmond Hill,Queens,40.69927,-73.82916,Private room,1,1.0,1 shared bath,1.0,85.0,65,4.77,4.85,4.78,4.88,4.55,4.74
+Joel,86,2.0,Bedford-Stuyvesant,Brooklyn,40.68783,-73.93205,Entire home/apt,2,1.0,1 bath,1.0,200.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Debra,100,1.0,Greenpoint,Brooklyn,40.73371,-73.95213,Entire home/apt,2,1.0,1 bath,1.0,129.0,107,4.87,4.91,4.69,4.87,4.96,4.89
+Artur,0,3.0,Chinatown,Manhattan,40.71693,-73.99929,Entire home/apt,2,1.0,1 bath,0.0,180.0,5,4.8,5.0,4.4,4.6,5.0,5.0
+Fadi,100,2.0,Financial District,Manhattan,40.70572,-74.00954,Private room,1,1.0,1 shared bath,2.0,100.0,5,4.4,4.6,4.2,4.6,4.8,4.8
+Asiatic,99,1.0,East Flatbush,Brooklyn,40.63487,-73.93241,Entire home/apt,5,1.0,1 bath,2.0,156.0,196,4.85,4.85,4.8,4.98,4.7,4.84
+Maranatha,100,1.0,Flatbush,Brooklyn,40.64055,-73.95288,Entire home/apt,2,1.0,1 bath,0.0,500.0,179,4.73,4.83,4.65,4.79,4.72,4.59
+Sash,90,3.0,Upper East Side,Manhattan,40.77413,-73.95274,Entire home/apt,3,1.0,1 bath,1.0,229.0,29,4.86,4.79,4.86,4.97,4.97,4.79
+Rennie,90,5.0,Harlem,Manhattan,40.8234,-73.95603,Private room,1,1.0,1 bath,1.0,47.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Natalia,83,1.0,Financial District,Manhattan,40.70732,-74.00742,Entire home/apt,3,1.0,1 bath,0.0,120.0,26,5.0,4.96,4.92,4.96,4.88,4.73
+Joe,50,2.0,Bedford-Stuyvesant,Brooklyn,40.68072,-73.93035,Entire home/apt,2,1.5,1.5 baths,2.0,400.0,9,5.0,5.0,5.0,5.0,4.78,4.89
+Mario,99,2.0,University Heights,Bronx,40.856033,-73.913162,Entire home/apt,2,1.0,1 bath,2.0,96.0,83,4.9,4.92,4.93,4.95,4.65,4.92
+Amy,100,2.0,Astoria,Queens,40.76502,-73.92085,Entire home/apt,4,1.0,1 bath,2.0,90.0,20,4.7,4.9,4.3,4.45,5.0,4.8
+Jacqueline,85,6.0,Glendale,Queens,40.70576,-73.87454,Entire home/apt,4,1.0,1 bath,0.0,107.0,22,4.95,4.86,4.91,5.0,4.82,4.86
+Berni,100,10.0,Fort Greene,Brooklyn,40.68907,-73.97852,Private room,2,1.0,1 shared bath,1.0,65.0,31,4.29,4.32,3.61,4.68,4.71,4.19
+Valerie,97,2.0,Upper East Side,Manhattan,40.77698,-73.94838,Entire home/apt,2,1.0,1 bath,0.0,175.0,28,4.82,4.82,4.82,4.96,4.93,4.64
+Thomas,100,3.0,Midtown,Manhattan,40.7449,-73.98499,Entire home/apt,2,1.0,1 bath,1.0,170.0,4,5.0,5.0,5.0,5.0,5.0,5.0
+Ghazal,97,3.0,Harlem,Manhattan,40.81181,-73.94438,Entire home/apt,2,1.0,1 bath,1.0,122.0,59,4.69,4.83,4.41,4.83,4.37,4.46
+Justin,26,3.0,Sunnyside,Queens,40.74533,-73.91958,Private room,2,1.0,1 shared bath,2.0,55.0,3,5.0,5.0,5.0,5.0,5.0,5.0
+Robert,80,1.0,Prospect Heights,Brooklyn,40.67506,-73.96423,Entire home/apt,4,1.0,1 bath,3.0,545.0,4,5.0,5.0,5.0,5.0,5.0,5.0
+Diana,0,5.0,Forest Hills,Queens,40.7139,-73.83523,Private room,1,1.0,1 private bath,1.0,57.0,36,4.61,4.75,4.78,4.78,4.94,4.69
+Mohammed,89,6.0,Ozone Park,Queens,40.67518311873156,-73.85983303701964,Entire home/apt,2,1.0,1 bath,1.0,58.0,8,5.0,4.88,4.88,5.0,5.0,4.88
+Julio,65,5.0,Bushwick,Brooklyn,40.69595,-73.92627,Private room,2,1.0,1 shared bath,1.0,49.0,24,4.42,4.13,4.5,4.63,4.75,4.38
+Krissy,100,2.0,East Harlem,Manhattan,40.79705,-73.93374,Private room,2,1.0,1 private bath,1.0,170.0,32,4.94,4.97,4.84,5.0,4.63,4.97
+Jeniffer,38,161.0,Hell's Kitchen,Manhattan,40.76411,-73.99371,Entire home/apt,3,1.0,1 bath,0.0,100.0,10,4.4,4.4,4.7,4.1,4.0,3.9
+James,92,2.0,Williamsburg,Brooklyn,40.71291500039569,-73.95864349765071,Entire home/apt,4,1.5,1.5 baths,2.0,223.0,10,4.9,4.7,4.9,4.8,4.9,4.6
+Sophie,44,1.0,Harlem,Manhattan,40.81074377785376,-73.9421337453503,Private room,2,1.0,1 private bath,1.0,105.0,12,4.92,4.92,4.83,4.92,4.75,5.0
+Steven,100,1.0,Bay Ridge,Brooklyn,40.62174391952977,-74.02403376110539,Entire home/apt,4,1.0,1 bath,1.0,165.0,3,5.0,5.0,5.0,5.0,5.0,5.0
+Ashade,96,2.0,Mariners Harbor,Staten Island,40.63672,-74.16801,Shared room,4,1.0,1 shared bath,2.0,160.0,13,4.46,4.54,4.85,4.92,4.46,4.46
+Susan,0,2.0,Upper West Side,Manhattan,40.784245,-73.971001,Entire home/apt,5,2.0,2 baths,2.0,249.0,6,5.0,5.0,5.0,5.0,5.0,5.0
+Yaakov,98,2.0,Prospect-Lefferts Gardens,Brooklyn,40.65810916058266,-73.9501197118144,Entire home/apt,6,1.0,1 bath,3.0,208.0,17,4.76,4.82,4.94,5.0,4.47,4.65
+Miss. G.,60,4.0,Ditmars Steinway,Queens,40.77256,-73.91249,Private room,1,1.0,1 shared bath,1.0,60.0,4,5.0,5.0,5.0,5.0,5.0,4.75
+Mae,97,3.0,Washington Heights,Manhattan,40.85007919522546,-73.9311497915174,Private room,2,2.0,2 baths,0.0,250.0,10,4.9,5.0,4.8,4.9,4.4,4.8
+Anton,100,4.0,Bedford-Stuyvesant,Brooklyn,40.69202,-73.92861,Private room,1,1.0,1 shared bath,1.0,43.0,25,4.44,4.48,4.2,4.72,4.4,4.32
+Matthew,100,1.0,Park Slope,Brooklyn,40.67163,-73.98086,Entire home/apt,6,1.0,1 bath,2.0,200.0,128,4.91,4.92,4.89,4.98,4.98,4.73
+Maria,77,20.0,Grant City,Staten Island,40.57955,-74.11033,Private room,1,1.0,1 shared bath,1.0,33.0,7,4.86,5.0,5.0,4.86,5.0,4.71
+Mary,100,3.0,Prospect Heights,Brooklyn,40.67361821084896,-73.96449927519801,Private room,2,2.0,2 baths,1.0,140.0,68,4.99,4.99,4.94,4.97,4.9,4.9
+Petya,76,58.0,Long Island City,Queens,40.7588,-73.92815,Private room,1,1.0,1 bath,1.0,43.0,13,4.77,4.38,4.69,4.92,4.77,4.62
+Anacleta,77,8.0,Hell's Kitchen,Manhattan,40.7541824196749,-73.9926882120482,Entire home/apt,2,1.0,1 bath,1.0,70.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Fatou,100,10.0,Crown Heights,Brooklyn,40.67422,-73.95252,Private room,3,1.0,1 shared bath,1.0,171.0,46,4.8,4.91,4.8,4.8,4.85,4.72
+Debbie,94,7.0,East New York,Brooklyn,40.67086,-73.87801,Private room,2,1.0,1 shared bath,1.0,55.0,4,4.75,4.5,4.5,4.5,4.5,3.75
+Stanley,95,86.0,Murray Hill,Manhattan,40.74884,-73.97756,Hotel room,4,1.0,1 bath,1.0,140.0,3,4.67,4.67,5.0,4.33,5.0,4.33
+Jovanna,75,1.0,Crown Heights,Brooklyn,40.67395,-73.93975,Entire home/apt,2,1.0,1 bath,1.0,123.0,63,4.75,4.89,4.89,4.75,4.54,4.64
+Wendy,0,3.0,East Village,Manhattan,40.7273843,-73.9874861,Entire home/apt,2,1.0,1 bath,1.0,200.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Central Park Apartments,65,49.0,Upper West Side,Manhattan,40.79646,-73.9614,Entire home/apt,2,1.0,1 bath,0.0,80.0,7,4.14,4.14,3.71,4.0,4.29,3.57
+R S,62,1.0,Hell's Kitchen,Manhattan,40.76342,-73.99322,Entire home/apt,4,1.0,1 bath,1.0,221.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Shogo,89,324.0,Washington Heights,Manhattan,40.85334563380046,-73.92814081479975,Private room,1,1.0,1 shared bath,1.0,36.0,1,4.0,5.0,4.0,5.0,5.0,3.0
+Peter,96,8.0,Cypress Hills,Brooklyn,40.689484,-73.870471,Private room,2,1.0,1 shared bath,1.0,60.0,34,4.47,4.5,4.38,4.79,4.03,4.32
+Gloria,80,1.0,Bronxdale,Bronx,40.85691,-73.8658,Private room,1,1.0,1 shared bath,1.0,50.0,13,4.77,4.85,5.0,4.92,4.46,4.85
+Badal,95,3.0,Kingsbridge,Bronx,40.88204,-73.90479,Entire home/apt,4,1.0,1 bath,1.0,79.0,48,4.67,4.77,4.42,4.83,4.73,4.77
+Emma,72,20.0,Bedford-Stuyvesant,Brooklyn,40.67953553184095,-73.9188803549248,Entire home/apt,4,1.0,1 bath,1.0,142.0,27,4.67,4.74,4.33,4.59,4.33,4.63
+Amber,97,4.0,Williamsburg,Brooklyn,40.71251,-73.9584,Private room,2,1.0,1 shared bath,1.0,95.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Tara,100,1.0,Bedford-Stuyvesant,Brooklyn,40.69176,-73.93976,Private room,2,1.0,1 shared bath,1.0,95.0,80,4.75,4.84,4.84,4.83,4.49,4.65
+Lacy,96,2.0,Williamsburg,Brooklyn,40.71117628705987,-73.96643680496146,Entire home/apt,8,1.5,1.5 baths,4.0,594.0,75,4.88,4.83,4.89,4.92,4.96,4.8
+Joyce,100,1.0,Crown Heights,Brooklyn,40.6731,-73.94114,Entire home/apt,3,1.0,1 bath,1.0,135.0,54,4.72,4.7,4.69,4.81,4.65,4.56
+Alicia,79,31.0,Flushing,Queens,40.74547616946749,-73.8251481131149,Entire home/apt,2,1.0,1 bath,1.0,79.0,1,4.0,4.0,5.0,5.0,5.0,4.0
+Ulza,90,1.0,Arden Heights,Staten Island,40.55427316280584,-74.17240497933464,Entire home/apt,6,1.0,1 bath,2.0,177.0,26,4.92,4.96,4.96,5.0,4.88,4.85
+Calatayud,94,15.0,Harlem,Manhattan,40.80812,-73.95111,Entire home/apt,2,1.0,1 bath,1.0,204.0,364,4.91,4.95,4.97,4.94,4.8,4.85
+Elle,92,1.0,Bedford-Stuyvesant,Brooklyn,40.68721,-73.92617,Entire home/apt,6,1.0,1 bath,2.0,149.0,99,4.52,4.6,4.54,4.71,4.58,4.4
+Evgeny,100,15.0,Gerritsen Beach,Brooklyn,40.60082,-73.93351,Private room,1,1.0,1 shared bath,1.0,60.0,2,4.5,5.0,4.5,5.0,5.0,5.0
+Audrey,100,2.0,South Ozone Park,Queens,40.67481,-73.80961,Entire home/apt,4,1.0,1 bath,2.0,110.0,88,4.83,4.94,4.85,4.98,4.67,4.9
+Will,0,3.0,Upper East Side,Manhattan,40.76653,-73.95136,Entire home/apt,5,1.0,1 bath,2.0,270.0,2,5.0,5.0,4.5,5.0,4.5,4.5
+Akiko & Cindy,0,11.0,Hell's Kitchen,Manhattan,40.76151,-73.99098,Private room,4,1.0,1 private bath,1.0,211.0,225,4.65,4.81,4.77,4.81,4.92,4.66
+Benjamin,76,26.0,Clinton Hill,Brooklyn,40.68410873413086,-73.95925903320312,Entire home/apt,5,1.0,1 bath,3.0,120.0,6,4.67,4.83,4.67,5.0,4.5,4.5
+The Local Stay,81,78.0,Upper East Side,Manhattan,40.78533,-73.95215,Entire home/apt,4,1.0,1 bath,2.0,104.0,7,4.71,4.57,4.57,5.0,4.71,4.71
+Tucker,95,2.0,Bushwick,Brooklyn,40.694365,-73.9288407,Private room,2,1.0,1 shared bath,1.0,105.0,61,4.92,4.87,4.77,4.97,4.8,4.84
+Jeniffer,38,161.0,Hell's Kitchen,Manhattan,40.76411,-73.99371,Entire home/apt,3,1.0,1 bath,0.0,90.0,22,4.68,4.91,4.82,4.59,4.73,4.45
+Ivanna,79,12.0,Flushing,Queens,40.74588,-73.82587,Entire home/apt,2,1.0,1 bath,1.0,197.0,6,5.0,5.0,5.0,5.0,5.0,4.83
+Arlo,89,7.0,Hell's Kitchen,Manhattan,40.75672,-73.99453,Private room,2,1.0,1 private bath,1.0,341.0,230,4.82,4.87,4.88,4.78,4.81,4.72
+Adashima,100,1.0,Washington Heights,Manhattan,40.83556370702809,-73.94797734917636,Entire home/apt,10,1.0,1 bath,3.0,250.0,12,4.92,4.92,4.92,5.0,4.5,4.58
+Nasir,99,5.0,East New York,Brooklyn,40.67428,-73.88621,Private room,2,1.0,1 private bath,1.0,100.0,77,4.55,4.66,4.6,4.92,4.64,4.62
+Nice Stay NYC,65,16.0,Upper East Side,Manhattan,40.77663,-73.95725,Entire home/apt,2,1.0,1 bath,1.0,258.0,2,5.0,4.5,5.0,5.0,5.0,4.0
+Brinton,100,5.0,Harlem,Manhattan,40.80581,-73.94614,Entire home/apt,2,1.0,1 bath,0.0,169.0,108,4.84,4.89,4.8,4.93,4.58,4.75
+Patrick,100,8.0,Wakefield,Bronx,40.896,-73.84153,Private room,1,1.0,1 shared bath,1.0,45.0,14,5.0,5.0,4.93,5.0,4.79,4.93
+Elska,100,1.0,Bensonhurst,Brooklyn,40.61281,-73.98807,Entire home/apt,4,1.0,1 bath,1.0,82.0,8,4.78,4.89,4.89,5.0,4.89,4.56
+Pedro,87,1.0,East Flatbush,Brooklyn,40.639367774506745,-73.93221659860257,Entire home/apt,2,1.0,1 bath,1.0,105.0,49,4.92,4.88,4.9,4.98,4.59,4.71
+Justa,100,8.0,Cypress Hills,Brooklyn,40.68742,-73.87588,Entire home/apt,3,1.0,1 bath,3.0,119.0,57,4.84,4.88,4.86,4.98,4.51,4.77
+Lior,18,11.0,Hell's Kitchen,Manhattan,40.75738177913014,-73.99576099374268,Entire home/apt,2,1.0,1 bath,1.0,85.0,3,4.0,4.0,4.67,3.67,3.0,3.67
+Anyplace,68,119.0,Financial District,Manhattan,40.70352,-74.00827,Entire home/apt,2,1.0,1 bath,0.0,165.0,3,4.67,5.0,4.67,5.0,4.0,4.33
+Ryan,35,4.0,Greenpoint,Brooklyn,40.73089,-73.95863,Entire home/apt,2,1.0,1 bath,1.0,110.0,43,4.93,4.98,4.95,5.0,5.0,4.81
+Candice,92,7.0,Morningside Heights,Manhattan,40.80377985056735,-73.9643568930822,Private room,1,1.0,1 shared bath,3.0,75.0,11,4.82,4.73,4.91,5.0,4.64,4.82
+Steven,26,474.0,Midtown,Manhattan,40.755992004243375,-73.97969764004675,Entire home/apt,2,1.0,1 bath,0.0,223.0,1,5.0,4.0,5.0,5.0,5.0,4.0
+Berel,100,1.0,Brownsville,Brooklyn,40.66816,-73.92559,Entire home/apt,8,2.0,2 baths,4.0,279.0,47,4.66,4.83,4.72,4.87,4.34,4.66
+Carlos,0,1.0,Lower East Side,Manhattan,40.71969070000001,-73.989708,Private room,1,1.0,1 private bath,2.0,60.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Elizabeth,67,14.0,Gowanus,Brooklyn,40.68482,-73.98864,Entire home/apt,4,1.0,1 bath,2.0,300.0,12,5.0,5.0,5.0,5.0,5.0,4.91
+Ken,87,1.0,Bedford-Stuyvesant,Brooklyn,40.6973601,-73.9368203,Private room,1,1.0,1 private bath,1.0,160.0,4,5.0,5.0,5.0,5.0,4.75,5.0
+Andrada,99,8.0,Sunset Park,Brooklyn,40.65653,-74.00497,Private room,2,1.0,1 private bath,1.0,110.0,129,4.94,4.94,4.97,4.98,4.66,4.92
+David,33,1.0,Williamsburg,Brooklyn,40.71477,-73.9611,Entire home/apt,2,1.0,1 bath,1.0,190.0,11,4.73,4.91,4.91,5.0,5.0,4.64
+Shearly,33,1.0,Fort Greene,Brooklyn,40.68464,-73.97519,Entire home/apt,2,1.0,1 bath,1.0,135.0,49,4.98,5.0,5.0,4.94,5.0,4.88
+Zach,100,1.0,Bushwick,Brooklyn,40.69756,-73.90778,Private room,2,1.0,1 shared bath,1.0,49.0,171,4.57,4.79,4.52,4.52,4.49,4.62
+Chiara,100,1.0,Bushwick,Brooklyn,40.69545340167035,-73.92310721949124,Private room,2,1.0,1 private bath,1.0,164.0,212,4.87,4.98,4.86,4.97,4.79,4.92
+Blueground,97,5313.0,West Village,Manhattan,40.73732,-74.00424,Entire home/apt,4,2.0,2 baths,2.0,321.0,1,5.0,4.0,4.0,5.0,5.0,3.0
+David,75,1.0,East Village,Manhattan,40.72949,-73.98726,Entire home/apt,2,1.0,1 bath,1.0,350.0,3,4.67,5.0,4.33,5.0,5.0,4.33
+Luxury Modern,93,8.0,Williamsburg,Brooklyn,40.72262,-73.9607,Entire home/apt,2,1.0,1 bath,0.0,374.0,19,4.95,5.0,5.0,5.0,4.95,4.84
+Dylan,97,5.0,Murray Hill,Manhattan,40.75048,-73.97968,Hotel room,2,1.0,1 shared bath,1.0,758.0,7,4.57,5.0,4.57,5.0,4.86,4.43
+Pelin,100,4.0,Williamsburg,Brooklyn,40.71419,-73.95869,Private room,2,1.0,1 private bath,1.0,150.0,43,4.93,4.88,4.98,4.98,4.95,4.72
+Mi Casa Su Casa,94,1.0,Prospect-Lefferts Gardens,Brooklyn,40.66089,-73.96155,Private room,2,1.0,1 shared bath,1.0,155.0,95,4.87,4.81,4.89,4.92,4.87,4.74
+Alberto,99,4.0,Midtown,Manhattan,40.748028133087374,-73.98841856951695,Entire home/apt,6,1.0,1 bath,0.0,163.0,5,4.6,4.4,4.4,4.8,4.8,4.4
+CozySuites Copake,99,15.0,Upper East Side,Manhattan,40.7711,-73.95676,Entire home/apt,4,1.0,1 bath,2.0,15.0,9,4.78,4.22,4.67,4.78,4.89,4.33
+Rohit,100,1.0,Bedford-Stuyvesant,Brooklyn,40.69026709464736,-73.9296727596866,Entire home/apt,8,2.5,2.5 baths,1.0,253.0,4,5.0,5.0,5.0,5.0,5.0,5.0
+Alan,100,2.0,Upper West Side,Manhattan,40.79131,-73.9694,Entire home/apt,2,1.0,1 bath,1.0,290.0,56,4.93,4.93,4.75,5.0,4.96,4.8
+Henri-Leon,100,4.0,Fort Greene,Brooklyn,40.688,-73.97386,Entire home/apt,2,1.0,1 bath,1.0,195.0,10,5.0,4.9,4.7,4.9,5.0,4.7
+Annette,79,7.0,Lower East Side,Manhattan,40.713,-73.99231,Entire home/apt,2,1.0,1 bath,1.0,100.0,7,4.71,4.86,5.0,4.86,4.43,4.71
+Brooklyn,92,4.0,East New York,Brooklyn,40.676116896646604,-73.8850858669342,Entire home/apt,2,1.0,1 bath,1.0,180.0,4,5.0,4.75,5.0,5.0,4.25,4.5
+Tina,100,4.0,Dyker Heights,Brooklyn,40.62584,-74.00819,Entire home/apt,5,1.0,1 bath,2.0,120.0,35,4.69,4.77,4.43,4.71,4.71,4.63
+Lana,99,35.0,Glendale,Queens,40.70212276458548,-73.88409173645633,Private room,1,2.5,2.5 shared baths,1.0,35.0,3,4.67,3.67,5.0,5.0,5.0,4.33
+Nim,46,2.0,Midtown,Manhattan,40.751712799072266,-73.97032928466797,Entire home/apt,2,1.0,1 bath,1.0,151.0,10,4.9,4.9,4.78,5.0,5.0,4.67
+Eugene,18,825.0,Bushwick,Brooklyn,40.69005,-73.92008,Private room,1,2.0,2 shared baths,1.0,25.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Simon,38,1.0,Williamsburg,Brooklyn,40.71272,-73.96416,Entire home/apt,4,1.0,1 bath,2.0,249.0,12,4.58,4.92,4.42,4.75,5.0,4.58
+King,91,2.0,Astoria,Queens,40.75875,-73.91629,Private room,1,1.0,1 private bath,1.0,49.0,6,5.0,4.67,4.83,5.0,5.0,4.83
+Elisha,100,3.0,East Harlem,Manhattan,40.7921433,-73.93665899999999,Entire home/apt,4,1.0,1 bath,1.0,299.0,10,4.0,4.3,3.7,4.4,4.2,4.2
+Dan,42,2.0,Gramercy,Manhattan,40.73671,-73.98654,Entire home/apt,2,1.0,1 bath,0.0,300.0,271,4.86,4.87,4.87,4.97,4.96,4.79
+Hiroki,88,372.0,Inwood,Manhattan,40.86764,-73.91722,Private room,2,1.0,1 private bath,1.0,36.0,2,4.0,4.0,4.0,4.0,5.0,3.5
+Casimir,100,2.0,St. Albans,Queens,40.69505,-73.7636,Private room,2,1.0,1 private bath,2.0,120.0,27,4.93,4.89,4.93,4.93,4.67,4.7
+Mohammed,89,6.0,Ozone Park,Queens,40.6754094636946,-73.85732580898437,Private room,2,1.0,1 shared bath,1.0,43.0,13,5.0,5.0,5.0,5.0,4.69,5.0
+Bp Stays.,100,59.0,Harlem,Manhattan,40.81164,-73.95276,Private room,6,2.0,2 shared baths,1.0,57.0,27,4.74,4.74,4.85,4.89,4.37,4.67
+Gershon,99,4.0,East Flatbush,Brooklyn,40.65864856044564,-73.92682024781395,Entire home/apt,8,1.5,1.5 baths,3.0,315.0,14,5.0,5.0,5.0,4.86,4.93,4.79
+Ivan,88,11.0,Harlem,Manhattan,40.8257,-73.95009,Private room,1,1.0,1 bath,1.0,35.0,1,1.0,3.0,4.0,1.0,5.0,1.0
+Simcha,99,5.0,East New York,Brooklyn,40.66170852512951,-73.86579311532033,Entire home/apt,8,1.5,1.5 baths,3.0,207.0,9,4.89,4.89,4.89,4.89,4.56,4.67
+Wendy,100,3.0,Rosebank,Staten Island,40.6137,-74.06728,Entire home/apt,4,1.0,1 bath,2.0,75.0,52,4.38,4.37,4.33,4.73,4.44,4.4
+Sarah,88,2.0,Crown Heights,Brooklyn,40.66554,-73.93704,Entire home/apt,6,1.0,1 bath,2.0,300.0,5,4.6,4.4,5.0,4.4,4.6,4.8
+Rose,33,4.0,Tribeca,Manhattan,40.7148026346056,-74.00660779358992,Entire home/apt,3,1.0,1 bath,1.0,436.0,5,5.0,5.0,4.8,5.0,5.0,4.8
+Sukhwinder,83,6.0,Richmond Hill,Queens,40.68932740911687,-73.8213528742047,Private room,1,1.0,1 shared bath,1.0,70.0,1,5.0,4.0,3.0,5.0,5.0,3.0
+Hiroki,88,372.0,Elmhurst,Queens,40.730184332633485,-73.87671039997572,Private room,2,1.0,1 shared bath,1.0,37.0,1,4.0,5.0,5.0,4.0,3.0,4.0
+Usquire,68,72.0,Long Island City,Queens,40.75617,-73.93637,Entire home/apt,2,1.0,1 bath,1.0,275.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Jeniffer,90,77.0,Chinatown,Manhattan,40.71804,-73.99529,Entire home/apt,2,1.0,1 bath,0.0,150.0,40,4.85,4.88,4.85,4.55,4.8,4.63
+Jamerson,100,8.0,Long Island City,Queens,40.75412445757375,-73.93193381311018,Private room,1,2.0,2 shared baths,1.0,62.0,21,4.76,4.81,4.9,4.95,4.67,4.57
+Walker Hotel Tribeca,98,7.0,Tribeca,Manhattan,40.71864,-74.00309,Private room,1,1.0,1 bath,1.0,252.0,227,4.7,4.76,4.81,4.74,4.83,4.58
+Nadine,100,3.0,Greenwich Village,Manhattan,40.73446,-73.99715,Entire home/apt,3,1.0,1 bath,1.0,170.0,4,5.0,4.75,4.75,5.0,5.0,4.75
+Best Inns USA,71,39.0,East Village,Manhattan,40.73236396518396,-73.98523687917398,Entire home/apt,2,1.0,1 bath,0.0,87.0,1,4.0,3.0,4.0,4.0,5.0,4.0
+Hernan,95,7.0,East Village,Manhattan,40.72536,-73.98541,Private room,1,1.0,1 shared bath,1.0,80.0,139,4.94,4.96,4.94,4.95,4.94,4.93
+Marios,78,18.0,Lower East Side,Manhattan,40.72054299096232,-73.9920643900761,Entire home/apt,4,1.0,1 bath,2.0,87.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Stu,100,1.0,Washington Heights,Manhattan,40.8462,-73.93341,Private room,1,1.5,1.5 shared baths,1.0,66.0,34,4.79,4.85,4.85,4.79,4.62,4.88
+Hiroki,88,372.0,Elmhurst,Queens,40.74217,-73.88821,Private room,1,1.0,1 shared bath,1.0,30.0,1,4.0,4.0,3.0,1.0,3.0,5.0
+Monica,100,5.0,Bushwick,Brooklyn,40.70762,-73.92267,Entire home/apt,5,1.0,1 bath,3.0,228.0,235,4.81,4.88,4.72,4.94,4.84,4.8
+Ǧani,100,14.0,Crown Heights,Brooklyn,40.67808,-73.94448,Entire home/apt,12,2.5,2.5 baths,3.0,487.0,10,4.7,4.4,4.4,5.0,4.3,4.6
+Avi,86,148.0,Midtown,Manhattan,40.76387,-73.9831,Entire home/apt,3,1.0,1 bath,1.0,150.0,2,5.0,5.0,4.0,4.5,5.0,4.0
+Ayanna,100,1.0,Prospect-Lefferts Gardens,Brooklyn,40.65515,-73.96074,Private room,1,1.0,1 private bath,1.0,59.0,34,4.65,4.68,4.41,4.97,4.56,4.44
+Jovana,100,6.0,Flatbush,Brooklyn,40.6491698,-73.9616495,Entire home/apt,2,1.0,1 bath,0.0,137.0,2,5.0,5.0,5.0,5.0,4.5,5.0
+Mutale,88,3.0,Fort Greene,Brooklyn,40.69404,-73.974,Entire home/apt,4,1.0,1 bath,2.0,210.0,98,4.63,4.78,4.56,4.86,4.76,4.61
+Emi,87,14.0,Crown Heights,Brooklyn,40.67404404802367,-73.9167882244762,Private room,4,1.0,1 shared bath,1.0,99.0,3,5.0,5.0,5.0,5.0,5.0,5.0
+Andrea,90,3.0,West Brighton,Staten Island,40.63042,-74.10299,Private room,2,1.0,1 private bath,1.0,109.0,39,4.74,4.74,4.74,4.85,4.82,4.74
+Benjamin,38,2.0,Upper West Side,Manhattan,40.79063734150534,-73.97187195718288,Private room,6,5.5,5.5 baths,1.0,1750.0,2,5.0,5.0,5.0,5.0,5.0,4.5
+Phil,97,12.0,Bedford-Stuyvesant,Brooklyn,40.69242,-73.94891,Private room,2,1.0,1 private bath,1.0,65.0,126,4.78,4.88,4.91,4.97,4.73,4.71
+Daniel,100,3.0,Bushwick,Brooklyn,40.69072507417998,-73.90344117693265,Entire home/apt,3,1.0,1 bath,1.0,96.0,4,5.0,4.75,4.5,5.0,4.75,4.5
+Lily,100,1.0,Gramercy,Manhattan,40.73753,-73.98026,Private room,1,1.0,1 shared bath,1.0,49.0,139,4.98,4.97,4.99,4.99,4.94,4.92
+Fernando,100,9.0,Midtown,Manhattan,40.76144731845113,-73.97103510551376,Entire home/apt,12,3.0,3 baths,5.0,229.0,4,5.0,5.0,5.0,5.0,5.0,5.0
+Anna,40,5.0,Inwood,Manhattan,40.86541,-73.92738,Entire home/apt,1,1.0,1 bath,0.0,99.0,13,4.92,4.85,4.15,4.92,4.85,4.85
+Jessica,70,3.0,Bedford-Stuyvesant,Brooklyn,40.69292,-73.93415,Entire home/apt,4,1.0,1 bath,1.0,120.0,39,4.87,4.9,4.64,4.92,4.62,4.64
+Hotel Belleclaire,65,13.0,Upper West Side,Manhattan,40.78361,-73.98214,Private room,4,1.0,1 private bath,1.0,390.0,1,5.0,5.0,5.0,5.0,5.0,4.0
+Cheri,0,1.0,Kips Bay,Manhattan,40.74259,-73.97949,Entire home/apt,2,1.0,1 bath,2.0,250.0,15,4.87,4.73,4.73,4.93,4.79,4.67
+Smyth Tribeca,80,15.0,Tribeca,Manhattan,40.71442,-74.00968,Private room,2,1.0,1 private bath,1.0,532.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Hotel 32 32,99,11.0,Midtown,Manhattan,40.74645,-73.98253,Private room,2,1.0,1 private bath,1.0,288.0,169,4.32,4.4,4.44,4.38,4.71,4.22
+Maney,100,2.0,Midtown,Manhattan,40.74505,-73.98745,Entire home/apt,5,1.0,1 bath,1.0,227.0,38,4.82,4.79,4.87,4.79,4.84,4.61
+Jason,100,1.0,Harlem,Manhattan,40.8111,-73.9452,Private room,2,1.0,1 shared bath,1.0,80.0,39,4.97,4.95,5.0,4.97,4.92,4.97
+Kristina,89,5.0,Chelsea,Manhattan,40.74882,-74.00326,Entire home/apt,2,1.0,1 bath,1.0,420.0,20,4.9,4.81,4.86,5.0,5.0,4.67
+Bp Stays.,100,59.0,Harlem,Manhattan,40.80885,-73.94821,Private room,2,1.0,1 shared bath,1.0,56.0,51,4.73,4.69,4.82,4.9,4.24,4.61
+Marwa,44,1.0,East Village,Manhattan,40.72973,-73.98624,Entire home/apt,2,1.0,1 bath,1.0,200.0,4,5.0,5.0,5.0,5.0,5.0,5.0
+B,91,6.0,Upper West Side,Manhattan,40.77203292107463,-73.9901982100222,Entire home/apt,4,2.5,2.5 baths,2.0,650.0,29,4.72,4.76,4.55,4.55,4.83,4.59
+Alain,88,2.0,Bedford-Stuyvesant,Brooklyn,40.68682,-73.95639,Entire home/apt,2,1.0,1 bath,1.0,130.0,22,5.0,4.95,4.95,5.0,4.95,4.91
+Paris,46,5.0,Upper West Side,Manhattan,40.79497173980575,-73.97383419264895,Private room,1,1.0,1 shared bath,1.0,110.0,91,4.41,4.55,4.31,4.43,4.85,4.53
+Lynn,57,2.0,South Slope,Brooklyn,40.6613,-73.98493,Entire home/apt,4,1.0,1 bath,2.0,139.0,3,5.0,5.0,5.0,5.0,4.67,4.67
+Darina,89,16.0,Bedford-Stuyvesant,Brooklyn,40.68092029576777,-73.91262706769565,Private room,2,2.0,2 baths,4.0,65.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Mohammad,99,8.0,East Elmhurst,Queens,40.76271,-73.87613,Entire home/apt,2,1.0,1 bath,1.0,82.0,25,4.92,4.96,4.92,4.88,4.73,4.85
+Rehim,83,3.0,Rego Park,Queens,40.72976,-73.86768,Entire home/apt,5,1.0,1 bath,2.0,114.0,15,4.87,4.73,4.73,4.87,4.87,4.6
+Boris,100,1.0,Washington Heights,Manhattan,40.84886,-73.94335,Private room,2,1.0,1 shared bath,1.0,85.0,183,4.87,4.9,4.63,4.97,4.87,4.89
+Jack,96,11.0,Chinatown,Manhattan,40.71388,-73.99439,Private room,2,1.0,1 shared bath,1.0,97.0,9,4.78,4.89,4.78,5.0,4.78,4.89
+Cindy,89,3.0,Washington Heights,Manhattan,40.85939,-73.92687,Entire home/apt,3,1.0,1 bath,1.0,115.0,114,4.7,4.73,4.79,4.86,4.57,4.59
+Nomad,95,59.0,Midtown,Manhattan,40.74655,-73.98884,Entire home/apt,3,1.0,1 bath,0.0,163.0,177,4.55,4.51,4.6,4.83,4.84,4.42
+Julie,56,2.0,Upper East Side,Manhattan,40.7704,-73.95975,Entire home/apt,1,1.0,1 bath,1.0,145.0,5,4.6,4.8,5.0,4.8,4.6,4.6
+Eric,67,1.0,Clinton Hill,Brooklyn,40.68536,-73.96309,Private room,1,1.0,1 shared bath,1.0,110.0,29,4.9,4.93,4.62,5.0,4.82,4.93
+Michael,94,3.0,Laurelton,Queens,40.68124810391811,-73.75017305994251,Private room,2,2.0,2 baths,1.0,259.0,7,5.0,5.0,5.0,5.0,5.0,4.86
+Gisele,100,37.0,Washington Heights,Manhattan,40.84238,-73.9405,Entire home/apt,2,1.0,1 bath,1.0,50.0,6,4.67,4.83,4.83,4.83,4.67,4.5
+Hibba,82,2.0,Canarsie,Brooklyn,40.630771,-73.9008353,Entire home/apt,7,1.0,1 bath,2.0,214.0,10,4.18,4.45,3.64,4.91,4.09,3.82
+Courtney,0,1.0,Hell's Kitchen,Manhattan,40.76731,-73.98415,Entire home/apt,3,1.0,1 bath,1.0,145.0,5,5.0,5.0,4.4,5.0,5.0,4.8
+Maria,0,3.0,Crown Heights,Brooklyn,40.67377,-73.92823,Entire home/apt,4,2.0,2 baths,2.0,200.0,2,5.0,5.0,5.0,5.0,4.0,5.0
+Gabriel,100,1.0,East Flatbush,Brooklyn,40.64867823798895,-73.94727844744921,Entire home/apt,2,1.0,1 bath,1.0,107.0,15,4.73,4.93,4.73,5.0,4.53,4.67
+Yuki,99,1.0,East Village,Manhattan,40.733535939025984,-73.99016218384963,Entire home/apt,2,1.0,1 bath,1.0,114.0,193,4.56,4.67,4.48,4.71,4.9,4.59
+Suzanne,93,1.0,Elmhurst,Queens,40.7432,-73.88015,Entire home/apt,4,1.0,1 bath,1.0,193.0,47,4.96,4.96,4.96,4.98,4.57,4.83
+Ann,91,3.0,Washington Heights,Manhattan,40.83596019749408,-73.9410161228181,Entire home/apt,2,1.0,1 bath,1.0,221.0,25,4.96,4.92,4.92,4.96,4.72,4.8
+Margarita,94,11.0,Kips Bay,Manhattan,40.74174,-73.97805,Entire home/apt,2,1.0,1 bath,1.0,179.0,67,4.97,4.96,4.91,4.99,4.9,4.84
+Best Inns USA,71,39.0,Gramercy,Manhattan,40.73426,-73.98672,Entire home/apt,1,1.0,1 bath,0.0,85.0,4,5.0,5.0,5.0,5.0,5.0,5.0
+Eugenia,91,5.0,Crown Heights,Brooklyn,40.67001,-73.92322,Private room,2,3.0,3 shared baths,1.0,62.0,20,4.85,4.85,4.7,4.8,4.4,4.75
+Kaz,78,366.0,Sunnyside,Queens,40.74778,-73.91979,Private room,1,1.0,1 shared bath,1.0,40.0,6,5.0,5.0,5.0,5.0,5.0,4.67
+Blueground,97,5313.0,East Village,Manhattan,40.7324098,-73.98747879999999,Entire home/apt,4,2.0,2 baths,2.0,303.0,1,1.0,2.0,1.0,1.0,1.0,1.0
+Farzana,100,3.0,Woodhaven,Queens,40.68849582532212,-73.86182104758156,Entire home/apt,4,1.0,1 bath,1.0,115.0,3,3.67,3.67,3.67,4.67,4.33,3.67
+Jose,65,45.0,Financial District,Manhattan,40.70599,-74.00729,Private room,1,2.0,2 shared baths,1.0,125.0,3,4.0,4.0,3.67,3.67,4.33,3.67
+Anyplace,68,119.0,Chelsea,Manhattan,40.74104,-73.99459,Entire home/apt,2,1.0,1 bath,1.0,272.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Jemar Ira,98,20.0,Brownsville,Brooklyn,40.6568996,-73.9130071,Shared room,2,1.0,1 shared bath,1.0,135.0,12,4.58,4.5,4.5,4.75,4.08,4.42
+Reginald,100,2.0,Harlem,Manhattan,40.823902,-73.9460278,Entire home/apt,4,1.0,1 bath,1.0,159.0,55,4.76,4.8,4.73,4.89,4.78,4.6
+Susan,40,1.0,West Village,Manhattan,40.73814,-74.00811,Private room,1,1.0,1 shared bath,2.0,94.0,12,5.0,5.0,4.92,5.0,5.0,4.92
+Michael,52,164.0,Upper East Side,Manhattan,40.7806,-73.94944,Entire home/apt,2,1.0,1 bath,0.0,92.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Rove,88,94.0,Hell's Kitchen,Manhattan,40.75999978740193,-73.99280170904629,Entire home/apt,6,3.0,3 baths,3.0,336.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Rachel,100,2.0,Financial District,Manhattan,40.70703,-74.00213,Private room,2,1.0,1 private bath,0.0,212.0,102,4.84,4.91,4.96,4.97,4.88,4.82
+Barry,86,2.0,Bushwick,Brooklyn,40.69913,-73.93107,Private room,2,2.0,2 baths,1.0,95.0,41,4.63,4.83,4.32,4.85,4.34,4.56
+Tj,97,4.0,Bedford-Stuyvesant,Brooklyn,40.68447,-73.92474,Private room,3,1.0,1 shared bath,1.0,55.0,72,4.69,4.9,4.71,4.85,4.56,4.67
+Adriana,72,3.0,Washington Heights,Manhattan,40.8443703,-73.9412633,Private room,2,1.0,1 shared bath,1.0,85.0,2,4.5,5.0,5.0,4.5,4.5,4.5
+Isabella,98,2.0,Sunnyside,Queens,40.74252120196174,-73.91739574603271,Private room,2,2.0,2 baths,1.0,129.0,86,4.97,4.93,4.97,4.87,4.85,4.86
+Nicholas,97,3.0,Bedford-Stuyvesant,Brooklyn,40.6888294,-73.94281389999999,Private room,2,1.0,1 private bath,1.0,135.0,241,4.7,4.82,4.76,4.95,4.46,4.58
+Hristiyan,91,3.0,Greenpoint,Brooklyn,40.73577,-73.95537,Entire home/apt,2,1.0,1 bath,1.0,115.0,48,4.71,4.78,4.84,4.9,4.8,4.76
+Keeng-Shilo,97,1.0,Chelsea,Manhattan,40.74926,-73.99521,Shared room,2,1.0,1 shared bath,1.0,150.0,108,4.79,4.8,4.6,4.94,4.81,4.76
+Matthew,0,4.0,Downtown Brooklyn,Brooklyn,40.69132,-73.98573,Private room,1,1.5,1.5 baths,1.0,184.0,5,5.0,5.0,4.8,5.0,4.4,4.8
+Ali,100,7.0,Clinton Hill,Brooklyn,40.68904,-73.96375,Entire home/apt,4,1.0,1 bath,1.0,135.0,2,4.0,4.5,5.0,4.5,3.0,4.0
+Momoyo,80,299.0,Woodside,Queens,40.74662,-73.89256,Private room,2,1.0,1 shared bath,1.0,33.0,1,4.0,4.0,3.0,4.0,4.0,3.0
+Brook,96,3.0,Bedford-Stuyvesant,Brooklyn,40.69098,-73.94661,Private room,2,1.5,1.5 shared baths,1.0,48.0,6,4.67,4.17,5.0,4.33,4.5,4.5
+Yves,100,2.0,East Flatbush,Brooklyn,40.64025,-73.95097,Entire home/apt,4,1.0,1 bath,1.0,125.0,197,4.65,4.81,4.46,4.83,4.72,4.65
+William,100,1.0,Bedford-Stuyvesant,Brooklyn,40.69169,-73.95744,Entire home/apt,7,1.0,1 bath,2.0,240.0,75,4.52,4.6,4.51,4.65,4.3,4.41
+Michele,86,1.0,Park Slope,Brooklyn,40.67325,-73.97884,Entire home/apt,4,1.0,1 bath,1.0,158.0,29,5.0,4.96,5.0,5.0,5.0,4.93
+George,100,3.0,Ditmars Steinway,Queens,40.7712,-73.91705,Entire home/apt,6,1.0,1 bath,2.0,100.0,36,4.94,4.97,4.92,4.97,4.75,4.86
+Avi,86,148.0,Upper West Side,Manhattan,40.79621,-73.96662,Entire home/apt,7,1.0,1 bath,3.0,165.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+RoomPicks,88,3117.0,Theater District,Manhattan,40.76072204053564,-73.98511044537265,Private room,4,1.0,1 bath,1.0,221.0,1,5.0,5.0,5.0,5.0,5.0,4.0
+Dmitriy,100,6.0,Shore Acres,Staten Island,40.606396,-74.067902,Entire home/apt,2,1.0,1 bath,1.0,90.0,5,4.6,4.6,4.0,5.0,4.8,4.6
+Joseph,100,5.0,Flatlands,Brooklyn,40.62265,-73.92658,Private room,2,1.0,1 private bath,2.0,143.0,183,4.77,4.83,4.92,4.83,4.48,4.76
+Inna,68,57.0,Upper East Side,Manhattan,40.77096,-73.95696,Entire home/apt,2,1.0,1 bath,0.0,99.0,11,4.91,4.64,4.73,5.0,5.0,4.45
+Jon,99,9.0,Hell's Kitchen,Manhattan,40.75939186742734,-73.98869341890487,Entire home/apt,5,1.0,1 bath,2.0,335.0,30,4.84,4.81,4.61,5.0,4.9,4.68
+Chaim,100,1.0,East Flatbush,Brooklyn,40.65788,-73.936,Entire home/apt,6,1.0,1 bath,2.0,189.0,51,4.84,4.9,4.88,4.96,4.47,4.75
+Stanley,95,86.0,Murray Hill,Manhattan,40.74951,-73.97542,Entire home/apt,3,1.0,1 bath,1.0,160.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Daniel,100,1.0,Washington Heights,Manhattan,40.84601,-73.93681,Private room,2,1.0,1 shared bath,1.0,250.0,2,1.0,1.0,1.0,1.0,1.0,1.0
+Angela,65,6.0,Bedford-Stuyvesant,Brooklyn,40.68325,-73.95483,Private room,3,2.0,2 baths,1.0,90.0,6,5.0,4.5,4.83,5.0,4.83,4.83
+Jay,33,2.0,Upper East Side,Manhattan,40.78057,-73.95188,Entire home/apt,3,1.0,1 bath,0.0,142.0,1,5.0,4.0,5.0,5.0,5.0,4.0
+Will,100,4.0,Harlem,Manhattan,40.80354,-73.95093,Entire home/apt,2,1.0,1 bath,1.0,95.0,92,4.91,4.98,4.96,4.93,4.76,4.8
+An Artful Hotel,90,18.0,Hell's Kitchen,Manhattan,40.75436,-73.99391,Private room,2,1.0,1 private bath,1.0,378.0,1,4.0,4.0,5.0,4.0,5.0,5.0
+Angela,99,2.0,Upper East Side,Manhattan,40.76312,-73.95961,Private room,1,1.0,1 shared bath,1.0,110.0,45,4.87,4.96,4.93,4.87,4.89,4.84
+Jahde,82,1.0,Williamsbridge,Bronx,40.86987343505582,-73.86233617701673,Entire home/apt,4,1.0,1 bath,1.0,100.0,7,4.86,4.86,4.86,5.0,4.86,4.43
+Rove,88,94.0,Tribeca,Manhattan,40.71952194567768,-74.00924878298464,Entire home/apt,4,1.0,1 bath,2.0,392.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Eibhlin,53,32.0,Bedford-Stuyvesant,Brooklyn,40.68753,-73.92717,Private room,2,2.0,2 shared baths,1.0,43.0,2,5.0,5.0,5.0,5.0,4.5,4.5
+Park Central,99,12.0,Midtown,Manhattan,40.7636,-73.98049,Private room,4,1.0,1 private bath,1.0,279.0,32,3.94,4.16,4.47,4.09,4.72,4.13
+Gus,99,12.0,Bushwick,Brooklyn,40.69054,-73.9104,Private room,2,2.0,2 baths,1.0,120.0,5,4.0,4.33,3.67,4.33,4.33,3.83
+Tonderai,100,1.0,Bedford-Stuyvesant,Brooklyn,40.68301667665517,-73.93047807281734,Entire home/apt,6,1.0,1 bath,3.0,259.0,415,4.88,4.9,4.8,4.95,4.66,4.83
+Ysabel,100,2.0,Washington Heights,Manhattan,40.8505637,-73.93756328280334,Private room,2,1.0,1 private bath,2.0,250.0,35,4.49,4.69,4.31,4.63,4.54,4.31
+Robert,0,1.0,Hell's Kitchen,Manhattan,40.76287,-73.99178,Entire home/apt,2,1.0,1 bath,0.0,130.0,9,4.78,4.78,4.67,5.0,4.78,4.67
+Elizabeth,60,2.0,Boerum Hill,Brooklyn,40.68594,-73.98601,Private room,2,1.0,1 private bath,2.0,339.0,11,5.0,4.82,5.0,5.0,5.0,4.73
+Cheryl,100,1.0,Sheepshead Bay,Brooklyn,40.58547,-73.93659,Entire home/apt,2,1.0,1 bath,1.0,312.0,151,4.6,4.64,4.56,4.9,4.75,4.54
+Reservations,95,779.0,Theater District,Manhattan,40.75948847118014,-73.98680762139965,Hotel room,2,1.0,1 bath,1.0,100.0,2,4.5,5.0,4.5,5.0,5.0,5.0
+Abdo,89,15.0,Flatbush,Brooklyn,40.65158,-73.9614,Private room,2,1.0,1 private bath,2.0,600.0,8,5.0,5.0,5.0,5.0,4.88,4.63
+Jameelah,100,8.0,Bedford-Stuyvesant,Brooklyn,40.689412873073735,-73.93258969968974,Entire home/apt,3,1.0,1 bath,1.0,79.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Ann,91,3.0,Washington Heights,Manhattan,40.83569,-73.94293,Entire home/apt,6,1.0,1 bath,2.0,279.0,71,4.89,4.89,4.87,4.96,4.69,4.86
+Sarah,100,2.0,Prince's Bay,Staten Island,40.51707,-74.19613,Entire home/apt,2,1.0,1 bath,1.0,102.0,8,4.63,4.63,4.38,4.63,4.75,4.5
+WestHouse,99,12.0,Midtown,Manhattan,40.76451,-73.9836,Private room,2,1.0,1 shared bath,1.0,339.0,6,4.17,4.5,4.5,3.67,5.0,4.0
+Imrul,99,3.0,Gowanus,Brooklyn,40.6818722,-73.981614,Entire home/apt,7,1.5,1.5 baths,3.0,325.0,33,4.73,4.76,4.61,4.64,4.73,4.58
+Karen,100,17.0,Astoria,Queens,40.76832,-73.92503,Private room,2,1.0,1 bath,1.0,95.0,85,4.72,4.86,4.44,4.81,4.85,4.69
+J.J.,98,3.0,Boerum Hill,Brooklyn,40.68821,-73.98371,Entire home/apt,2,1.0,1 bath,1.0,129.0,258,4.91,4.94,4.91,4.94,4.87,4.84
+Felix,100,2.0,Rosedale,Queens,40.66305,-73.73569,Shared room,2,1.0,1 shared bath,3.0,313.0,24,4.75,4.58,4.67,4.67,4.58,4.38
+Alex,79,7.0,Bushwick,Brooklyn,40.69098,-73.91754,Private room,1,1.0,1 shared bath,1.0,45.0,33,4.82,4.73,4.61,4.79,4.7,4.7
+Esin,75,4.0,Sunnyside,Queens,40.73852,-73.92531,Private room,1,1.0,1 shared bath,1.0,60.0,47,4.79,4.77,4.6,4.85,4.77,4.7
+Mi,75,1.0,Gowanus,Brooklyn,40.66952,-73.99201,Entire home/apt,3,1.0,1 bath,1.0,150.0,119,4.94,4.97,4.91,4.95,4.81,4.89
+Asaf,100,6.0,Kew Gardens Hills,Queens,40.71708,-73.81598,Entire home/apt,3,1.0,1 bath,1.0,84.0,64,4.77,4.81,4.7,4.95,4.66,4.59
+Marsha,91,2.0,East Flatbush,Brooklyn,40.65507,-73.9152,Entire home/apt,2,1.0,1 bath,1.0,170.0,36,4.94,4.94,5.0,4.97,4.75,4.89
+Julia,100,10.0,Midtown,Manhattan,40.74722,-73.9878,Entire home/apt,6,1.0,1 bath,0.0,243.0,175,4.58,4.79,4.65,4.82,4.91,4.62
+Raquel,100,1.0,Bedford-Stuyvesant,Brooklyn,40.6918929413144,-73.94467504699499,Private room,2,1.0,1 bath,1.0,140.0,41,4.93,4.98,4.76,5.0,4.93,4.8
+Ramiro,69,7.0,Williamsburg,Brooklyn,40.7074,-73.96202,Entire home/apt,4,1.0,1 bath,3.0,150.0,12,4.75,4.92,4.58,4.83,4.83,4.75
+Charlie,95,4.0,Bayside,Queens,40.773396,-73.776924,Entire home/apt,2,1.0,1 bath,1.0,108.0,4,5.0,4.75,5.0,5.0,5.0,5.0
+Juliet,97,1.0,Cambria Heights,Queens,40.7028062,-73.72808739999999,Private room,2,1.0,1 private bath,1.0,123.0,27,4.96,5.0,5.0,5.0,4.85,4.96
+Usquire,68,72.0,Williamsburg,Brooklyn,40.72325911043252,-73.95466440339098,Entire home/apt,2,1.0,1 bath,1.0,237.0,8,4.63,4.75,5.0,4.88,5.0,4.75
+Dorit,100,44.0,Bay Ridge,Brooklyn,40.62350683170389,-74.02685487103041,Entire home/apt,2,1.0,1 bath,1.0,150.0,6,4.67,4.8,4.6,4.6,4.8,5.0
+Diego,100,6.0,Jackson Heights,Queens,40.75292,-73.89521,Private room,2,1.0,1 shared bath,1.0,79.0,27,4.52,4.78,4.7,4.7,4.74,4.59
+Devon,100,2.0,Brownsville,Brooklyn,40.66827,-73.92424,Entire home/apt,4,1.0,1 bath,1.0,229.0,4,4.75,5.0,4.75,4.75,4.0,4.25
+Julio,100,1.0,Cypress Hills,Brooklyn,40.68974,-73.86925,Private room,2,1.0,1 shared bath,1.0,120.0,41,4.63,4.59,4.68,4.8,4.29,4.66
+Bryan,77,5.0,East Flatbush,Brooklyn,40.65245,-73.94206,Private room,1,2.0,2 shared baths,5.0,47.0,18,4.61,4.83,4.28,4.72,4.5,4.72
+Jess,100,2.0,East Village,Manhattan,40.72854369635891,-73.98363285952453,Entire home/apt,2,1.0,1 bath,1.0,239.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Krzysztof,63,8.0,Greenpoint,Brooklyn,40.7208,-73.94238,Entire home/apt,3,1.0,1 bath,0.0,79.0,17,4.76,4.71,4.29,4.94,4.47,4.59
+Lidia,100,1.0,Bedford-Stuyvesant,Brooklyn,40.68584,-73.91911,Entire home/apt,5,1.0,1 bath,2.0,211.0,41,4.85,4.76,4.46,4.98,4.61,4.78
+Jasmine,100,1.0,Kips Bay,Manhattan,40.74191284767835,-73.98240270421714,Entire home/apt,6,1.0,1 bath,2.0,279.0,6,4.5,4.6,5.0,4.8,5.0,4.2
+Michael,100,2.0,Harlem,Manhattan,40.81613,-73.93566,Entire home/apt,5,1.0,1 bath,1.0,150.0,40,4.55,4.65,4.55,4.8,4.48,4.5
+Byron,71,3.0,Harlem,Manhattan,40.82338,-73.95462,Private room,2,1.0,1 shared bath,1.0,97.0,21,4.95,4.86,4.95,4.9,4.81,4.95
+Pavel,100,3.0,Astoria,Queens,40.765306640244695,-73.92335747781142,Private room,2,1.0,1 shared bath,1.0,106.0,29,4.76,4.79,4.72,4.69,4.83,4.66
+Kaz,78,366.0,Woodside,Queens,40.7426,-73.89321,Private room,1,1.5,1.5 shared baths,1.0,36.0,6,4.83,5.0,4.67,4.83,4.67,4.67
+Sonia,100,2.0,East Elmhurst,Queens,40.76146,-73.88029,Private room,2,2.0,2 baths,1.0,86.0,138,4.68,4.77,4.77,4.77,4.79,4.75
+Furnished Quarters,100,1013.0,Midtown,Manhattan,40.74434,-73.98526,Entire home/apt,3,1.0,1 bath,1.0,327.0,1,4.0,5.0,5.0,4.0,5.0,4.0
+Troy,96,5.0,Theater District,Manhattan,40.75702,-73.98293,Private room,1,1.0,1 shared bath,1.0,89.0,27,4.81,4.81,4.56,4.81,5.0,4.78
+Siara S.,100,1.0,Flatbush,Brooklyn,40.65057,-73.96225,Entire home/apt,2,1.0,1 bath,1.0,90.0,34,4.85,4.91,4.88,4.76,4.5,4.94
+Claude,100,6.0,Bedford-Stuyvesant,Brooklyn,40.68229,-73.93172,Entire home/apt,2,1.0,1 bath,1.0,125.0,14,4.71,4.71,4.79,4.93,4.86,4.64
+Momoyo,80,299.0,Sunnyside,Queens,40.73975,-73.92631,Private room,2,1.0,1 shared bath,1.0,33.0,3,5.0,5.0,5.0,5.0,5.0,5.0
+Aracelis,94,11.0,Jamaica,Queens,40.69138,-73.79432,Private room,2,1.0,1 shared bath,1.0,50.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Mike,39,55.0,Midtown,Manhattan,40.75042,-73.97153,Entire home/apt,3,1.0,1 bath,0.0,120.0,9,4.11,4.44,3.89,4.67,4.78,3.89
+Erica,96,4.0,Clinton Hill,Brooklyn,40.687,-73.96149,Entire home/apt,8,1.0,1 bath,2.0,498.0,112,4.6,4.66,4.51,4.91,4.87,4.44
+Shayla,83,1.0,Arverne,Queens,40.59520852920578,-73.7926363784628,Private room,2,1.0,1 shared bath,1.0,45.0,4,5.0,4.5,5.0,5.0,4.25,4.75
+Marco,96,1.0,East Flatbush,Brooklyn,40.64723,-73.92723,Private room,2,1.0,1 private bath,1.0,88.0,93,4.91,4.96,4.91,4.95,4.56,4.91
+Michelle,99,15.0,Crown Heights,Brooklyn,40.67718,-73.94209,Private room,2,2.0,2 baths,1.0,70.0,56,4.71,4.79,4.66,4.96,4.45,4.75
+Jonathan,70,3.0,South Slope,Brooklyn,40.66686,-73.98871,Entire home/apt,3,1.0,1 bath,1.0,300.0,61,4.97,4.93,4.98,5.0,4.93,4.9
+Uri,100,2.0,Midwood,Brooklyn,40.61114,-73.95783,Entire home/apt,6,2.0,2 baths,3.0,200.0,1,4.0,5.0,4.0,5.0,4.0,5.0
+Mona,99,2.0,Chelsea,Manhattan,40.74606444060933,-74.00258699916371,Entire home/apt,8,2.0,2 baths,2.0,578.0,30,4.6,4.62,4.48,4.86,4.86,4.48
+Baris,100,1.0,Williamsburg,Brooklyn,40.71623,-73.94067,Entire home/apt,2,1.0,1 bath,1.0,201.0,104,4.86,4.91,4.88,4.95,4.85,4.72
+Chii,50,5.0,Harlem,Manhattan,40.82202,-73.95601,Private room,2,1.0,1 private bath,1.0,170.0,13,4.92,5.0,5.0,5.0,4.85,4.85
+Robert,75,1.0,Williamsburg,Brooklyn,40.71742,-73.95212,Entire home/apt,2,1.0,1 bath,1.0,130.0,3,4.67,4.67,4.33,5.0,5.0,4.67
+Frank,100,8.0,Williamsburg,Brooklyn,40.71706,-73.95035,Private room,2,2.0,2 shared baths,1.0,115.0,4,4.5,4.5,4.5,5.0,5.0,4.25
+Enoch,100,1.0,Mott Haven,Bronx,40.8125762,-73.9178974,Private room,2,1.0,1 shared bath,1.0,99.0,39,4.85,4.85,5.0,4.95,4.1,4.67
+Terry,91,4.0,Brownsville,Brooklyn,40.66209,-73.91951,Private room,2,1.0,1 shared bath,1.0,75.0,46,4.8,4.83,4.67,4.8,4.5,4.72
+Robert,100,1.0,Upper West Side,Manhattan,40.80098,-73.96911,Entire home/apt,2,1.0,1 bath,0.0,225.0,56,4.98,4.98,4.91,5.0,4.93,4.77
+Inna,36,1.0,Long Island City,Queens,40.74496,-73.94201,Entire home/apt,2,1.0,1 bath,1.0,249.0,12,5.0,4.92,5.0,5.0,4.92,4.92
+Tony,99,14.0,Flushing,Queens,40.75616,-73.83157,Entire home/apt,3,1.0,1 bath,1.0,159.0,150,4.84,4.91,4.88,5.0,4.77,4.81
+Carol,70,4.0,Brownsville,Brooklyn,40.6679,-73.9231,Entire home/apt,6,1.0,1 bath,3.0,399.0,44,4.66,4.89,4.93,4.93,4.14,4.61
+Lolita,89,11.0,Astoria,Queens,40.76795,-73.92312,Private room,1,1.0,1 shared bath,1.0,39.0,223,4.67,4.82,4.78,4.76,4.86,4.8
+Gordon,50,3.0,Kingsbridge,Bronx,40.88059,-73.9098,Entire home/apt,2,1.0,1 bath,1.0,98.0,6,5.0,5.0,5.0,5.0,4.83,5.0
+Sergey,100,4.0,Clifton,Staten Island,40.6237,-74.07517,Entire home/apt,8,1.0,1 bath,3.0,175.0,40,4.08,4.23,3.9,4.5,4.38,4.08
+Darcy And Ross,100,3.0,Fort Greene,Brooklyn,40.6903,-73.97589,Private room,2,1.0,1 private bath,1.0,195.0,283,4.74,4.83,4.81,4.96,4.96,4.66
+Leyssa,90,7.0,Belmont,Bronx,40.84913,-73.88622629999999,Private room,2,1.0,1 shared bath,3.0,60.0,9,4.89,5.0,5.0,5.0,4.67,5.0
+Clintisha,73,3.0,East Flatbush,Brooklyn,40.64775316502993,-73.927065774488,Entire home/apt,4,1.0,1 bath,1.0,189.0,1,5.0,5.0,5.0,5.0,5.0,4.0
+Abena,89,15.0,Crown Heights,Brooklyn,40.6759,-73.91455,Private room,1,1.0,1 shared bath,1.0,75.0,10,4.5,4.6,4.6,5.0,4.4,4.4
+Devora,100,17.0,Bedford-Stuyvesant,Brooklyn,40.67826,-73.94493,Entire home/apt,7,1.0,1 bath,2.0,281.0,5,4.8,4.8,4.8,4.8,5.0,4.8
+Nickesha,17,9.0,St. Albans,Queens,40.68657,-73.76906,Private room,2,1.0,1 private bath,1.0,68.0,35,4.69,4.94,4.77,5.0,4.57,4.62
+Carlos,93,5.0,Elmhurst,Queens,40.74363229423362,-73.88170284631398,Private room,1,1.0,1 shared bath,1.0,68.0,136,4.98,4.99,4.99,4.99,4.96,4.96
+Francesco,92,1.0,Upper East Side,Manhattan,40.7742101,-73.95082169999999,Entire home/apt,2,1.0,1 bath,1.0,206.0,97,4.56,4.71,4.41,4.91,4.86,4.41
+The Local Stay,81,78.0,Upper East Side,Manhattan,40.7736,-73.95339,Entire home/apt,3,1.0,1 bath,0.0,92.0,15,4.6,4.6,4.33,4.93,5.0,4.47
+Renae,83,3.0,Bedford-Stuyvesant,Brooklyn,40.68123,-73.93311,Private room,2,1.0,1 shared bath,1.0,108.0,16,5.0,4.94,5.0,5.0,4.81,4.94
+Krystal,67,1.0,Williamsburg,Brooklyn,40.70476,-73.94245,Entire home/apt,4,1.0,1 bath,1.0,80.0,27,4.81,4.96,4.56,4.7,4.74,4.74
+SoHoBlu,99,23.0,Tribeca,Manhattan,40.71882,-74.00301,Entire home/apt,3,1.0,1 bath,1.0,168.0,21,4.43,4.57,4.62,4.62,4.57,4.33
+Valentin,99,4.0,Hell's Kitchen,Manhattan,40.7616,-73.99947,Entire home/apt,4,2.0,2 baths,2.0,950.0,8,4.88,5.0,5.0,5.0,5.0,5.0
+Alexandra,40,1.0,Astoria,Queens,40.75546,-73.91757,Private room,2,1.0,1 shared bath,1.0,70.0,21,4.76,4.81,4.76,5.0,4.95,4.76
+Dmitry,57,3.0,Prospect-Lefferts Gardens,Brooklyn,40.66132,-73.96272,Entire home/apt,2,1.0,1 bath,1.0,75.0,12,4.58,4.58,4.08,4.67,4.75,4.42
+Paradise Suites,43,41.0,Upper East Side,Manhattan,40.75949,-73.95936,Entire home/apt,4,1.0,1 bath,2.0,151.0,7,5.0,4.86,4.71,4.86,5.0,4.71
+Momoyo,80,299.0,Inwood,Manhattan,40.86457,-73.92214,Private room,1,2.0,2 shared baths,1.0,33.0,1,5.0,5.0,5.0,5.0,5.0,4.0
+Ahmet,99,8.0,Midtown,Manhattan,40.75407,-73.97987,Entire home/apt,4,1.0,1 bath,2.0,225.0,2,4.0,4.5,4.5,2.0,5.0,4.0
+Susan,94,2.0,Williamsburg,Brooklyn,40.71964,-73.95529,Entire home/apt,2,1.0,1 bath,1.0,249.0,146,4.97,4.99,4.96,4.99,4.99,4.88
+Aliza,97,1.0,Midwood,Brooklyn,40.62447,-73.9614,Entire home/apt,6,1.0,1 bath,2.0,170.0,157,4.9,4.87,4.94,4.96,4.82,4.89
+Tanika,100,1.0,Harlem,Manhattan,40.82838,-73.94435,Entire home/apt,4,1.0,1 bath,1.0,95.0,48,4.65,4.79,4.52,5.0,4.83,4.63
+Page,99,1.0,Harlem,Manhattan,40.82006657696089,-73.94615572701426,Entire home/apt,12,2.0,2 baths,4.0,337.0,152,4.8,4.78,4.72,4.95,4.8,4.68
+Momoyo,80,299.0,Woodside,Queens,40.74435,-73.89315,Private room,2,1.0,1 shared bath,1.0,38.0,1,3.0,4.0,4.0,5.0,5.0,3.0
+Glicerda,74,9.0,Morris Park,Bronx,40.85143773315224,-73.86136762797832,Entire home/apt,2,1.0,1 bath,1.0,51.0,3,4.67,4.67,5.0,4.67,5.0,5.0
+Diana,0,2.0,Astoria,Queens,40.75944,-73.90805,Private room,2,1.0,1 shared bath,1.0,60.0,119,4.92,4.96,4.86,4.99,4.87,4.86
+Ivo,0,1.0,Greenpoint,Brooklyn,40.71904,-73.95294,Entire home/apt,4,1.0,1 bath,2.0,300.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Christina,58,4.0,Ditmars Steinway,Queens,40.77559,-73.91985,Entire home/apt,2,1.5,1.5 baths,1.0,350.0,12,5.0,4.83,4.92,4.92,4.92,4.67
+Jeniffer,90,77.0,Lower East Side,Manhattan,40.71826,-73.99416,Entire home/apt,2,1.0,1 bath,0.0,125.0,15,4.33,4.47,4.33,4.13,4.6,4.4
+Suleman,69,6.0,Sunnyside,Queens,40.74292,-73.92048,Private room,1,1.0,1 shared bath,2.0,60.0,14,5.0,5.0,5.0,5.0,4.86,5.0
+Coral,100,1.0,Crown Heights,Brooklyn,40.67319519999999,-73.9266822,Private room,1,1.0,1 shared bath,3.0,65.0,8,4.5,4.75,4.5,4.63,4.63,4.88
+Urban Furnished,69,357.0,Lower East Side,Manhattan,40.7193634,-73.985112,Entire home/apt,3,1.0,1 bath,1.0,116.0,1,4.0,4.0,3.0,4.0,5.0,4.0
+Jeniffer,38,161.0,Little Italy,Manhattan,40.71899,-73.99773,Entire home/apt,2,1.0,1 bath,0.0,100.0,11,4.64,4.73,4.91,4.45,5.0,4.27
+Nana,99,8.0,East Harlem,Manhattan,40.80815443661565,-73.93733882361224,Entire home/apt,6,1.0,1 bath,3.0,361.0,11,4.45,4.64,4.91,4.55,4.36,4.73
+Sammi,100,1.0,Crown Heights,Brooklyn,40.67368,-73.9547,Private room,2,1.0,1 private bath,1.0,219.0,48,4.98,4.98,5.0,4.9,4.98,4.96
+Starr,99,3.0,Flatbush,Brooklyn,40.64034653192358,-73.95943062378372,Entire home/apt,5,1.5,1.5 baths,2.0,150.0,22,4.82,4.82,4.64,4.91,4.73,4.86
+Rop,98,3.0,Harlem,Manhattan,40.81332324652202,-73.94238006776251,Private room,2,1.0,1 bath,1.0,85.0,12,4.33,4.36,4.55,4.55,4.45,4.18
+Esteban,98,3.0,Jackson Heights,Queens,40.75572,-73.86453,Private room,2,1.0,1 shared bath,1.0,100.0,158,4.89,4.91,4.93,4.97,4.63,4.91
+Theresa,100,2.0,Greenpoint,Brooklyn,40.72534,-73.95451,Entire home/apt,3,1.0,1 bath,1.0,325.0,1,5.0,5.0,3.0,5.0,5.0,5.0
+Sharon,100,3.0,Sunset Park,Brooklyn,40.6445,-74.00093,Private room,2,1.0,1 shared bath,1.0,70.0,66,4.79,4.79,4.64,4.83,4.39,4.68
+Luis,98,6.0,East Harlem,Manhattan,40.79919153595661,-73.94434585466679,Private room,1,1.0,1 shared bath,1.0,100.0,28,4.82,4.82,4.86,4.96,4.36,4.79
+Judie And Steven,94,7.0,Harlem,Manhattan,40.81908,-73.9456,Private room,1,1.5,1.5 baths,1.0,110.0,121,4.96,4.96,4.98,4.95,4.88,4.93
+Iosif,97,2.0,Glendale,Queens,40.69291,-73.89714,Entire home/apt,6,1.0,1 bath,3.0,185.0,77,4.57,4.73,4.61,4.78,4.42,4.51
+Fernando,100,15.0,Midtown,Manhattan,40.74657,-73.98867,Entire home/apt,2,1.0,1 bath,1.0,146.0,7,4.29,4.57,4.43,5.0,5.0,4.14
+Skylar,81,3.0,Greenpoint,Brooklyn,40.72496892086341,-73.94907439628285,Entire home/apt,1,1.5,1.5 baths,1.0,140.0,14,4.71,4.86,4.29,5.0,5.0,4.79
+Michelle,92,3.0,Harlem,Manhattan,40.80639,-73.94951,Private room,1,1.5,1.5 shared baths,1.0,59.0,5,5.0,5.0,4.8,5.0,5.0,4.8
+NU Hotel,100,7.0,Downtown Brooklyn,Brooklyn,40.69982,-73.98697,Private room,2,1.0,1 private bath,1.0,290.0,169,4.45,4.53,4.74,4.52,4.73,4.25
+Anyplace,68,119.0,Financial District,Manhattan,40.70889,-74.00823,Entire home/apt,2,1.0,1 bath,1.0,173.0,4,5.0,5.0,5.0,5.0,5.0,5.0
+Rossana,0,3.0,Astoria,Queens,40.75833,-73.91525,Private room,3,1.0,1 shared bath,1.0,69.0,19,4.89,4.79,4.95,4.83,4.78,4.72
+Casey,97,13.0,Bedford-Stuyvesant,Brooklyn,40.6803,-73.94927,Entire home/apt,3,1.0,1 bath,1.0,209.0,9,4.44,4.56,4.22,4.78,3.78,4.22
+Pona,100,1.0,East Flatbush,Brooklyn,40.64171840560989,-73.94256364165297,Entire home/apt,2,1.0,1 bath,1.0,79.0,25,4.36,4.48,4.24,4.56,4.52,4.44
+Juan,100,4.0,Greenpoint,Brooklyn,40.73409,-73.95791,Entire home/apt,2,1.0,1 bath,1.0,155.0,6,5.0,4.67,5.0,5.0,5.0,4.17
+Jeniffer,38,161.0,Hell's Kitchen,Manhattan,40.7601,-73.99311,Entire home/apt,6,3.0,3 baths,4.0,200.0,3,4.67,4.67,4.0,4.33,5.0,4.33
+Artem,86,3.0,Williamsburg,Brooklyn,40.71397,-73.94185,Entire home/apt,4,1.0,1 bath,2.0,150.0,171,4.5,4.63,4.52,4.87,4.83,4.5
+Mark,34,10.0,Middle Village,Queens,40.71734,-73.87805,Entire home/apt,12,1.0,1 bath,3.0,328.0,6,4.33,4.17,4.33,4.67,4.83,4.33
+Selina Chelsea,99,5.0,Chelsea,Manhattan,40.75144,-74.00449,Private room,2,1.0,1 private bath,1.0,530.0,10,3.7,3.2,4.5,3.8,4.6,3.7
+Nathan,43,58.0,Upper East Side,Manhattan,40.76117,-73.96505,Entire home/apt,4,1.0,1 bath,0.0,119.0,6,5.0,5.0,5.0,5.0,5.0,4.67
+Beatrice,95,6.0,Harlem,Manhattan,40.80679,-73.94997,Entire home/apt,2,1.0,1 bath,1.0,119.0,60,4.83,4.83,4.53,4.87,4.82,4.78
+Jessica,96,6.0,Bedford-Stuyvesant,Brooklyn,40.68751247191264,-73.93183906081754,Private room,2,1.0,1 private bath,1.0,200.0,6,5.0,5.0,5.0,5.0,4.83,5.0
+Rise,100,2.0,Harlem,Manhattan,40.82242,-73.93831,Private room,1,1.5,1.5 shared baths,3.0,82.0,20,5.0,4.95,4.95,5.0,4.9,4.9
+Jfk,92,8.0,Springfield Gardens,Queens,40.65971,-73.7715,Shared room,2,1.0,1 shared bath,1.0,35.0,84,4.5,4.73,4.64,4.83,4.5,4.46
+Maristela,100,2.0,Mott Haven,Bronx,40.81086,-73.92489,Entire home/apt,15,3.0,3 baths,3.0,321.0,38,4.92,4.95,5.0,4.89,4.63,4.82
+Jason,11,1.0,Forest Hills,Queens,40.72256,-73.84276,Private room,2,1.0,1 private bath,1.0,200.0,52,4.87,4.94,4.86,4.92,4.9,4.88
+Mauricio Mateo,61,21.0,Long Island City,Queens,40.74703,-73.94695,Private room,3,1.0,1 shared bath,1.0,50.0,10,4.5,4.3,4.4,4.5,4.7,4.4
+Matthew,97,13.0,Prospect Heights,Brooklyn,40.68116,-73.97014,Entire home/apt,8,1.5,1.5 baths,3.0,562.0,6,5.0,4.83,5.0,5.0,5.0,4.67
+Jonathan,91,2.0,Bushwick,Brooklyn,40.70746,-73.91928,Private room,1,1.0,1 shared bath,1.0,75.0,211,4.88,4.94,4.87,4.96,4.93,4.85
+Jude,100,12.0,Harlem,Manhattan,40.8174733,-73.94419090000001,Entire home/apt,14,2.0,2 baths,6.0,803.0,6,5.0,5.0,5.0,5.0,4.67,4.83
+Mohammad,100,1.0,Canarsie,Brooklyn,40.64032283528141,-73.90373570793457,Entire home/apt,6,1.0,1 bath,2.0,155.0,16,4.44,4.44,4.44,4.56,4.31,4.44
+Victoria And Juliana,33,1.0,Prospect Heights,Brooklyn,40.67283,-73.9661,Entire home/apt,2,1.0,1 bath,1.0,105.0,11,4.82,5.0,4.82,5.0,4.82,4.73
+Ola,89,18.0,Arverne,Queens,40.59077,-73.79047,Private room,3,1.0,1 shared bath,1.0,30.0,17,4.12,4.35,4.12,4.12,4.24,4.35
+Linh,100,3.0,Flushing,Queens,40.75036,-73.80607,Entire home/apt,2,1.0,1 bath,1.0,75.0,9,4.78,4.67,4.89,4.89,4.67,4.67
+Chardean,0,1.0,Park Slope,Brooklyn,40.67428,-73.98194,Entire home/apt,6,3.0,3 baths,4.0,643.0,1,5.0,5.0,5.0,5.0,5.0,4.0
+Karen,98,10.0,Lower East Side,Manhattan,40.72107,-73.99284,Entire home/apt,2,1.0,1 bath,1.0,100.0,10,4.7,4.6,4.7,5.0,4.9,4.5
+Bp Stays.,100,59.0,Harlem,Manhattan,40.80304,-73.957,Private room,2,2.0,2 shared baths,1.0,64.0,48,4.76,4.8,4.88,4.94,4.65,4.69
+Jose,100,2.0,Ozone Park,Queens,40.68302,-73.86135,Private room,2,1.0,1 shared bath,1.0,82.0,68,4.94,4.96,4.97,4.99,4.79,4.88
+Jocelyn,98,2.0,SoHo,Manhattan,40.72648,-74.00312,Entire home/apt,1,1.0,1 bath,0.0,180.0,40,4.8,4.85,4.6,4.98,5.0,4.75
+Joseph,85,4.0,Hell's Kitchen,Manhattan,40.761138917634895,-73.99077642208776,Private room,2,1.0,1 shared bath,1.0,150.0,9,4.89,4.78,4.67,4.78,4.89,4.56
+Rory,100,2.0,Upper East Side,Manhattan,40.78009,-73.94793,Entire home/apt,6,1.0,1 bath,2.0,299.0,20,4.05,4.25,3.8,4.65,4.8,3.85
+Jovan,100,2.0,Greenpoint,Brooklyn,40.7333725,-73.9573111,Entire home/apt,4,1.0,1 bath,2.0,400.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+James,82,1.0,Ditmars Steinway,Queens,40.769721,-73.8890984,Private room,2,1.0,1 private bath,1.0,102.0,19,4.95,5.0,4.95,4.95,4.89,4.89
+Evgeny,100,15.0,Gerritsen Beach,Brooklyn,40.59937,-73.93294,Private room,1,1.0,1 shared bath,1.0,45.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Wendell,92,4.0,East New York,Brooklyn,40.67542,-73.88424,Private room,1,1.0,1 shared bath,1.0,70.0,52,4.73,4.75,4.58,4.87,4.65,4.62
+Mich,100,15.0,East Village,Manhattan,40.72625,-73.97977,Entire home/apt,6,1.0,1 bath,1.0,130.0,17,4.82,4.82,4.53,4.94,4.88,4.82
+Brant,80,10.0,Jamaica,Queens,40.66885,-73.77207,Entire home/apt,2,1.0,1 bath,1.0,123.0,46,4.98,5.0,4.96,4.98,4.89,4.93
+Win,99,4.0,East Elmhurst,Queens,40.75809,-73.86806,Private room,1,1.0,1 shared bath,1.0,55.0,406,4.89,4.93,4.91,4.95,4.65,4.88
+Daniela & James,73,31.0,Bushwick,Brooklyn,40.69975,-73.93919,Private room,2,2.0,2 shared baths,1.0,59.0,8,4.13,4.38,3.88,4.25,4.13,4.0
+Urban Furnished,69,357.0,East Village,Manhattan,40.7251091003418,-73.98831176757812,Entire home/apt,2,1.0,1 bath,0.0,134.0,3,5.0,5.0,5.0,5.0,5.0,5.0
+Blueground,97,5313.0,Kips Bay,Manhattan,40.74021949999999,-73.9795651,Entire home/apt,2,1.0,1 bath,1.0,222.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Adam,100,1.0,Bedford-Stuyvesant,Brooklyn,40.68764783938008,-73.95362011621947,Private room,2,1.0,1 private bath,1.0,118.0,226,4.82,4.92,4.89,4.87,4.77,4.81
+Marcus,71,6.0,Sunset Park,Brooklyn,40.66262,-73.99017,Entire home/apt,1,1.0,1 bath,1.0,75.0,4,4.75,5.0,4.75,4.75,4.5,4.75
+Ismael,99,7.0,Washington Heights,Manhattan,40.83629,-73.94419,Private room,1,1.0,1 shared bath,1.0,83.0,47,4.85,4.89,4.89,4.91,4.68,4.77
+Blueground,97,5313.0,Tribeca,Manhattan,40.715793,-74.005871,Entire home/apt,2,1.0,1 bath,1.0,278.0,1,5.0,5.0,5.0,5.0,5.0,4.0
+Gary,100,1.0,East Elmhurst,Queens,40.75966,-73.87816,Private room,2,1.0,1 shared bath,2.0,125.0,19,4.89,4.79,4.89,5.0,4.79,4.89
+The Snow Effect,100,1.0,Hollis,Queens,40.70955,-73.76267,Shared room,2,1.0,1 shared bath,1.0,159.0,56,4.82,4.89,4.91,4.95,4.73,4.77
+Giampiero,100,7.0,Upper East Side,Manhattan,40.76577,-73.96562,Entire home/apt,3,1.0,1 bath,1.0,425.0,32,4.94,4.84,4.94,5.0,4.97,4.84
+Daniel,100,2.0,Upper East Side,Manhattan,40.77395,-73.95153,Entire home/apt,2,1.0,1 bath,1.0,100.0,92,4.38,4.61,4.49,4.8,4.82,4.57
+Naheima,0,4.0,Bedford-Stuyvesant,Brooklyn,40.68635,-73.94935,Entire home/apt,8,2.5,2.5 baths,4.0,895.0,6,4.67,4.83,4.0,5.0,4.33,4.67
+Liat,100,1.0,Cobble Hill,Brooklyn,40.68644,-73.99917,Entire home/apt,6,1.0,1 bath,2.0,300.0,160,4.93,4.95,4.88,4.99,4.99,4.85
+Kristina And Sasha,100,15.0,Williamsburg,Brooklyn,40.70117,-73.94484,Entire home/apt,6,2.0,2 baths,3.0,195.0,106,4.77,4.8,4.67,4.93,4.49,4.7
+Stephanie,25,4.0,Upper East Side,Manhattan,40.77956,-73.94754,Entire home/apt,2,1.0,1 bath,1.0,300.0,16,4.88,4.81,4.75,4.75,4.94,4.75
+Elke,0,1.0,Harlem,Manhattan,40.8328,-73.94895,Private room,1,1.0,1 bath,1.0,70.0,29,4.86,4.93,4.72,4.97,4.83,4.9
+Sol,85,14.0,Upper East Side,Manhattan,40.7813,-73.9466,Entire home/apt,4,1.0,1 bath,2.0,103.0,10,4.8,4.4,4.4,5.0,5.0,4.8
+Rove,88,94.0,SoHo,Manhattan,40.72281376509608,-74.00471126382388,Entire home/apt,7,3.5,3.5 baths,4.0,672.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Jeffrey,93,1.0,Upper West Side,Manhattan,40.79541,-73.97562,Private room,2,1.0,1 shared bath,1.0,146.0,185,4.98,4.98,4.99,4.98,4.97,4.94
+David,0,1.0,NoHo,Manhattan,40.72831,-73.99344,Entire home/apt,2,1.0,1 bath,0.0,269.0,1,4.0,5.0,5.0,4.0,5.0,5.0
+Daniela & James,73,31.0,Bedford-Stuyvesant,Brooklyn,40.69967,-73.94037,Private room,1,1.0,1 shared bath,1.0,47.0,4,4.25,5.0,3.5,4.0,4.0,4.0
+Andrew,100,6.0,Harlem,Manhattan,40.80535,-73.94793,Private room,2,1.0,1 shared bath,1.0,89.0,247,4.98,4.98,4.97,5.0,4.83,4.94
+William,31,3.0,Bushwick,Brooklyn,40.6878,-73.90767,Private room,2,2.0,2 baths,1.0,75.0,7,4.71,4.57,4.71,5.0,4.57,4.57
+Song,89,1.0,Queens Village,Queens,40.72205,-73.73571,Entire home/apt,2,1.0,1 bath,1.0,88.0,287,4.79,4.94,4.87,4.98,4.83,4.8
+Rian,98,5.0,East Elmhurst,Queens,40.76599,-73.87592,Private room,2,2.0,2 shared baths,1.0,58.0,119,4.61,4.69,4.55,4.82,4.66,4.63
+Dina,24,1.0,Theater District,Manhattan,40.7615,-73.98636,Entire home/apt,3,1.0,1 bath,1.0,299.0,39,4.67,4.56,4.72,4.69,4.87,4.49
+Jhon Andres,96,4.0,Jamaica,Queens,40.67609783535909,-73.77863086760044,Private room,2,1.5,1.5 baths,1.0,112.0,195,4.88,4.89,4.82,4.96,4.77,4.81
+Torell,100,9.0,Bedford-Stuyvesant,Brooklyn,40.68542,-73.95762,Shared room,1,1.5,1.5 shared baths,1.0,40.0,29,4.9,4.86,4.34,4.9,4.93,4.83
+Millennium Downtown,99,8.0,Financial District,Manhattan,40.71042,-74.00956,Entire home/apt,2,1.0,1 bath,1.0,243.0,4,5.0,4.5,5.0,5.0,5.0,5.0
+Darsha,95,9.0,Flatlands,Brooklyn,40.62270033609854,-73.93155819749994,Private room,1,1.0,1 shared bath,1.0,33.0,4,4.5,4.5,4.5,5.0,5.0,4.5
+Ana,98,3.0,Ridgewood,Queens,40.70927,-73.90512,Private room,2,1.0,1 private bath,2.0,250.0,56,5.0,4.98,4.98,4.95,4.81,4.89
+Daniel,86,1.0,Port Morris,Bronx,40.80858,-73.92983,Private room,2,1.0,1 shared bath,1.0,80.0,120,4.76,4.87,4.35,4.81,4.63,4.77
+Oyo,99,6.0,Theater District,Manhattan,40.7591257,-73.98376669999999,Private room,2,1.0,1 private bath,1.0,214.0,67,4.03,4.07,4.28,4.42,4.69,3.85
+James&Laureta,100,7.0,Bedford-Stuyvesant,Brooklyn,40.68168,-73.9417,Entire home/apt,2,1.0,1 bath,0.0,137.0,87,4.82,4.87,4.97,4.92,4.77,4.57
+Irina,100,1.0,Sunset Park,Brooklyn,40.63915,-74.01859,Entire home/apt,3,1.0,1 bath,1.0,93.0,14,4.36,4.5,4.14,4.93,4.21,4.29
+Casey,89,4.0,East Village,Manhattan,40.72281,-73.98501,Private room,1,1.0,1 shared bath,1.0,99.0,188,4.72,4.8,4.45,4.89,4.9,4.64
+Nesva Hotel,100,15.0,Long Island City,Queens,40.75422,-73.93532,Private room,4,1.0,1 private bath,1.0,199.0,58,4.28,4.36,4.28,4.53,4.4,4.28
+Lord Daniel,98,11.0,Bedford-Stuyvesant,Brooklyn,40.68768,-73.95262,Private room,1,1.0,1 shared bath,1.0,35.0,111,4.73,4.79,4.61,4.89,4.71,4.76
+Miad,92,1.0,Rosedale,Queens,40.6568707,-73.7498216,Private room,2,1.0,1 shared bath,1.0,144.0,31,5.0,5.0,4.97,5.0,4.9,5.0
+Beekman,98,10.0,Midtown,Manhattan,40.7534,-73.96617,Entire home/apt,5,1.0,1 bath,2.0,519.0,18,4.56,4.72,4.67,4.56,4.89,4.56
+Audrey,100,1.0,Tremont,Bronx,40.84592,-73.89141,Private room,2,1.0,1 shared bath,2.0,58.0,70,4.44,4.59,4.37,4.6,4.23,4.4
+Dennis,100,4.0,Harlem,Manhattan,40.80553,-73.94815,Entire home/apt,1,1.0,1 bath,1.0,110.0,13,4.92,5.0,4.54,5.0,4.77,4.85
+Daria,79,1.0,Brighton Beach,Brooklyn,40.57577,-73.96041,Private room,2,1.0,1 shared bath,1.0,50.0,35,4.74,4.69,4.6,4.86,4.97,4.66
+Agatha,87,2.0,Two Bridges,Manhattan,40.71154,-73.99333,Entire home/apt,2,1.0,1 bath,1.0,100.0,20,4.8,4.95,5.0,4.95,4.6,4.75
+Jie,71,6.0,Forest Hills,Queens,40.71184,-73.84903,Private room,1,1.0,1 shared bath,1.0,49.0,35,4.46,4.5,3.91,4.79,4.79,4.47
+Tain,67,3.0,Sunnyside,Queens,40.7435,-73.915,Entire home/apt,4,1.0,1 bath,1.0,116.0,24,4.58,4.83,4.39,4.96,4.96,4.52
+Ben,67,4.0,Williamsburg,Brooklyn,40.70426,-73.94074,Private room,2,1.0,1 shared bath,1.0,145.0,42,4.76,4.83,4.76,4.76,4.9,4.83
+Mariama,83,1.0,Roosevelt Island,Manhattan,40.76355,-73.94848,Private room,2,1.0,1 private bath,1.0,165.0,92,4.96,4.96,4.84,4.98,4.93,4.88
+Giuseppe,98,1.0,Ozone Park,Queens,40.67227235266577,-73.84795230422972,Entire home/apt,3,1.0,1 bath,1.0,80.0,63,4.95,4.94,4.84,4.97,4.73,4.89
+Chris,95,1.0,Prospect Heights,Brooklyn,40.67786687682116,-73.97272303285371,Private room,2,1.0,1 private bath,1.0,165.0,201,4.9,4.81,4.8,4.97,4.99,4.81
+Urban Furnished,69,357.0,Upper East Side,Manhattan,40.77619934082031,-73.95426940917969,Entire home/apt,3,1.0,1 bath,0.0,118.0,4,4.75,4.25,5.0,4.75,5.0,4.0
+Sam,77,8.0,SoHo,Manhattan,40.7217,-73.99957,Entire home/apt,2,1.0,1 bath,1.0,130.0,8,4.75,4.75,4.63,5.0,4.63,4.63
+Dionne,100,3.0,Cypress Hills,Brooklyn,40.68672,-73.87607,Private room,2,1.0,1 shared bath,1.0,100.0,42,4.53,4.53,4.65,4.49,4.51,4.35
+Zaza,100,2.0,East Harlem,Manhattan,40.79523,-73.93094,Private room,3,1.0,1 shared bath,1.0,90.0,81,4.48,4.62,4.47,4.62,4.37,4.36
+Yael,82,2.0,Prospect-Lefferts Gardens,Brooklyn,40.65814,-73.96099,Entire home/apt,2,1.0,1 bath,1.0,170.0,6,5.0,5.0,5.0,5.0,5.0,4.83
+Sara Fay,100,1.0,Upper East Side,Manhattan,40.76192157361409,-73.96016044388999,Entire home/apt,3,1.0,1 bath,2.0,150.0,2,4.5,4.5,4.5,4.5,4.5,4.0
+Gabriel,83,1.0,Bushwick,Brooklyn,40.6881103515625,-73.9118423461914,Private room,2,1.0,1 private bath,1.0,196.0,92,4.93,4.95,4.89,4.97,4.68,4.91
+Timothy,98,5.0,St. George,Staten Island,40.6425504,-74.08374429999999,Entire home/apt,4,1.0,1 bath,2.0,95.0,6,4.33,4.17,4.17,4.33,4.67,5.0
+Blue,80,1.0,Lower East Side,Manhattan,40.72113,-73.98442,Entire home/apt,2,1.0,1 bath,1.0,105.0,116,4.7,4.67,4.14,4.9,4.81,4.47
+Sean,95,1.0,East Flatbush,Brooklyn,40.64904,-73.93517,Private room,2,1.0,1 shared bath,1.0,85.0,128,4.96,4.96,4.95,4.97,4.75,4.84
+Raanan,40,8.0,Gramercy,Manhattan,40.73301,-73.98407,Entire home/apt,3,1.0,1 bath,1.0,150.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Shehrina,100,1.0,Long Island City,Queens,40.74459,-73.94736,Entire home/apt,2,1.0,1 bath,1.0,185.0,5,5.0,5.0,5.0,5.0,5.0,5.0
+Masud,89,13.0,Cypress Hills,Brooklyn,40.68824,-73.87588,Private room,1,2.0,2 shared baths,1.0,32.0,7,4.86,4.86,4.43,5.0,4.86,4.71
+Elite Services By G&G,98,6.0,East Harlem,Manhattan,40.79461037276417,-73.9437934470267,Entire home/apt,6,1.0,1 bath,3.0,267.0,8,4.75,4.38,4.75,4.88,4.38,4.5
+Eean,87,2.0,Norwood,Bronx,40.87251,-73.87727,Private room,2,1.0,1 bath,1.0,50.0,54,4.8,4.89,4.74,4.87,4.76,4.81
+Negra,91,5.0,Astoria,Queens,40.75626501680838,-73.91593615929375,Private room,6,1.0,1 private bath,3.0,307.0,187,4.98,4.96,4.97,4.99,4.94,4.9
+Cristina,100,4.0,Upper East Side,Manhattan,40.77,-73.95842,Private room,1,1.0,1 shared bath,1.0,120.0,104,4.66,4.74,4.57,4.86,4.86,4.7
+Aamer,96,26.0,Midtown,Manhattan,40.74357,-73.98274,Private room,4,1.0,1 private bath,1.0,125.0,2,5.0,4.5,5.0,5.0,5.0,5.0
+Helen,74,10.0,Williamsburg,Brooklyn,40.70611,-73.93279,Private room,2,1.5,1.5 shared baths,1.0,61.0,34,4.59,4.62,4.18,4.97,4.74,4.53
+Agueda Anaid,100,1.0,Woodside,Queens,40.74722,-73.90708,Entire home/apt,2,1.0,1 bath,0.0,103.0,4,5.0,5.0,5.0,5.0,5.0,5.0
+An Artful Hotel,90,18.0,Hell's Kitchen,Manhattan,40.75436,-73.99391,Private room,2,1.0,1 private bath,1.0,302.0,4,4.0,4.0,4.75,4.5,3.5,3.25
+Hila,92,15.0,Kips Bay,Manhattan,40.74301,-73.97372,Entire home/apt,4,1.0,1 bath,1.0,150.0,2,5.0,5.0,5.0,5.0,5.0,4.5
+Best Inns USA,71,39.0,Gramercy,Manhattan,40.7344,-73.98534,Entire home/apt,2,1.0,1 bath,0.0,92.0,13,4.54,4.62,4.54,4.31,4.77,4.38
+Dorit,100,44.0,Bay Ridge,Brooklyn,40.625236273987184,-74.02637196653265,Entire home/apt,2,1.0,1 bath,1.0,150.0,9,4.78,4.67,4.78,4.67,4.44,4.67
+Thomas,75,1.0,Rockaway Beach,Queens,40.586635024644494,-73.8137535835943,Entire home/apt,6,2.0,2 baths,3.0,159.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Ayman,100,1.0,West Brighton,Staten Island,40.62872,-74.12154,Entire home/apt,4,1.0,1 bath,0.0,86.0,230,4.89,4.92,4.9,4.96,4.8,4.87
+P,85,23.0,East Village,Manhattan,40.72707,-73.98432,Entire home/apt,2,1.0,1 bath,1.0,140.0,3,3.67,4.0,3.33,4.33,5.0,3.0
+Carol-Anne,0,2.0,Harlem,Manhattan,40.80018,-73.95245,Private room,2,1.0,1 private bath,1.0,232.0,2,5.0,5.0,5.0,5.0,4.5,4.5
+Chiu Yi,87,2.0,Chinatown,Manhattan,40.717279624414026,-73.99114447906561,Private room,2,1.0,1 bath,1.0,81.0,11,4.45,4.11,4.22,4.44,4.0,3.78
+Charlie,95,4.0,Bayside,Queens,40.77228,-73.77766,Private room,1,1.0,1 private bath,1.0,89.0,12,5.0,5.0,4.83,5.0,5.0,4.83
+Anna,100,1.0,East Village,Manhattan,40.72889,-73.98642,Entire home/apt,2,1.0,1 bath,1.0,190.0,3,5.0,5.0,5.0,5.0,5.0,4.67
+Roberto,77,9.0,East New York,Brooklyn,40.67002,-73.87826,Private room,2,1.0,1 shared bath,1.0,57.0,39,4.95,4.92,4.95,4.97,4.26,4.82
+Nikki,72,3.0,Bedford-Stuyvesant,Brooklyn,40.68756096720372,-73.95347065889726,Private room,2,1.0,1 private bath,1.0,191.0,11,4.45,4.36,4.45,4.82,4.73,4.27
+Kat,0,2.0,Forest Hills,Queens,40.71283,-73.85309,Private room,1,2.0,2 shared baths,2.0,35.0,6,5.0,4.83,4.67,4.83,4.67,4.5
+Vk,100,39.0,Hell's Kitchen,Manhattan,40.75303,-73.9941,Private room,2,1.0,1 private bath,0.0,329.0,9,4.11,3.67,4.67,3.78,4.56,3.67
+Stephon,93,4.0,East Flatbush,Brooklyn,40.64863,-73.92921,Private room,2,1.0,1 private bath,1.0,45.0,6,4.5,4.5,4.5,4.83,4.17,4.33
+Mohammed,100,15.0,Brownsville,Brooklyn,40.65574,-73.90911,Private room,2,1.5,1.5 shared baths,1.0,39.0,3,5.0,5.0,5.0,5.0,5.0,5.0
+Alex,100,3.0,East Village,Manhattan,40.7261,-73.97964,Entire home/apt,8,3.5,3.5 baths,4.0,1600.0,118,4.96,4.97,4.81,4.99,4.89,4.81
+Blake,94,3.0,Clinton Hill,Brooklyn,40.68641,-73.96187,Entire home/apt,4,2.0,2 baths,2.0,269.0,55,4.98,4.98,4.96,4.96,4.98,4.84
+Jixian,50,1.0,Flushing,Queens,40.75973,-73.81243,Private room,2,1.0,1 shared bath,1.0,48.0,22,4.86,4.86,4.86,5.0,4.64,4.64
+Jonathan,82,2.0,Fort Hamilton,Brooklyn,40.61832,-74.03563,Entire home/apt,5,1.0,1 bath,2.0,185.0,6,5.0,5.0,4.83,5.0,4.67,5.0
+Urban Furnished,69,357.0,Kips Bay,Manhattan,40.73984909057617,-73.98014831542969,Entire home/apt,4,1.0,1 bath,1.0,144.0,7,4.71,4.57,4.0,4.71,5.0,4.0
+Peter,97,4.0,Bay Ridge,Brooklyn,40.63587,-74.02308,Entire home/apt,8,2.0,2 baths,3.0,126.0,72,4.82,4.93,4.93,4.99,4.75,4.81
+Malika,94,8.0,Astoria,Queens,40.76107866447721,-73.9224673435092,Entire home/apt,2,1.0,1 bath,1.0,75.0,7,4.86,4.43,4.57,4.86,5.0,4.57
+Maria,99,2.0,Maspeth,Queens,40.71916239999999,-73.90279079999999,Private room,2,0.5,Shared half-bath,1.0,45.0,30,4.87,4.93,5.0,4.93,4.63,4.77
+Dylan,98,5.0,Williamsburg,Brooklyn,40.71147,-73.94387,Entire home/apt,6,1.5,1.5 baths,3.0,214.0,143,4.83,4.87,4.71,4.97,4.98,4.73
+Frank,50,3.0,Crown Heights,Brooklyn,40.67606,-73.93228,Entire home/apt,6,1.0,1 bath,2.0,250.0,21,4.95,5.0,4.95,5.0,4.52,4.86
+Shully'S,95,5.0,Wakefield,Bronx,40.89858,-73.85896,Entire home/apt,3,1.0,1 bath,1.0,103.0,259,4.78,4.84,4.87,4.86,4.75,4.73
+Eva,98,1.0,East Flatbush,Brooklyn,40.66106,-73.92277,Entire home/apt,6,1.0,1 bath,2.0,119.0,113,4.43,4.5,4.4,4.83,4.31,4.41
+Stay With Vibe,74,330.0,Upper West Side,Manhattan,40.7835,-73.97523,Entire home/apt,3,1.0,1 bath,1.0,122.0,7,4.71,4.71,4.71,4.86,5.0,4.14
+Fabiola,99,10.0,Richmond Hill,Queens,40.68879,-73.81368,Private room,2,1.0,1 shared bath,1.0,98.0,32,4.59,4.59,4.81,4.75,4.59,4.53
+Angelica,84,4.0,Bushwick,Brooklyn,40.6948,-73.91417,Private room,1,1.0,1 private bath,1.0,50.0,231,4.86,4.92,4.94,4.96,4.74,4.79
+Daniel,100,2.0,Williamsburg,Brooklyn,40.71347,-73.96035,Entire home/apt,4,1.0,1 bath,0.0,268.0,193,4.93,4.9,4.91,4.96,4.97,4.84
+Myla,98,23.0,Brighton Beach,Brooklyn,40.57716632963894,-73.96413313030948,Private room,1,1.0,1 bath,1.0,99.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Erick,100,2.0,Morningside Heights,Manhattan,40.80284,-73.95931,Private room,2,1.5,1.5 shared baths,1.0,195.0,47,4.83,4.87,4.63,4.85,4.85,4.83
+Rove,88,94.0,Tribeca,Manhattan,40.72082647314247,-74.00455095887173,Entire home/apt,6,2.0,2 baths,3.0,303.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Latif,99,17.0,Crown Heights,Brooklyn,40.67326683033156,-73.93084096459849,Entire home/apt,6,2.0,2 baths,2.0,114.0,30,4.43,4.57,4.37,4.73,4.0,4.43
+Francisco,63,5.0,Lower East Side,Manhattan,40.71328,-73.99054,Entire home/apt,6,1.5,1.5 baths,3.0,160.0,9,4.56,4.33,4.44,4.56,4.33,4.44
+Makia,100,3.0,Prospect-Lefferts Gardens,Brooklyn,40.65884,-73.95951,Private room,1,1.0,1 shared bath,1.0,65.0,13,4.77,4.85,4.54,5.0,4.85,4.69
+Dayne,90,2.0,Long Island City,Queens,40.75776258278125,-73.93114920373047,Entire home/apt,6,1.0,1 bath,3.0,325.0,285,4.94,4.91,4.98,4.96,4.87,4.85
+Susie,19,1.0,West Village,Manhattan,40.7317,-74.00424,Entire home/apt,2,1.0,1 bath,1.0,137.0,26,4.62,4.77,4.27,4.85,4.96,4.6
+Eliza,100,67.0,Midtown,Manhattan,40.74635,-73.9872,Private room,5,1.0,1 private bath,1.0,121.0,37,4.05,4.5,4.13,4.71,4.74,4.03
+Wisdom Global Realty,97,8.0,Theater District,Manhattan,40.75901,-73.98388,Entire home/apt,6,2.0,2 baths,2.0,296.0,5,5.0,5.0,4.6,5.0,5.0,5.0
+Paul,100,2.0,Sunset Park,Brooklyn,40.65673,-74.00141,Entire home/apt,2,1.0,1 bath,0.0,111.0,55,4.84,4.85,4.87,5.0,4.67,4.82
+Anthony,70,4.0,Williamsburg,Brooklyn,40.70377,-73.94299,Private room,2,1.0,1 shared bath,1.0,50.0,2,5.0,5.0,5.0,5.0,5.0,5.0
+Bella,100,8.0,Lower East Side,Manhattan,40.71910786360471,-73.99106525490703,Private room,2,1.0,1 bath,1.0,119.0,3,4.67,4.67,4.67,4.67,5.0,4.67
+Millennium Broadway,94,16.0,Theater District,Manhattan,40.75593,-73.98531,Private room,2,1.0,1 private bath,1.0,223.0,485,4.39,4.35,4.4,4.53,4.85,4.27
+Nidal,75,1.0,Concord,Staten Island,40.60531,-74.0827,Private room,2,1.0,1 private bath,2.0,263.0,8,5.0,5.0,5.0,5.0,5.0,4.88
+Hanna Lois,100,3.0,Briarwood,Queens,40.70741,-73.8086,Entire home/apt,6,2.0,2 baths,3.0,256.0,42,4.64,4.55,4.76,4.93,4.52,4.5
+Hannah M.,82,9.0,Upper East Side,Manhattan,40.76958,-73.95464,Entire home/apt,2,1.0,1 bath,0.0,105.0,3,4.33,4.33,4.0,5.0,4.67,5.0
+New York,94,27.0,Hell's Kitchen,Manhattan,40.76253,-73.99739,Entire home/apt,4,2.0,2 baths,2.0,749.0,47,4.85,4.77,4.91,4.74,4.87,4.66
+Khalid,2,3.0,Long Island City,Queens,40.75765,-73.93046,Private room,2,1.5,1.5 shared baths,1.0,71.0,105,4.69,4.83,4.58,4.8,4.89,4.7
+Mike,99,14.0,Bedford-Stuyvesant,Brooklyn,40.68649,-73.93844,Private room,2,1.0,1 shared bath,1.0,85.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Peggy,88,3.0,Jackson Heights,Queens,40.74764,-73.888,Private room,2,2.0,2 shared baths,1.0,35.0,95,4.38,4.57,4.08,4.76,4.67,4.46
+Jordan,92,3.0,Crown Heights,Brooklyn,40.67539,-73.93226,Entire home/apt,4,1.5,1.5 baths,2.0,199.0,15,4.93,4.93,4.8,5.0,4.8,4.87
+Mila Sara,98,16.0,East Village,Manhattan,40.73238,-73.98915,Entire home/apt,3,1.0,1 bath,1.0,158.0,26,4.69,4.73,4.85,4.88,4.73,4.88
+Outpost Club,50,35.0,Bedford-Stuyvesant,Brooklyn,40.68997,-73.93709,Private room,2,2.0,2 shared baths,1.0,57.0,2,3.5,3.5,4.0,3.5,4.0,3.5
+Monique,96,1.0,Prospect Heights,Brooklyn,40.681374,-73.9711,Entire home/apt,4,1.0,1 bath,1.0,245.0,47,5.0,5.0,4.98,5.0,4.96,4.81
+Esplanade 99,54,79.0,Upper West Side,Manhattan,40.79571,-73.97163,Private room,2,1.0,1 private bath,0.0,75.0,4,3.5,3.5,4.25,3.75,5.0,3.0
+Vee,94,27.0,Kips Bay,Manhattan,40.74144914999705,-73.97938783839417,Entire home/apt,3,1.0,1 bath,1.0,106.0,15,4.6,4.6,4.73,4.8,4.73,4.67
+ModernHaus SoHo,100,7.0,SoHo,Manhattan,40.72281,-74.00475,Hotel room,2,1.0,1 private bath,1.0,425.0,1,5.0,5.0,5.0,5.0,5.0,3.0
+Shelley,48,4.0,Flatbush,Brooklyn,40.64085,-73.95469,Entire home/apt,2,1.0,1 bath,1.0,95.0,256,4.53,4.75,4.67,4.61,4.35,4.59
+Lana,95,9.0,Midland Beach,Staten Island,40.57552,-74.09086,Entire home/apt,4,1.0,1 bath,1.0,158.0,27,4.96,4.96,4.96,5.0,4.93,4.85
+Tracey,0,2.0,Upper West Side,Manhattan,40.78537,-73.9729,Entire home/apt,2,1.0,1 bath,0.0,149.0,17,4.88,5.0,4.94,5.0,4.94,4.82
+Haim Shlomo,68,19.0,Crown Heights,Brooklyn,40.67263785852165,-73.93986039094077,Private room,2,1.5,1.5 baths,3.0,50.0,2,5.0,4.5,5.0,5.0,4.5,5.0
+Central Park Apartments,65,49.0,Upper West Side,Manhattan,40.79744,-73.96196,Entire home/apt,2,1.0,1 bath,0.0,75.0,5,4.4,4.8,5.0,4.6,5.0,4.4
+Ramneet,100,4.0,South Ozone Park,Queens,40.6720111,-73.811453,Private room,2,1.0,1 private bath,1.0,100.0,101,4.54,4.69,4.72,4.34,4.56,4.56
+Furnished Quarters,100,1013.0,Midtown,Manhattan,40.76385,-73.98372,Entire home/apt,3,1.0,1 bath,1.0,276.0,1,4.0,5.0,4.0,5.0,5.0,5.0
+Bianca,100,1.0,Ridgewood,Queens,40.7035,-73.90966,Entire home/apt,5,1.0,1 bath,2.0,170.0,31,4.84,4.9,4.77,4.97,4.81,4.84
+Matt,62,20.0,Midtown,Manhattan,40.75476,-73.96383,Entire home/apt,3,1.0,1 bath,0.0,170.0,6,4.67,4.67,4.67,4.17,5.0,4.33
+Shanti,79,3.0,Crown Heights,Brooklyn,40.67492,-73.91771,Private room,2,1.5,1.5 shared baths,1.0,79.0,36,4.92,4.97,4.92,4.97,4.31,4.83
+Junior,88,22.0,Mount Hope,Bronx,40.85229,-73.90771,Private room,2,1.0,1 shared bath,1.0,135.0,73,4.57,4.68,4.71,4.64,4.4,4.49
+Marisol,87,1.0,South Ozone Park,Queens,40.6718907259417,-73.80901108353392,Entire home/apt,4,1.0,1 bath,2.0,151.0,18,4.83,4.83,4.94,5.0,4.89,4.89
+Sonia,93,5.0,East New York,Brooklyn,40.67548,-73.87881,Entire home/apt,4,1.0,1 bath,2.0,160.0,152,4.82,4.88,4.95,4.89,4.44,4.85
+Central Park Apartments,65,49.0,Upper West Side,Manhattan,40.79632,-73.9635,Entire home/apt,2,1.0,1 bath,0.0,81.0,3,4.67,5.0,5.0,4.67,4.0,4.67
+Pamela,90,3.0,Bedford-Stuyvesant,Brooklyn,40.69018,-73.95357,Private room,2,1.0,1 shared bath,1.0,75.0,162,4.67,4.8,4.69,4.85,4.69,4.63
+Emmanuel,100,55.0,Flushing,Queens,40.76581,-73.80569,Private room,1,1.0,1 private bath,1.0,55.0,8,5.0,5.0,5.0,5.0,5.0,4.63
+Jean,100,1.0,East Harlem,Manhattan,40.80764,-73.94039,Entire home/apt,6,1.5,1.5 baths,2.0,406.0,121,4.99,5.0,4.88,4.99,4.77,4.87
+Pauline,83,8.0,Cypress Hills,Brooklyn,40.681104,-73.8903624,Private room,1,1.0,1 shared bath,1.0,55.0,6,5.0,5.0,5.0,5.0,5.0,5.0
+Abena,89,15.0,Bedford-Stuyvesant,Brooklyn,40.67732,-73.9143,Private room,1,1.0,1 shared bath,1.0,70.0,17,4.82,4.76,4.53,4.65,4.82,4.94
+Maria,100,1.0,Woodside,Queens,40.756329,-73.90759880000002,Private room,2,1.0,1 shared bath,1.0,119.0,11,4.82,5.0,4.91,5.0,4.91,5.0
+MyNyHousing,84,115.0,East Harlem,Manhattan,40.78674,-73.94866,Entire home/apt,3,1.0,1 bath,0.0,140.0,12,4.75,4.67,4.25,4.75,4.75,3.83
+Greg,100,3.0,East New York,Brooklyn,40.67391,-73.89394,Entire home/apt,6,1.0,1 bath,3.0,212.0,93,4.89,4.93,4.78,4.99,4.43,4.76
+Mohammed,89,6.0,Ozone Park,Queens,40.67432148531266,-73.8594022189078,Private room,2,1.0,1 shared bath,1.0,71.0,13,4.92,4.92,4.85,5.0,4.85,4.85
+David,76,6.0,Van Nest,Bronx,40.84780498513437,-73.8635117188096,Shared room,1,1.0,1 shared bath,1.0,51.0,16,4.81,4.88,4.94,4.88,4.81,4.94
+Makeda,80,1.0,Flatlands,Brooklyn,40.62831,-73.93634,Entire home/apt,3,1.0,1 bath,1.0,147.0,2,5.0,5.0,4.5,5.0,4.5,4.5
+Tom,100,1.0,Prospect Heights,Brooklyn,40.67546,-73.96577,Private room,2,1.0,1 shared bath,1.0,65.0,24,4.79,4.79,4.42,4.92,4.79,4.79
+Christian,67,9.0,Corona,Queens,40.73894,-73.86337,Shared room,1,1.5,1.5 shared baths,1.0,40.0,42,4.48,4.55,4.67,4.43,4.4,4.4
+Muhammad,100,1.0,Flatlands,Brooklyn,40.625,-73.92799,Private room,1,1.0,1 bath,1.0,40.0,36,4.5,4.78,4.22,4.89,4.78,4.75
+Ryan,100,1.0,Crown Heights,Brooklyn,40.67757924733385,-73.94276028780219,Private room,2,1.0,1 private bath,1.0,317.0,82,4.93,4.95,4.94,4.96,4.56,4.87
+Darina,89,16.0,Bushwick,Brooklyn,40.70045,-73.91861,Private room,2,4.0,4 baths,5.0,87.0,53,4.72,4.83,4.7,4.75,4.72,4.77
+Blueground,97,5313.0,Upper West Side,Manhattan,40.8009069,-73.96954989999999,Entire home/apt,2,1.0,1 bath,1.0,227.0,1,5.0,5.0,5.0,5.0,5.0,4.0
+Felix,98,2.0,Corona,Queens,40.73623,-73.86243,Private room,2,1.0,1 shared bath,1.0,37.0,156,4.85,4.81,4.87,4.85,4.69,4.81
+Romario,99,5.0,Flushing,Queens,40.72696,-73.81056,Entire home/apt,2,1.0,1 bath,1.0,75.0,43,4.3,4.63,4.56,4.53,4.49,4.53
+Adam,0,1.0,SoHo,Manhattan,40.72574,-74.00325,Entire home/apt,2,1.0,1 bath,1.0,199.0,6,4.83,4.83,4.83,5.0,5.0,4.5
+Steven,67,7.0,Hunts Point,Bronx,40.81767,-73.8899,Private room,1,1.0,1 shared bath,1.0,85.0,14,4.79,5.0,4.86,5.0,4.57,4.86
+Best Inns USA,71,39.0,East Village,Manhattan,40.73234,-73.98682,Entire home/apt,2,1.0,1 bath,0.0,80.0,5,5.0,5.0,4.8,5.0,5.0,5.0
+Jeniffer,38,161.0,Upper East Side,Manhattan,40.78204,-73.95381,Entire home/apt,3,1.0,1 bath,0.0,100.0,13,4.62,4.69,4.69,4.46,4.85,4.38
+Sheri,91,1.0,Bedford-Stuyvesant,Brooklyn,40.68255039374513,-73.91238354793946,Entire home/apt,5,1.0,1 bath,1.0,170.0,35,4.86,4.97,4.86,5.0,4.74,4.77
+Clara,85,4.0,Kips Bay,Manhattan,40.7402,-73.982,Entire home/apt,2,1.5,1.5 baths,1.0,450.0,75,4.99,4.97,4.97,4.97,4.99,4.95
+Ray,100,3.0,East Harlem,Manhattan,40.79645,-73.93164,Entire home/apt,8,2.5,2.5 baths,3.0,175.0,41,4.33,4.14,4.33,4.48,4.19,4.19
+Javaughn,100,3.0,Laurelton,Queens,40.67547319099326,-73.74796066219604,Entire home/apt,4,1.0,1 bath,2.0,145.0,1,5.0,5.0,5.0,5.0,5.0,5.0
+Natalie,99,19.0,Flatbush,Brooklyn,40.64157,-73.9634,Entire home/apt,5,2.0,2 baths,3.0,135.0,37,4.73,4.76,4.62,4.68,4.68,4.59
+Daniel,100,8.0,Bushwick,Brooklyn,40.68831,-73.91589,Entire home/apt,8,1.0,1 bath,3.0,175.0,143,4.86,4.94,4.94,4.97,4.62,4.81
+Brittney,100,1.0,Crown Heights,Brooklyn,40.67531,-73.9426,Private room,3,1.0,1 private bath,1.0,138.0,63,4.94,4.95,4.95,4.97,4.67,4.84
+David,93,3.0,Bedford-Stuyvesant,Brooklyn,40.68385,-73.91589,Private room,5,1.0,1 private bath,2.0,214.0,164,4.78,4.75,4.74,4.91,4.57,4.72
+Yehudit,100,2.0,Borough Park,Brooklyn,40.63343,-73.98348,Entire home/apt,4,1.0,1 bath,2.0,95.0,6,3.83,4.33,4.17,3.83,4.17,3.67
+Gaspar,79,1.0,Crown Heights,Brooklyn,40.67308,-73.94051,Entire home/apt,2,1.0,1 bath,1.0,99.0,412,4.83,4.88,4.75,4.87,4.66,4.82
+Kimpton,100,4.0,Theater District,Manhattan,40.76021,-73.98761,Entire home/apt,2,1.0,1 bath,0.0,269.0,3,5.0,5.0,5.0,5.0,5.0,5.0
+Jeniffer,38,161.0,Hell's Kitchen,Manhattan,40.76411,-73.99371,Entire home/apt,3,1.0,1 bath,0.0,100.0,16,4.81,4.88,4.75,4.69,4.81,4.56
+Antoinette,39,2.0,Crown Heights,Brooklyn,40.66559,-73.93348,Entire home/apt,2,1.0,1 bath,1.0,90.0,7,5.0,5.0,4.57,5.0,4.43,4.71

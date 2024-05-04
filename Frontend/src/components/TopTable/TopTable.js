@@ -7,13 +7,13 @@ export default function TopTable({setRadarLocs}) {
     const [selectedAttr, setSelectedAttr] = useState("price");
 
     const attributeList = [
-        "review_scores_rating",
-        "review_scores_accuracy",
-        "review_scores_cleanliness",
-        "review_scores_communication",
-        "review_scores_location",
-        "review_scores_value",
-        "accommodates",
+        "rating",
+        "accuracy",
+        "cleanliness",
+        "communication",
+        "location",
+        "value",
+        "num_accommodations",
         "bedrooms",
         "bathrooms",
         "host_acceptance_rate",

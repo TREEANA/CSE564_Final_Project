@@ -9,12 +9,25 @@ columns = [
     'neighbourhood_cleansed', 'neighbourhood_group_cleansed', 'latitude', 'longitude'
 ]
 
+rename_map = {
+    "review_scores_rating": "rating",
+    "review_scores_accuracy": "accuracy",
+    "review_scores_cleanliness": "cleanliness",
+    "review_scores_communication": "communication",
+    "review_scores_location": "location",
+    "review_scores_value": "value",
+    "neighbourhood_cleansed": "neighbourhood",
+    "neighbourhood_group_cleansed": "neighbourhood_group",
+    "accommodates": "num_accommodations"
+}
+
 data = pd.read_csv(file_path, usecols=columns).dropna()
 data['price'] = data['price'].str.replace('$', '').str.replace(',', '').str.replace(' ', '')
 data["price"] = data["price"].astype(float)
 data = data[data["price"] <= 2000].reset_index(drop=True)
+data = data.rename(rename_map, axis=1)
 
-sampled_data = data.sample(n=700, random_state=1)
+sampled_data = data.sample(n=1500, random_state=1)
 
 sampled_data['host_acceptance_rate'] = sampled_data['host_acceptance_rate'].astype(str).str.replace('%', '').astype(int)
 

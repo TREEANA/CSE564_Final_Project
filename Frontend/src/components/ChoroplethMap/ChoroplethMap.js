@@ -7,16 +7,16 @@ const ChoroplethMap = () => {
   const [selectedAttribute, setSelectedAttribute] = useState('price');
 
   const ordered_columns = [
-    'review_scores_cleanliness',
-    'review_scores_rating',
-    'review_scores_accuracy',
-    'review_scores_value',
-    'review_scores_communication',
-    'review_scores_location',
+    'cleanliness',
+    'rating',
+    'accuracy',
+    'value',
+    'communication',
+    'location',
     'number_of_reviews',
     'bedrooms',
     'bathrooms',
-    'accommodates',
+    'num_accommodations',
     'host_total_listings_count',
     'price',
   ];
