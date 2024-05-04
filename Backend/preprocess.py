@@ -1,6 +1,6 @@
 import pandas as pd
 
-file_path = "C:\\Users\\Jason\\Documents\\School Stuff\\Spring 2024\\CSE564\\Final Project\\listings.csv"
+file_path = "listings.csv"
 columns = [
     'host_name', 'host_total_listings_count', 'room_type', 'accommodates',
     'bathrooms_text', 'bedrooms', 'bathrooms', 'host_acceptance_rate', 
@@ -24,7 +24,10 @@ rename_map = {
 data = pd.read_csv(file_path, usecols=columns).dropna()
 data['price'] = data['price'].str.replace('$', '').str.replace(',', '').str.replace(' ', '')
 data["price"] = data["price"].astype(float)
+
+# Filter out outliers in the data
 data = data[data["price"] <= 2000].reset_index(drop=True)
+data = data[data["host_total_listings_count"] <= 2000].reset_index(drop=True)
 data = data.rename(rename_map, axis=1)
 
 sampled_data = data.sample(n=4000, random_state=1)

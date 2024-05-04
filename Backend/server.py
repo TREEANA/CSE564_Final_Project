@@ -85,7 +85,7 @@ max_vals = {
     "price": 1750
 }
 
-mds_1 = MDS(n_components=2, metric=True, random_state=42)
+mds_1 = MDS(n_components=2, metric=True, random_state=42, n_jobs=-1)
 try:
     X_mds = np.load("mds.npy")
 except:
