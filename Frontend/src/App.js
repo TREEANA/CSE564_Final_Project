@@ -21,7 +21,7 @@ import RadarPlot from './components/RadarPlot/RadarPlot';
 function App() {
 	
 
-	const [k, setK] = useState(7);
+	const [k, setK] = useState(3);
 	const [radarLocs, setRadarLocs] = useState([]);
 	const [mapAttr, setMapAttr] = useState("price");
 
@@ -30,7 +30,8 @@ function App() {
 
 		axios.get('http://localhost:2000/best_k').then((repos) => {
 		  const getData = repos.data;
-		  setK(getData)
+		//   setK(getData)
+		setK(3)
 
 
 		});

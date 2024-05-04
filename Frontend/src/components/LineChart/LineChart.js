@@ -21,8 +21,8 @@ const LineChart = ({setK, k }) => {
 
 		  axios.get('http://localhost:2000/best_k').then((repos) => {
 			const getData = repos.data;
-			setElbow(getData)
-  
+			// setElbow(getDta)
+      setElbow(3)
 
 		  });
   }, []);
@@ -140,11 +140,11 @@ const LineChart = ({setK, k }) => {
       chart.append("text")
         .attr("class", "selected-txt")
         .attr("x", selectedX)
-        .attr("y", selectedY - 70) 
+        .attr("y", selectedY - 50) 
         .attr("text-anchor", "middle")
         .attr("fill", "black")
         .attr("font-weight", "bold") 
-        .text("eblow");
+        .text("elbow");
 
       chart.append("line")
         .attr("class", "selected-lne")

@@ -53,10 +53,10 @@ scaler = StandardScaler()
 X_standardized = scaler.fit_transform(df)
 # X_standardized = MinMaxScaler().fit_transform(X_standardized)
 
-# Finding the optimal k using the elbow method
+# Finding the optimal k using the elbow method 31 6
 sse = {}
-for k in range(1, 11):
-    kmeans = KMeans(n_clusters=k, max_iter=1000, random_state=14).fit(X_standardized)
+for k in range(1, 11): 
+    kmeans = KMeans(n_clusters=k, max_iter=1000, random_state=31).fit(X_standardized)
     sse[k] = kmeans.inertia_
 
 first_derivative = {k: sse[k] - sse[k-1] for k in range(2, 11)}

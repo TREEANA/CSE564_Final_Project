@@ -13,7 +13,7 @@ const PCPPage = ({ k, setK }) => {
     return (
         <>
             <div style={{display: 'flex', gap: '15px'}}>
-                <h5 style={{textAlign: 'center', display: 'inline-block'}}>{showFirstPlot ? "Parallel Coordinates Plot" : " Numerical Parallel Coordinates Plot"}</h5>
+                <h5 style={{textAlign: 'center', display: 'inline-block'}}>{showFirstPlot ? "Numerical Parallel Coordinates Plot" : "Parallel Coordinates Plot"}</h5>
                 <div className="toggle-switch">
                     <input
                         id="toggle"
@@ -25,7 +25,7 @@ const PCPPage = ({ k, setK }) => {
                     <label htmlFor="toggle" className="slider"></label>
                 </div>
             </div>
-            {showFirstPlot ? <PCPPlot k={k} /> : <PCPPlot2 k={k} />}
+            {showFirstPlot ? <PCPPlot2 k={k} /> : <PCPPlot k={k} />}
         </>
     );
 };

@@ -51,7 +51,7 @@ const ChoroplethMap = () => {
       .attr('class', 'neighborhood')
       .attr('d', pathGenerator)
       .attr('fill', (d) =>
-        d.properties[selectedAttribute] ? colorScale(d.properties[selectedAttribute]) : '#ccc'
+        d.properties[selectedAttribute] ? colorScale(d.properties[selectedAttribute]) : '#bbb'
       )
       .attr('stroke', 'black');
 
@@ -60,7 +60,7 @@ const ChoroplethMap = () => {
       const clickedPath = d3.select(event.currentTarget);
       if (d.properties[selectedAttribute]) {
         paths.attr('fill', (d) =>
-          d.properties[selectedAttribute] ? colorScale(d.properties[selectedAttribute]) : '#ccc'
+          d.properties[selectedAttribute] ? colorScale(d.properties[selectedAttribute]) : '#bbb'
         );
         clickedPath.attr('fill', 'yellow');
         setSelectedCity({ name: d.properties.neighbourhood, value: d.properties[selectedAttribute] });
