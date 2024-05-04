@@ -70,6 +70,20 @@ df['Cluster_ID'] = kmeans.labels_
 # concat numerical_cols and  categorical_cols for pcp_plot 1
 df_for_pcp = pd.concat([df, df2], axis=1)
 
+max_vals = {
+    "rating": 5,
+    "accuracy": 5,
+    "cleanliness": 5,
+    "communication": 5,
+    "location": 5,
+    "value": 5,
+    "num_accommodations": 16,
+    "bedrooms": 5.5,
+    "bathrooms": 6,
+    "host_acceptance_rate": 100,
+    "number_of_reviews": 680,
+    "price": 1750
+}
 
 mds_1 = MDS(n_components=2, metric=True, random_state=42)
 try:
@@ -202,7 +216,7 @@ def radar():
             for i in labels:
                 data_entry = {
                     "axis": i.replace("_", " "),
-                    "value": gbn.loc[query_params["loc"][j], :][i],
+                    "value": gbn.loc[query_params["loc"][j], :][i] * (5 / max_vals[i]),
                     "i": j
                 }
                 group.append(data_entry)

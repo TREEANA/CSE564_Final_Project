@@ -27,7 +27,7 @@ data["price"] = data["price"].astype(float)
 data = data[data["price"] <= 2000].reset_index(drop=True)
 data = data.rename(rename_map, axis=1)
 
-sampled_data = data.sample(n=1500, random_state=1)
+sampled_data = data.sample(n=4000, random_state=1)
 
 sampled_data['host_acceptance_rate'] = sampled_data['host_acceptance_rate'].astype(str).str.replace('%', '').astype(int)
 

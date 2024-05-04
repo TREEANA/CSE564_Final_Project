@@ -50,7 +50,6 @@ const RadarPlot = ({radarLocs}) => {
         const width = 400 - margin.left - margin.right;
         const height = 320 - margin.top - margin.bottom;
         const color = d3.scaleOrdinal(d3.schemeCategory10);
-
         const attributes = data[0].map((i, _) => i.axis)
         const maxValue = 5;
 
