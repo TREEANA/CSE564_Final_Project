@@ -27,10 +27,10 @@ data["price"] = data["price"].astype(float)
 
 # Filter out outliers in the data
 data = data[data["price"] <= 2000].reset_index(drop=True)
-data = data[data["host_total_listings_count"] <= 2000].reset_index(drop=True)
+data = data[data["host_total_listings_count"] <= 500].reset_index(drop=True)
 data = data.rename(rename_map, axis=1)
 
-sampled_data = data.sample(n=4000, random_state=1)
+sampled_data = data.sample(n=5000, random_state=1)
 
 sampled_data['host_acceptance_rate'] = sampled_data['host_acceptance_rate'].astype(str).str.replace('%', '').astype(int)
 
