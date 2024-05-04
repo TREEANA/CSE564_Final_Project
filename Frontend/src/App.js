@@ -21,7 +21,7 @@ import RadarPlot from './components/RadarPlot/RadarPlot';
 function App() {
 	
 
-	const [k, setK] = useState(4);
+	const [k, setK] = useState(7);
 	const [radarLocs, setRadarLocs] = useState([]);
 	const [mapAttr, setMapAttr] = useState("price");
 

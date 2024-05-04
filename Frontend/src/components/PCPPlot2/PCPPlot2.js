@@ -198,9 +198,9 @@ const PCPPlot2 = ({k}) => {
     const dimensions = Object.keys(plotData[0]).filter(d => d !== "Cluster_ID");
     const colors = d3.scaleOrdinal(d3.schemeCategory10);
 
-    const margin = { top: 30, right: 38, bottom: 140, left: 40 },
-          width = 2000 - margin.left - margin.right,
-          height = 800 - margin.top - margin.bottom;
+    const margin = { top: 10, right: 35, bottom: 140, left: 10 },
+          width = 750 - margin.left - margin.right,
+          height = 300 - margin.top - margin.bottom;
 
     const x = d3.scalePoint()
                 .range([0, width])
@@ -320,10 +320,10 @@ const PCPPlot2 = ({k}) => {
     // Add new text elements for axis titles
     .call(drag)
     .append("text")
-    .style("text-anchor", "middle")
+    .style("text-anchor", "end")
     .attr("transform", d => `translate(0,${height})rotate(-90)`)
     .attr("y", 0)  // Offset the labels further down from the axes
-    .attr("x", -80)
+    .attr("x", -10)
     .text(d => d)
     .style("fill", "black");
     
@@ -334,24 +334,25 @@ const PCPPlot2 = ({k}) => {
       .data(legendData)
       .enter().append("g")
       .attr("class", "legend")
-      .attr("transform", (d, i) => `translate(${width - 50},${i * 20 + height / 1000})`);
+      .attr("transform", (d, i) => `translate(${width - 50},${i * 15 + height / 1000})`);
 
     legend.append("rect")
-      .attr("x", 0)
-      .attr("width", 18)
-      .attr("height", 18)
+      .attr("x", 22)
+      .attr("width", 11)
+      .attr("height", 11)
       .style("fill", colors);
 
     legend.append("text")
-      .attr("x", 22)
-      .attr("y", 9)
+      .attr("x", 35)
+      .attr("y", 5.5)
       .attr("dy", ".35em")
+      .style("font-size", "13px")
       .text(d => `Cluster ${d}`);
   };
 
   return (
     <>
-    <div style={{ textAlign: 'center', margin: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
       <table>
         <tbody>
           <tr>
@@ -380,7 +381,7 @@ const PCPPlot2 = ({k}) => {
       </table>
     </div>
       
-      <h3 style={{ textAlign: 'center', color: 'blue' }}>Parallel Coordinates Plot2 by MDS Axes Ordering (numerical value) </h3>
+      {/* <h3 style={{ textAlign: 'center', color: 'blue' }}>Parallel Coordinates Plot2 by MDS Axes Ordering (numerical value) </h3> */}
       <svg ref={chartRef} />
     </>
   );

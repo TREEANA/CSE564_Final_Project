@@ -151,9 +151,9 @@ const PCPPlot = ({k}) => {
     const dimensions = Object.keys(plotData[0]).filter(d => d !== "Cluster_ID");
     const colors = d3.scaleOrdinal(d3.schemeCategory10);
 
-    const margin = { top: 30, right: 38, bottom: 140, left: 40 },
-          width = 2000 - margin.left - margin.right,
-          height = 800 - margin.top - margin.bottom;
+    const margin = { top: 10, right: 60, bottom: 140, left: 0 },
+          width = 775 - margin.left - margin.right,
+          height = 300 - margin.top - margin.bottom;
 
     const x = d3.scalePoint()
                 .range([0, width])
@@ -181,104 +181,93 @@ const PCPPlot = ({k}) => {
                 .append("g")
                 .attr("transform", `translate(${margin.left},${margin.top})`);
 
-                var highlight = function(event, d) {
-                  d3.selectAll(".line")
-                    .transition().duration(200)
-                    .style("stroke", "lightgrey")
-                    .style("opacity", "0.2");
-              
-                  d3.selectAll(".cluster" + d.Cluster_ID)
-                    .transition().duration(200)
-                    .style("stroke", colors(d.Cluster_ID))
-                    .style("opacity", "1");
-                };
-              
-                // Unhighlight 함수
-                var doNotHighlight = function() {
-                  d3.selectAll(".line")
-                    .transition().duration(200).delay(1000)
-                    .style("stroke", d => colors(d.Cluster_ID))
-                    .style("opacity", "0.5");
-                };
-              
-                // path 함수
-                const path = d => d3.line()(dimensions.map(p => [x(p), y[p](d[p])]));
-              
-                // 라인 그리기
-                svg.selectAll(".line")
-                  .data(plotData)
-                  .enter().append("path")
-                    .attr("class", d => "line cluster" + d.Cluster_ID) // 클러스터 ID를 기반으로 클래스 지정
-                    .attr("d", path)
-                    .style("fill", "none")
-                    .style("stroke", d => colors(d.Cluster_ID)) // 클러스터 ID를 기반으로 색상 지정
-                    .style("opacity", 0.5)
-                    .on("mouseover", highlight)
-                    .on("mouseleave", doNotHighlight);
+    var highlight = function(event, d) {
+      d3.selectAll(".line")
+        .transition().duration(200)
+        .style("stroke", "lightgrey")
+        .style("opacity", "0.2");
 
-                    svg.selectAll(".axis")
-                    .data(dimensions).enter()
-                    .append("g")
-                    .attr("class", "axis")
-                    .attr("transform", d => `translate(${x(d)})`)
-                    .each(function(d) { d3.select(this).call(d3.axisLeft(y[d])); });
+      d3.selectAll(".cluster" + d.Cluster_ID)
+        .transition().duration(200)
+        .style("stroke", colors(d.Cluster_ID))
+        .style("opacity", "1");
+    };
 
-      svg.selectAll(".axis")
+    // Unhighlight 함수
+    var doNotHighlight = function() {
+      d3.selectAll(".line")
+        .transition().duration(200).delay(1000)
+        .style("stroke", d => colors(d.Cluster_ID))
+        .style("opacity", "0.5");
+    };
 
+    // path 함수
+    const path = d => d3.line()(dimensions.map(p => [x(p), y[p](d[p])]));
+
+  // 라인 그리기
+    svg.selectAll(".line")
+      .data(plotData)
+      .enter().append("path")
+        .attr("class", d => "line cluster" + d.Cluster_ID) // 클러스터 ID를 기반으로 클래스 지정
+        .attr("d", path)
+        .style("fill", "none")
+        .style("stroke", d => colors(d.Cluster_ID)) // 클러스터 ID를 기반으로 색상 지정
+        .style("opacity", 0.5)
+        .on("mouseover", highlight)
+        .on("mouseleave", doNotHighlight);
+
+    svg.selectAll(".axis")
     .data(dimensions).enter()
     .append("g")
     .attr("class", "axis")
-    // Position each axis on the plot
-    .attr("transform", d => `translate(${x(d)},0)`)
-    .each(function(d) { d3.select(this).call(d3.axisLeft(y[d])); })
-    // Remove previous text elements if any
-    .selectAll("text").remove();
+    .attr("transform", d => `translate(${x(d)})`)
+    .each(function(d) { d3.select(this).call(d3.axisLeft(y[d])); });
 
+    svg.selectAll(".axis")
+      .data(dimensions).enter()
+      .append("g")
+      .attr("class", "axis")
+      // Position each axis on the plot
+      .attr("transform", d => `translate(${x(d)},0)`)
+      .each(function(d) { d3.select(this).call(d3.axisLeft(y[d])); })
+      // Remove previous text elements if any
+      .selectAll("text").remove();
 
-    let lastClosest = null;            
+    let lastClosest = null;
     const drag = d3.drag()
-          .on("start", function(event, d) {
+      .on("start", function(event, d) {
+
+      })
+      .on("drag", function(event, d) {
+        const newPosX = event.x;
+        d3.select(this).attr("transform", `translate(${newPosX},0)`);
+
+        // 드래그된 축에 대한 업데이트
+        const dimensionIndex = dimensions.indexOf(d);
+        dimensions.splice(dimensionIndex, 1); // 기존 위치에서 제거
+        const dropTargetIndex = Math.round(newPosX / (width / dimensions.length));
+        dimensions.splice(dropTargetIndex, 0, d); // 새 위치에 삽입
+
+        x.domain(dimensions); // xScale 업데이트
+
+        // 모든 선을 업데이트
+        svg.selectAll(".line")
+          .attr("d", path);
+
+      })
+      .on("end", function(event, d) {
+        // 드래그가 끝났을 때 실행될 로직
+        const draggedLabel = d;
+        const dddd = Object.keys(plotData[0]).filter(d => d !== "Cluster_ID");
+        const xScale = d3.scalePoint()
+          .range([0, width])
+          .padding(1)
+          .domain(dddd);
+        
+        const dropX = event.x;
+        const dropTargetLabel = findClosestLabel(dropX,dddd, xScale);
   
-
-           
-  
-          })
-          .on("drag", function(event, d) {
-            
-           
-
-            const newPosX = event.x;
-            d3.select(this).attr("transform", `translate(${newPosX},0)`);
-          
-            // 드래그된 축에 대한 업데이트
-            const dimensionIndex = dimensions.indexOf(d);
-            dimensions.splice(dimensionIndex, 1); // 기존 위치에서 제거
-            const dropTargetIndex = Math.round(newPosX / (width / dimensions.length));
-            dimensions.splice(dropTargetIndex, 0, d); // 새 위치에 삽입
-          
-            x.domain(dimensions); // xScale 업데이트
-          
-            // 모든 선을 업데이트
-            svg.selectAll(".line")
-              .attr("d", path);
-             
-
-            
-          })
-          .on("end", function(event, d) {
-            // 드래그가 끝났을 때 실행될 로직
-            const draggedLabel = d;
-            const dddd = Object.keys(plotData[0]).filter(d => d !== "Cluster_ID");
-            const xScale = d3.scalePoint()
-              .range([0, width])
-              .padding(1)
-              .domain(dddd);
-            
-          
-            const dropX = event.x;
-            const dropTargetLabel = findClosestLabel(dropX,dddd, xScale);
-      
-            handleApplyChanges2(draggedLabel, dropTargetLabel,plotData);
+        handleApplyChanges2(draggedLabel, dropTargetLabel,plotData);
 
           });
           
@@ -286,10 +275,10 @@ const PCPPlot = ({k}) => {
         // Add new text elements for axis titles
         .call(drag)
         .append("text")
-        .style("text-anchor", "middle")
+        .style("text-anchor", "end")
         .attr("transform", d => `translate(0,${height})rotate(-90)`)
         .attr("y", 0)  // Offset the labels further down from the axes
-        .attr("x", -80)
+        .attr("x", -10)
         .text(d => d)
         .style("fill", "black");
     
@@ -300,25 +289,26 @@ const PCPPlot = ({k}) => {
       .data(legendData)
       .enter().append("g")
       .attr("class", "legend")
-      .attr("transform", (d, i) => `translate(${width - 50},${i * 20 + height / 1000})`);
+      .attr("transform", (d, i) => `translate(${width - 50},${i * 15 + height / 1000})`);
 
     legend.append("rect")
-      .attr("x", 0)
-      .attr("width", 18)
-      .attr("height", 18)
+      .attr("x", 22)
+      .attr("width", 11)
+      .attr("height", 11)
       .style("fill", colors);
 
     legend.append("text")
-      .attr("x", 22)
-      .attr("y", 9)
+      .attr("x", 35)
+      .attr("y", 5.5)
       .attr("dy", ".35em")
+      .style("font-size", "13px")
       .text(d => `Cluster ${d}`);
   };
 
  
   return (
     <>
-     <div style={{ textAlign: 'center', margin: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+     <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
       <table>
         <tbody>
           <tr>
@@ -347,7 +337,7 @@ const PCPPlot = ({k}) => {
       </table>
     </div>
       
-      <h3 style={{ textAlign: 'center', color: 'blue' }}>Parallel Coordinates Plot by Cluster ID (category and numerical value)</h3>
+      {/* <h3 style={{ textAlign: 'center', color: 'blue' }}>Parallel Coordinates Plot by Cluster ID (category and numerical value)</h3> */}
       <svg ref={chartRef} />
     </>
   );

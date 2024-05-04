@@ -1,9 +1,7 @@
 .dashboard-container {
-
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid; */
+  grid-template-rows: 1fr 1fr;
   gap: 10px;
-  padding: 10px;
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -12,14 +10,9 @@
 
 .mds-plots-container {
   display: flex;
-  grid-row: 1;
   gap: 10px;
-  margin-left: 100px;
-}
-
-.mds-plot {
-  flex: 1;
-
+  margin-left: 10px;
+  justify-content: center;
 }
 
 .pcp-plots-container {
@@ -30,19 +23,21 @@
 }
 
 .pcp-plot {
-  flex: 1;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .radar-plot-container {
   display: flex;
   flex-direction: row;
-  grid-row: 1;
   gap: 10px;
+  justify-content: center;
 }
 
-.radar {
-  flex: 1;
+.radar-plot-container table {
+  height: 80%;
+  border: solid 1px black;
 }
 
 .radar td:nth-child(2), .radar th:nth-child(2) {

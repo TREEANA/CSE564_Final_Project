@@ -12,7 +12,7 @@ from sklearn.cluster import KMeans
 import numpy as np
 import seaborn as sns
 import geopandas as gpd
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 import json
 from flask_cors import CORS
 
@@ -186,34 +186,36 @@ def pcp_plot_2(k):
 
 @app.route("/radar")
 def radar():
-    labels = ["review scores rating",
-              "review scores accuracy",
-              "review scores cleanliness",
-              "review scores communication",
-              "review scores location",
-              "review scores value"]
+    query_params = request.args.to_dict(flat=False)
+    labels = query_params["attrb"]
     data = []
-    for j in range(3):
-        group = []
-        for i in labels:
-            data_entry = {
-                "axis": i,
-                "value": df.iloc[j, :]["_".join(i.split())],
-                "i": j
-            }
-            group.append(data_entry)
-        data.append(group)
+    gbn = original_df.groupby("neighbourhood_cleansed")[labels].mean()
+    try:
+        for j in range(len(query_params["loc"])):
+            group = []
+            for i in labels:
+                data_entry = {
+                    "axis": i.replace("_", " "),
+                    "value": gbn.loc[query_params["loc"][j], :][i],
+                    "i": j
+                }
+                group.append(data_entry)
+            data.append(group)
+    except KeyError:
+        data = [
+            [
+                {"axis": i.replace("_", " ")} for i in labels
+            ]
+        ]
+    print(data)
     # data_dict = df[labels].to_dict(orient="records")[:5]
     return data
 
 @app.route("/toptable")
 def top_table():
-    gdf = gpd.read_file('neighbourhoods.geojson')
+    query_params = request.args.to_dict()
     data = pd.read_csv('data.csv')
-    pbn = data.groupby("neighbourhood_cleansed").price.mean().sort_values()[:5]
-    # data_gdf = gpd.GeoDataFrame(data, geometry=gpd.points_from_xy(data.longitude, data.latitude))
-    # joined = gpd.sjoin(gdf, data_gdf, how='inner', op='contains')
-    # price_by_neighbourhood = joined.groupby('neighbourhood').price.mean().sort_values()[:5]
+    pbn = data.groupby("neighbourhood_cleansed")[query_params["attrb"]].mean().sort_values()[:5]
     data = []
     for neighborhood, val in pbn.items():
         data.append({

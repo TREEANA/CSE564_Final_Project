@@ -20,9 +20,9 @@ const MDSPlot2 = () => {
     const svg = d3.select(chartRef.current);
     svg.selectAll("*").remove();
 
-    const margin = { top: 20, right: 20, bottom: 70, left: 80 };
-    const width = 800 - margin.left - margin.right;
-    const height = 500 - margin.top - margin.bottom;
+    const margin = { top: 5, right: 20, bottom: 55, left: 60 };
+    const width = 360 - margin.left - margin.right;
+    const height = 220 - margin.top - margin.bottom;
 
     const xScale = d3.scaleLinear()
       .domain([d3.min(data.x), d3.max(data.x)+0.15])
@@ -41,7 +41,7 @@ const MDSPlot2 = () => {
       .join("circle")
       .attr("cx", (_, i) => xScale(data.x[i]))
       .attr("cy", (_, i) => yScale(data.y[i]))
-      .attr("r", 5)
+      .attr("r", 4)
       .attr("fill", "blue");
 
     // Adding variable names as labels next to the points
@@ -53,7 +53,7 @@ const MDSPlot2 = () => {
       .attr("dx", 8) // Offset from the circle
       .attr("dy", ".35em") // Vertical alignment
       .text(d => d)
-      .style("font-size", "12px")
+      .style("font-size", "8px")
       .style("fill", "black");
 
     // Axes
@@ -83,8 +83,8 @@ const MDSPlot2 = () => {
 
   return (
     <>
-      <h3 style={{ color: 'blue' }}>Variables MDS Plot using (1-|Correlation|) Distance</h3>
-      <svg ref={chartRef} width="800" height="500"></svg>
+      <h5 style={{ textAlign: 'center' }}>Variables MDS Plot using (1-|Correlation|) Distance</h5>
+      <svg ref={chartRef} width="360" height="220"></svg>
     </>
   );
 };

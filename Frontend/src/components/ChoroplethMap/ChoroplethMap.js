@@ -33,7 +33,7 @@ const ChoroplethMap = () => {
     const svg = d3.select(svgRef.current);
     svg.selectAll("*").remove(); // Clear previous drawings
 
-    const projection = d3.geoMercator().fitSize([800, 500], geoData);
+    const projection = d3.geoEquirectangular().fitSize([400, 300], geoData);
     const pathGenerator = d3.geoPath().projection(projection);
     const colorScale = d3.scaleSequential(d3.interpolateCool)
                           .domain(d3.extent(geoData.features, d => d.properties[selectedAttribute]));
@@ -57,33 +57,33 @@ const ChoroplethMap = () => {
       }
     });
 
-    svg.selectAll(".label")
-      .data(geoData.features)
-      .join("text")
-      .attr("class", "label")
-      .attr("x", d => pathGenerator.centroid(d)[0])
-      .attr("y", d => pathGenerator.centroid(d)[1])
-      .text(d => d.properties.neighbourhood.substring(0, 5))
-      .attr("text-anchor", "middle")
-      .attr("fill", "black")
-      .attr("font-size", "8px");
+    // svg.selectAll(".label")
+    //   .data(geoData.features)
+    //   .join("text")
+    //   .attr("class", "label")
+    //   .attr("x", d => pathGenerator.centroid(d)[0])
+    //   .attr("y", d => pathGenerator.centroid(d)[1])
+    //   .text(d => d.properties.neighbourhood.substring(0, 5))
+    //   .attr("text-anchor", "middle")
+    //   .attr("fill", "black")
+    //   .attr("font-size", "8px");
   };
 
   return (
     <div style={{ display: 'flex', flexDirection: 'row' }}>
       <div>
-        <h1>Choropleth Map</h1>
-        <svg ref={svgRef} width={800} height={500}></svg>
+        <h5 style={{textAlign: 'center'}}>Choropleth Map</h5>
+        <svg ref={svgRef} width={400} height={300}></svg>
       </div>
-      <div style={{ marginLeft: '20px' }}>
-        <h2>City Details</h2>
+      <div>
+        <h5>Neighborhood Details</h5>
         {selectedCity ? (
           <>
             <p><strong>Name:</strong> {selectedCity.name}</p>
             <p><strong>{selectedAttribute}:</strong> {selectedCity.value.toFixed(2)}</p>
           </>
         ) : (
-          <p><strong>Name:</strong> Choose a city</p>
+          <p><strong>Name:</strong> Choose a neighborhood</p>
         )}
         <div>
           <label htmlFor="attribute-selector">Select Attribute: </label>

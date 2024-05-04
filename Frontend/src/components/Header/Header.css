@@ -4,7 +4,7 @@
 }
 .header {
   /* title */
-  height: 150px;
+  height: calc(.1 * 100vh);
   display: flex;
   align-items: center;
   font-size: 1.2rem;
@@ -21,75 +21,10 @@
 
 .header__title {
   font-family: "Rounded Elegance";
-  font-size: 3rem;
-  margin: 10px;
+  font-size: 2.4rem;
   text-decoration: none;
   color: var(--primary);
   -webkit-text-stroke: 1px var(--primary);
   font-weight: bold;
   text-align-last: center;
-}
-
-.header_menu {
-  display: flex;
-  gap: 100px;
-  display: flex;
-  justify-content: space-around; 
-  align-items: center;
-}
-
-.header_menu button {
-  box-shadow: 0px 3px 10px -2px rgb(0 0 0);
-  border: none;
-  background-color: var(--primary);
-  color: var(--bg-0);
-  font-size: large;
-  font-weight: bold;
-  padding: 5px 10px 5px 10px;
-  border-radius: 5px;
-  min-width: 250px;
-  cursor: pointer;
-}
-
-.menu-item {
-  position: relative; 
-}
-
-.menu-item .dropdown-content {
-  display: block;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 250px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.menu-item .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.menu-item .dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-.scatterplot-option {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 10px; 
-}
-
-
-.axis-radio {
- 
-  display: flex;
-  align-items: center;
-  margin-right: 5px; 
-}
-
-.axis-radio input[type="radio"] {
-  margin-left: 5px; 
 }

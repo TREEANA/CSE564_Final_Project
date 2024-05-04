@@ -4,7 +4,6 @@
   min-height: calc(100vh);
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
 }
 
 .modalBackground {

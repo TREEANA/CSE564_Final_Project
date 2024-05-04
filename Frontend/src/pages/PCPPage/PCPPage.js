@@ -12,18 +12,19 @@ const PCPPage = ({ k, setK }) => {
 
     return (
         <>
-            <h1>{showFirstPlot ? "Parallel Coordinates Plot" : "MDS Parallel Coordinates Plot"}</h1>
-            <div className="toggle-switch">
-                <input
-                    id="toggle"
-                    type="checkbox"
-                    checked={!showFirstPlot}
-                    onChange={togglePlot}
-                    className="checkbox"
-                />
-                <label htmlFor="toggle" className="slider"></label>
+            <div style={{display: 'flex', gap: '15px'}}>
+                <h5 style={{textAlign: 'center', display: 'inline-block'}}>{showFirstPlot ? "Parallel Coordinates Plot" : "MDS Parallel Coordinates Plot"}</h5>
+                <div className="toggle-switch">
+                    <input
+                        id="toggle"
+                        type="checkbox"
+                        checked={!showFirstPlot}
+                        onChange={togglePlot}
+                        className="checkbox"
+                    />
+                    <label htmlFor="toggle" className="slider"></label>
+                </div>
             </div>
-
             {showFirstPlot ? <PCPPlot k={k} /> : <PCPPlot2 k={k} />}
         </>
     );

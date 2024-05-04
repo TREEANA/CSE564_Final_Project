@@ -4,9 +4,9 @@ import * as d3 from 'd3';
 
 const LineChart = ({setK, k }) => {
   const ref = useRef();
-  const margin = { top: 50, right: 30, bottom: 70, left: 60 };
-  const width = 600 - margin.left - margin.right;
-  const height = 400 - margin.top - margin.bottom;
+  const margin = { top: 45, right: 30, bottom: 40, left: 60 };
+  const width = 370 - margin.left - margin.right;
+  const height = 190 - margin.top - margin.bottom;
   const [data, setData] = useState(null);
   const [eblow, setElbow] = useState(3);
 
@@ -46,12 +46,12 @@ const LineChart = ({setK, k }) => {
            .attr("transform", `translate(0,${height})`)
            .call(d3.axisBottom(x))
            .selectAll("text")
-           .style("text-anchor", "end");
+           .style("text-anchor", "middle");
 
       chart.append("text")
            .attr("class", "x axis-label")
            .attr("x", width / 2) 
-           .attr("y", height + margin.bottom - 10) 
+           .attr("y", height + margin.bottom) 
            .style("text-anchor", "middle") 
            .text("Number of k cluster");
 
@@ -65,8 +65,8 @@ const LineChart = ({setK, k }) => {
       chart.append("text")
       .attr("class", "y axis-label")
       .attr("transform", "rotate(-90)") 
-      .attr("y", 0 - margin.left) 
-      .attr("x", 0 - (height / 2)) 
+      .attr("y", -margin.left) 
+      .attr("x", -(height / 2)) 
       .attr("dy", "1em") 
       .style("text-anchor", "middle") 
       .text("SSE");
@@ -82,17 +82,17 @@ const LineChart = ({setK, k }) => {
     .attr("r", 5)
     .attr("fill", "red");
 
-// 점들을 연결하는 라인을 추가
-const line = d3.line()
-              .x(d => x(d.x) + x.bandwidth() / 2) 
-              .y(d => y(d.y)-5); 
+    // 점들을 연결하는 라인을 추가
+    const line = d3.line()
+                  .x(d => x(d.x) + x.bandwidth() / 2) 
+                  .y(d => y(d.y)-5); 
 
-chart.append("path")
-    .datum(data.x.map((x, i) => ({ x, y: data.y[i] }))) 
-    .attr("fill", "none")
-    .attr("stroke", "red")
-    .attr("stroke-width", 1.5)
-    .attr("d", line);
+    chart.append("path")
+        .datum(data.x.map((x, i) => ({ x, y: data.y[i] }))) 
+        .attr("fill", "none")
+        .attr("stroke", "red")
+        .attr("stroke-width", 1.5)
+        .attr("d", line);
 
 
     if (k !== null) {
@@ -137,13 +137,12 @@ chart.append("path")
       chart.append("text")
         .attr("class", "selected-txt")
         .attr("x", selectedX)
-        .attr("y", selectedY - 80) 
+        .attr("y", selectedY - 70) 
         .attr("text-anchor", "middle")
         .attr("fill", "black")
         .attr("font-weight", "bold") 
         .text("eblow");
 
-      
       chart.append("line")
         .attr("class", "selected-lne")
         .attr("x1", selectedX)
@@ -154,8 +153,6 @@ chart.append("path")
         .attr("stroke-width", 1)
         .attr("stroke-dasharray", "5,5");
     }
-
-
 
       // 막대 그리기
       chart.selectAll(".bar")
@@ -170,17 +167,15 @@ chart.append("path")
            .on("mouseover", function(_, d) { d3.select(this).attr("fill", "red"); 
        svg.append("text")
        .attr("id", "tooltip")
-       .attr("x",  300)
+       .attr("x",  220)
        .attr("y", 20)
        .attr("text-anchor", "middle")
        .text(`SSE: ${d.y}`);
-    
     })
        .on("mouseout", function() { d3.select(this).attr("fill", "steelblue");
        svg.select("#tooltip").remove(); })
            .on("click", function(_, d) {
             setK(d.x);
-           
           });
 
     }
@@ -188,9 +183,9 @@ chart.append("path")
 
   return (
     <>
-      <h3 style={{ color: 'blue' }}>KMean MSE Plot (Elbow method)</h3>
-      <h3>{`Selected the number of Number of k cluster : ${k}`}</h3>
-      <svg ref={ref} width={600 + margin.left + margin.right} height={400 + margin.top + margin.bottom}/>
+      <h5 style={{ textAlign: 'center' }}>KMean MSE Plot (Elbow method)</h5>
+      <h6 style={{ textAlign: 'center' }}>{`Selected the number of Number of k cluster : ${k}`}</h6>
+      <svg ref={ref} width={370} height={190}/>
     </>
   );
 }

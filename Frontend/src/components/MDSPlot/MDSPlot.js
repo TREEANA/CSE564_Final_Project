@@ -21,9 +21,9 @@ const MDSPlot = ({k}) => {
     const svg = d3.select(chartRef.current);
     svg.selectAll("*").remove();
 
-    const margin = { top: 20, right: 20, bottom: 70, left: 80 };
-    const width = 800 - margin.left - margin.right;
-    const height = 500 - margin.top - margin.bottom;
+    const margin = { top: 20, right: 30, bottom: 40, left: 50 };
+    const width = 360 - margin.left - margin.right;
+    const height = 220 - margin.top - margin.bottom;
     const color = d3.scaleOrdinal(d3.schemeCategory10);
 
     const xScale = d3.scaleLinear()
@@ -42,7 +42,7 @@ const MDSPlot = ({k}) => {
       .join("circle")
       .attr("cx", (_, i) => xScale(data.x[i]))
       .attr("cy", (_, i) => yScale(data.y[i]))
-      .attr("r", 5)
+      .attr("r", 2.5)
       .attr("fill", d => color(d.Cluster_ID));
 
     const xAxis = svgContent.append("g")
@@ -61,7 +61,7 @@ const MDSPlot = ({k}) => {
 
     yAxis.append("text")
         .attr("transform", "rotate(-90)")
-        .attr("y", -60)
+        .attr("y", -45)
         .attr("x", -height / 2)
         .attr("dy", "1em")
         .attr("fill", "#000")
@@ -74,25 +74,25 @@ const MDSPlot = ({k}) => {
         .data(legendData)
         .enter().append("g")
         .attr("class", "legend")
-        .attr("transform", (d, i) => `translate(0, ${i * 20})`);
+        .attr("transform", (d, i) => `translate(0, ${i * 15})`);
 
     legend.append("rect")
-        .attr("x", width - 18)
-        .attr("width", 18)
-        .attr("height", 18)
+        .attr("x", width - 9)
+        .attr("width", 9)
+        .attr("height", 9)
         .style("fill", color);
 
     legend.append("text")
-        .attr("x", width - 24)
-        .attr("y", 9)
-        .attr("dy", ".35em")
+        .attr("x", width - 13)
+        .attr("y", 8.5)
         .style("text-anchor", "end")
+        .style("font-size", "12px")
         .text(d => `Cluster ${d}`);
   };
 
   return (<>
-  <h3 style={{ color: 'blue' }}>MDS plot (use the Euclidian distance) </h3>
-  <svg ref={chartRef} width="800" height="500"></svg>;
+  <h5 style={{ textAlign: 'center' }}>MDS plot (use the Euclidian distance) </h5>
+  <svg ref={chartRef} width="360" height="220"></svg>
   </>)
 };
 
