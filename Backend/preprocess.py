@@ -18,7 +18,7 @@ rename_map = {
     "review_scores_value": "value",
     "neighbourhood_cleansed": "neighbourhood",
     "neighbourhood_group_cleansed": "neighbourhood_group",
-    "accommodates": "num_accommodations"
+    "accommodates": "max_capacity"
 }
 
 data = pd.read_csv(file_path, usecols=columns).dropna()

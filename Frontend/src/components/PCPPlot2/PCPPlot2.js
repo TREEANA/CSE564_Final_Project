@@ -10,24 +10,19 @@ const PCPPlot2 = ({k}) => {
   const [loading, setLoading] = useState(true);
   // this is the MDS (1-|Correlation|) Distance axis order for columns without Cluster_ID
   const ordered_columns = [
+    'bedrooms',
+    'max_capacity',
+    'price',
+    'bathrooms',
+    'location',
+    'communication',
     'value',
     'accuracy',
-    'num_accommodations',
     'rating',
-    'communication',
-    'location',
-    'bathrooms',
-    'price',
-    'bedrooms',
-    'num_accommodations',
     'number_of_reviews',
     'host_total_listings_count',
     'host_acceptance_rate',
-    'Cluster_ID' ] 
- 
-    
-
- 
+    'Cluster_ID' ]
 
     useEffect(() => {
       fetch(`http://localhost:2000/pcp_plot_2/${k}`)
@@ -69,12 +64,8 @@ const PCPPlot2 = ({k}) => {
         });
     }, [k]);
 
-
-
   useEffect(() => {
     drawPlot(data);
-    
-
   }, [refreshData]);
 
 

@@ -133,10 +133,10 @@ const LineChart = ({setK, k }) => {
       const selectedX = x(eblow) + x.bandwidth() / 2;
       const selectedY = y(data.y[data.x.indexOf(eblow)]);
 
-      
+
       chart.selectAll(".selected-txt, .selected-lne").remove();
 
-      
+
       chart.append("text")
         .attr("class", "selected-txt")
         .attr("x", selectedX)

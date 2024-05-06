@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 
-const RadarPlot = ({radarLocs}) => {
+const RadarPlot = ({setRadarLocs, radarLocs}) => {
     const chartRef = useRef(null);
     const [data, setData] = useState(null);
     const [selectedAttr, setSelectedAttr] = useState(["rating",
@@ -10,6 +10,8 @@ const RadarPlot = ({radarLocs}) => {
                                                       "communication",
                                                       "location",
                                                       "value"]);
+    const [allNeighborhoods, setAllNeighborhoods] = useState([]);
+
     const attributeList = [
         "rating",
         "accuracy",
@@ -17,13 +19,22 @@ const RadarPlot = ({radarLocs}) => {
         "communication",
         "location",
         "value",
-        "num_accommodations",
+        "max_capacity",
         "bedrooms",
         "bathrooms",
         "host_acceptance_rate",
         "number_of_reviews",
         "price"
     ]
+
+    useEffect(() => {
+        fetch(`http://localhost:2000/nbs`)
+            .then(response => response.json())
+            .then(data => {
+                setAllNeighborhoods(data);
+        });
+    }, [])
+
     useEffect(() => {
         let qParamStr = "";
         for (let i = 0; i < radarLocs.length; i++) {
@@ -46,8 +57,8 @@ const RadarPlot = ({radarLocs}) => {
         const svg = d3.select(chartRef.current);
         svg.selectAll("*").remove();
 
-        const margin = { top: 20, right: 20, bottom: 70, left: 20 };
-        const width = 400 - margin.left - margin.right;
+        const margin = { top: 20, right: 175, bottom: 70, left: 20 };
+        const width = 450 - margin.left - margin.right;
         const height = 320 - margin.top - margin.bottom;
         const color = d3.scaleOrdinal(d3.schemeCategory10);
         const attributes = data[0].map((i, _) => i.axis)
@@ -103,7 +114,6 @@ const RadarPlot = ({radarLocs}) => {
             .call(wrap, 50)
             .on("click", (e, d) => {
                 const idx = selectedAttr.indexOf(d.replaceAll(" ", "_"));
-                console.log(idx)
                 createDropdown(e, idx);
             });
 
@@ -122,7 +132,7 @@ const RadarPlot = ({radarLocs}) => {
                     .attr("class", "radarArea")
                     .attr("d", (d, i) => radarLine(d))
                     .style("fill", (d, i) => color(i))
-                    .style("fill-opacity", 0.5)
+                    .style("fill-opacity", 0.45)
                     .attr("transform", `translate(${width / 2}, ${height / 2})`);
 
             blobWrapper.selectAll(".point")
@@ -134,6 +144,24 @@ const RadarPlot = ({radarLocs}) => {
                             .attr("cy", (d, i) => (height / 2) + radiusScale(d.value) * Math.sin(angleSlice * i - Math.PI / 2))
                             .style("fill", (d, i) => color(d.i))
                             .style("fill-opacity", 0.85)
+
+            const legend = svg.append("g")
+                .attr("class", "legend")
+                .attr("transform", `translate(${width + margin.left + 20}, ${margin.top})`)
+
+            radarLocs.forEach((loc, idx) => {
+                legend.append("rect")
+                    .attr("x", 0)
+                    .attr("y", idx * 20)
+                    .attr("width", 10)
+                    .attr("height", 10)
+                    .style("fill", color(idx))
+
+                legend.append("text")
+                    .attr("x", 15)
+                    .attr("y", idx * 20 + 9)
+                    .text(loc)
+            })
         }
 
         //Using http://bl.ocks.org/mbostock/7555321
@@ -196,9 +224,30 @@ const RadarPlot = ({radarLocs}) => {
         }
 
     }
+
+    const handleSelectChange = (e) => {
+        const selectedLoc = e.target.value;
+        if (radarLocs.includes(selectedLoc)) {
+            setRadarLocs(radarLocs.filter(x => x !== selectedLoc));
+        } else {
+            if (radarLocs.length < 5) {
+                setRadarLocs([...radarLocs, selectedLoc]);
+            }
+        }
+    }
     return (<>
         <h5 style={{ textAlign: 'center' }}>Radar Plot</h5>
-        <svg ref={chartRef} width="400" height="320"></svg>
+        <svg ref={chartRef} width="475" height="320"></svg>
+        <div style={{textAlign: 'center'}}>
+            <select onChange={handleSelectChange} value="">
+                <option value="">Add/Remove Neighborhood</option>
+                {allNeighborhoods.map(nbh => (
+                    <option key={nbh} value={nbh}>
+                        {nbh}
+                    </option>
+                ))}
+            </select>
+        </div>
     </>)
 }
 

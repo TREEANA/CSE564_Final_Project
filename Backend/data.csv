@@ -1,4 +1,4 @@
-host_name,host_acceptance_rate,host_total_listings_count,neighbourhood,neighbourhood_group,latitude,longitude,room_type,num_accommodations,bathrooms,bathrooms_text,bedrooms,price,number_of_reviews,rating,accuracy,cleanliness,communication,location,value
+host_name,host_acceptance_rate,host_total_listings_count,neighbourhood,neighbourhood_group,latitude,longitude,room_type,max_capacity,bathrooms,bathrooms_text,bedrooms,price,number_of_reviews,rating,accuracy,cleanliness,communication,location,value
 Annushka,100,8.0,Jamaica,Queens,40.68413,-73.79642,Private room,2,1.0,1 bath,1.0,100.0,75,4.81,4.87,4.93,4.92,4.72,4.88
 Danielle,63,4.0,Williamsburg,Brooklyn,40.71392440795898,-73.95526123046875,Private room,1,1.0,1 private bath,1.0,89.0,8,5.0,5.0,5.0,5.0,4.75,4.88
 A.B.,85,11.0,Midtown,Manhattan,40.75675,-73.96653,Entire home/apt,2,1.0,1 bath,1.0,499.0,29,4.5,4.45,4.0,4.93,4.86,4.5

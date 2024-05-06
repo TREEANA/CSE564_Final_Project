@@ -269,7 +269,7 @@ const PCPPlot = ({k}) => {
         
         const dropX = event.x;
         const dropTargetLabel = findClosestLabel(dropX,dddd, xScale);
-  
+
         handleApplyChanges2(draggedLabel, dropTargetLabel,plotData);
 
           });
@@ -284,7 +284,7 @@ const PCPPlot = ({k}) => {
         .attr("x", -10)
         .text(d => d)
         .style("fill", "black");
-    
+
 
     const legendData = Array.from(new Set(plotData.map(d => d.Cluster_ID))).sort();
 

@@ -77,12 +77,12 @@ max_vals = {
     "communication": 5,
     "location": 5,
     "value": 5,
-    "num_accommodations": 16,
-    "bedrooms": 5.5,
-    "bathrooms": 6,
+    "max_capacity": 16,
+    "bedrooms": 9,
+    "bathrooms": 11.5,
     "host_acceptance_rate": 100,
-    "number_of_reviews": 680,
-    "price": 1750
+    "number_of_reviews": 866,
+    "price": 2000
 }
 
 mds_1 = MDS(n_components=2, metric=True, random_state=42, n_jobs=-1)
@@ -227,22 +227,27 @@ def radar():
                 {"axis": i.replace("_", " ")} for i in labels
             ]
         ]
-    print(data)
     # data_dict = df[labels].to_dict(orient="records")[:5]
     return data
 
 @app.route("/toptable")
 def top_table():
     query_params = request.args.to_dict()
-    data = pd.read_csv('data.csv')
-    pbn = data.groupby("neighbourhood")[query_params["attrb"]].mean().sort_values()[:5]
+    if (query_params["srt"] == "desc"):
+        pbn = original_df.groupby("neighbourhood")[query_params["attrb"]].mean().sort_values(ascending=False)[:5]
+    else:
+        pbn = original_df.groupby("neighbourhood")[query_params["attrb"]].mean().sort_values(ascending=True)[:5]
     data = []
     for neighborhood, val in pbn.items():
         data.append({
             "neighborhood": neighborhood,
-            "value": val
+            "value": round(val, 2)
         })
     return data
+
+@app.route("/nbs")
+def nbs():
+    return sorted(list(original_df["neighbourhood"].unique()))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=2000, debug=True)

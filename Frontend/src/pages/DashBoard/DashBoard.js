@@ -8,19 +8,22 @@ import TopTable from '../../components/TopTable/TopTable';
 import RadarPlot from '../../components/RadarPlot/RadarPlot';
 import ChoroplethMap from '../../components/ChoroplethMap/ChoroplethMap';
 
+
+
 const DashBoard = ({  k,  setK, radarLocs, setRadarLocs }) => {
+  const [sharedAttr, setSharedAttr] = useState("price");
   return (
     <div className="dashboard-container">
 
       <div className='radar-plot-container'>
-        <div> 
-          <ChoroplethMap/>
+        <div>
+          <ChoroplethMap setSharedAttr={setSharedAttr}/>
         </div>
         <div className='radar'>
-          <TopTable setRadarLocs={setRadarLocs}></TopTable>
+          <TopTable setRadarLocs={setRadarLocs} radarLocs={radarLocs} sharedAttr={sharedAttr}></TopTable>
         </div>
         <div className='radar'>
-          <RadarPlot radarLocs={radarLocs}></RadarPlot>
+          <RadarPlot setRadarLocs={setRadarLocs} radarLocs={radarLocs}></RadarPlot>
         </div>
       </div>
 

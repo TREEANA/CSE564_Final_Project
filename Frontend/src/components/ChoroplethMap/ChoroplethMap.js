@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 
-const ChoroplethMap = () => {
+const ChoroplethMap = ({setSharedAttr}) => {
   const svgRef = useRef(null);
   const [selectedCity, setSelectedCity] = useState(null);
   const [selectedAttribute, setSelectedAttribute] = useState('price');
@@ -16,9 +16,10 @@ const ChoroplethMap = () => {
     'number_of_reviews',
     'bedrooms',
     'bathrooms',
-    'num_accommodations',
+    'max_capacity',
     'host_total_listings_count',
     'price',
+    'host_acceptance_rate'
   ];
 
   useEffect(() => {
@@ -137,7 +138,10 @@ const ChoroplethMap = () => {
           <select
             id='attribute-selector'
             value={selectedAttribute}
-            onChange={(e) => setSelectedAttribute(e.target.value)}
+            onChange={(e) => {
+              setSelectedAttribute(e.target.value);
+              setSharedAttr(e.target.value);
+            }}
           >
             {orderedColumns.map((attr) => (
               <option key={attr} value={attr}>
