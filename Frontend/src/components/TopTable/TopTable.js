@@ -26,23 +26,27 @@ export default function TopTable({setRadarLocs, radarLocs, sharedAttr}) {
     }
 
     return (
-        <table>
-            <thead>
-                <tr>
-                    <th>Neighborhood</th>
-                    <th onClick={toggleSortOrder}>{sharedAttr} {sortOrder === "asc" ? "↑" : "↓"}</th>
-                </tr>
-            </thead>
-            <tbody>
-                {data.map((row, ind) => (
-                    <tr key={ind} 
-                        onClick={() => handleRowClick(row.neighborhood)}
-                        style={{backgroundColor: radarLocs.includes(row.neighborhood) ? "yellow" : "unset"}}>
-                        <td>{row.neighborhood}</td>
-                        <td>{row.value}</td>
+        <>
+            <h5 style={{textAlign: 'center', marginBottom: '0px'}}>{sortOrder === "asc" ? "Bottom": "Top"} 5 Neighborhoods by</h5>
+            <h5 style={{textAlign: 'center'}}>{sharedAttr.replaceAll("_", " ")}</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <th style={{width: '150px'}}>Neighborhood</th>
+                        <th onClick={toggleSortOrder} style={{width: '185px'}}>{sharedAttr} {sortOrder === "asc" ? "↑" : "↓"}</th>
                     </tr>
-                ))}
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    {data.map((row, ind) => (
+                        <tr key={ind} 
+                            onClick={() => handleRowClick(row.neighborhood)}
+                            style={{backgroundColor: radarLocs.includes(row.neighborhood) ? "yellow" : "unset"}}>
+                            <td>{row.neighborhood}</td>
+                            <td>{row.value}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </>
     )
 }
