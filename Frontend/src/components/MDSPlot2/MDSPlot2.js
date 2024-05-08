@@ -20,8 +20,8 @@ const MDSPlot2 = () => {
     const svg = d3.select(chartRef.current);
     svg.selectAll("*").remove();
 
-    const margin = { top: 5, right: 20, bottom: 55, left: 60 };
-    const width = 360 - margin.left - margin.right;
+    const margin = { top: 5, right: 50, bottom: 55, left: 60 };
+    const width = 400 - margin.left - margin.right;
     const height = 220 - margin.top - margin.bottom;
 
     const xScale = d3.scaleLinear()
@@ -66,7 +66,7 @@ const MDSPlot2 = () => {
         .attr("y", 40)
         .attr("fill", "#000")
         .style("text-anchor", "middle")
-        .style("font-size", "8px")
+        .style("font-size", "12px")
         .text("MDS1");
 
     const yAxis = svgContent.append("g")
@@ -79,6 +79,7 @@ const MDSPlot2 = () => {
         .attr("dy", "1em")
         .attr("fill", "#000")
         .style("text-anchor", "middle")
+        .style("font-size", "12px")
         .text("MDS2");
   };
 
@@ -86,7 +87,7 @@ const MDSPlot2 = () => {
     <>
       <h5 style={{ textAlign: 'center'}}>Variables MDS Plot </h5>
       <h6 style={{ textAlign: 'center', marginBottom: '40px' }}>using 1-|Correlation| distance</h6>
-      <svg ref={chartRef} width="360" height="220"></svg>
+      <svg ref={chartRef} width="410" height="220"></svg>
     </>
   );
 };

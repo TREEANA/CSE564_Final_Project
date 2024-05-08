@@ -53,7 +53,7 @@ const LineChart = ({setK, k }) => {
            .attr("x", width / 2) 
            .attr("y", height + margin.bottom) 
            .style("text-anchor", "middle") 
-           .style("font-size", "8px")
+           .style("font-size", "12px")
            .text("Number of k cluster");
 
       // y 축 설정
@@ -70,7 +70,7 @@ const LineChart = ({setK, k }) => {
       .attr("x", -(height / 2)) 
       .attr("dy", "1em") 
       .style("text-anchor", "middle") 
-      .style("font-size", "8px")
+      .style("font-size", "12px")
       .text("SSE");
 
       
